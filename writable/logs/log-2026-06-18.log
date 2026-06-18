@@ -1,0 +1,1438 @@
+DEBUG - 2026-06-18 10:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 10:51:27 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelPengguna::ceklogin
+[Method: GET, Route: ceklogin]
+in SYSTEMPATH\Model.php on line 763.
+ 1 APPPATH\Controllers\Login.php(17): CodeIgniter\Model->__call('ceklogin', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Login->ceklogin()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 10:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-18 10:57:22 --> Table 'db_aldino_perabot.pengguna' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )', [], false)
+ 5 APPPATH\Models\ModelPengguna.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Login.php(17): App\Models\ModelPengguna->ceklogin(null)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Login->ceklogin()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 10:57:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_aldino_perabot.pengguna' doesn't exist
+[Method: GET, Route: ceklogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )', [], false)
+ 2 APPPATH\Models\ModelPengguna.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(17): App\Models\ModelPengguna->ceklogin(null)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Login->ceklogin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 10:57:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_aldino_perabot.pengguna' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )', [], false)
+ 4 APPPATH\Models\ModelPengguna.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Login.php(17): App\Models\ModelPengguna->ceklogin(null)
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Login->ceklogin()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 10:57:22 --> [Caused by] mysqli_sql_exception: Table 'db_aldino_perabot.pengguna' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE   (
+`username` IS NULL
+OR `email` IS NULL
+ )', [], false)
+ 5 APPPATH\Models\ModelPengguna.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Login.php(17): App\Models\ModelPengguna->ceklogin(null)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Login->ceklogin()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 10:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 11:35:03 --> ErrorException: Undefined variable $iduser
+[Method: GET, Route: registrasi]
+in APPPATH\Views\layout\registrasi.php on line 39.
+ 1 APPPATH\Views\layout\registrasi.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iduser', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\layout\\registrasi.php', 39)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\layout\\registrasi.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('layout/registrasi', [], true)
+ 5 APPPATH\Controllers\Layout.php(21): view('layout/registrasi')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->registrasi()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 11:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 11:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 12:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 14:30:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 14:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 14:30:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:30:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(60): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:33:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:34:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:39:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 14:43:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage/load_more_produk.php"
+[Method: GET, Route: homepage/loadmore]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage/load_more_produk.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepage/load_more_produk', [], true)
+ 3 APPPATH\Controllers\Layout.php(58): view('homepage/load_more_produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->loadMore()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 14:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 14:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 15:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 15:44:42 --> ErrorException: Attempt to read property "idkategori" on array
+[Method: GET, Route: katalogproduk]
+in APPPATH\Views\homepagepelanggan\katalogproduk.php on line 103.
+ 1 APPPATH\Views\homepagepelanggan\katalogproduk.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idkategori" on array', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\katalogproduk.php', 103)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\katalogproduk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/katalogproduk', [], true)
+ 5 APPPATH\Controllers\Layout.php(76): view('homepagepelanggan/katalogproduk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->katalog()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 16:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 16:26:30 --> ErrorException: Undefined variable $user
+[Method: GET, Route: homepage]
+in APPPATH\Views\homepagepelanggan\homepage.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\homepage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/homepage', [], true)
+ 5 APPPATH\Controllers\Layout.php(45): view('homepagepelanggan/homepage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 16:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 16:29:08 --> ErrorException: Undefined array key "iduser"
+[Method: GET, Route: homepage]
+in APPPATH\Views\homepagepelanggan\homepage.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\homepage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iduser"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/homepage', [], true)
+ 5 APPPATH\Controllers\Layout.php(49): view('homepagepelanggan/homepage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-18 16:32:07 --> ErrorException: Undefined array key "iduser"
+[Method: GET, Route: homepage]
+in APPPATH\Views\homepagepelanggan\homepage.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\homepage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iduser"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/homepage', [], true)
+ 5 APPPATH\Controllers\Layout.php(49): view('homepagepelanggan/homepage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 16:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 16:32:11 --> ErrorException: Undefined array key "iduser"
+[Method: GET, Route: homepage]
+in APPPATH\Views\homepagepelanggan\homepage.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\homepage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iduser"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/homepage', [], true)
+ 5 APPPATH\Controllers\Layout.php(49): view('homepagepelanggan/homepage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 16:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 16:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-18 17:16:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:16:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:16:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:16:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:16:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:16:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 17:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-18 17:29:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:29:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:29:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:29:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:29:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-06-18 17:29:08 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 163.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(163): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(31): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 17:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 17:46:38 --> ErrorException: Undefined variable $subtotal
+[Method: GET, Route: editpesanan/PSN000004]
+in APPPATH\Views\datatransaksi\editpesanan.php on line 216.
+ 1 APPPATH\Views\datatransaksi\editpesanan.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subtotal', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php', 216)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/editpesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(214): view('datatransaksi/editpesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->edit('PSN000004')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 17:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 17:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 18:10:36 --> ErrorException: Undefined array key "idpelanggan"
+[Method: GET, Route: katalogproduk]
+in APPPATH\Views\homepagepelanggan\katalogproduk.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\katalogproduk.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idpelanggan"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\katalogproduk.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\katalogproduk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/katalogproduk', [], true)
+ 5 APPPATH\Controllers\Layout.php(87): view('homepagepelanggan/katalogproduk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->katalog()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 18:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 18:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,155 @@
+CRITICAL - 2026-06-13 14:43:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: datapengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datamaster/v_datapengguna', [], true)
+ 4 APPPATH\Controllers\Pengguna.php(12): view('datamaster/v_datapengguna')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+ERROR - 2026-06-13 16:38:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#13 {main}
+CRITICAL - 2026-06-13 16:38:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: datapengguna]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-13 16:50:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamaster/v_tambahpengguna.php"
+[Method: GET, Route: tambahpengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamaster/v_tambahpengguna.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datamaster/v_tambahpengguna', [], true)
+ 3 APPPATH\Controllers\Pengguna.php(29): view('datamaster/v_tambahpengguna', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->tambahdata()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-13 16:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 16:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-13 16:54:31 --> Duplicate entry 'USR000001' for key 'user.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (:iduser:, :namauser:, :email:, :username:, :password:, :role:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pengguna.php(65): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->simpan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-13 16:54:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'USR000001' for key 'user.PRIMARY'
+[Method: POST, Route: pengguna/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (:iduser:, :namauser:, :email:, :username:, :password:, :role:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pengguna.php(65): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-13 16:54:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'USR000001' for key 'user.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (:iduser:, :namauser:, :email:, :username:, :password:, :role:, :status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pengguna.php(65): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-13 16:54:31 --> [Caused by] mysqli_sql_exception: Duplicate entry 'USR000001' for key 'user.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (\'USR000001\', \'Silvia Darma Yenti\', \'silvichaniago@gmail.com\', \'acin\', \'$2y$10$HwD2UZKxHKsIIc22GE0O6e0zk9EoE91TIJTWGQ/WlmI/XEIM9DYFu\', \'Admin\', \'Aktif\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`iduser`, `namauser`, `email`, `username`, `password`, `role`, `status`) VALUES (:iduser:, :namauser:, :email:, :username:, :password:, :role:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pengguna.php(65): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->simpan()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-13 16:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-13 17:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

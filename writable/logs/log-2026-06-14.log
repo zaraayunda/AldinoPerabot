@@ -1,0 +1,116 @@
+ERROR - 2026-06-14 07:08:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_aldino_perab...', 3306, '', 0)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#13 {main}
+CRITICAL - 2026-06-14 07:08:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: datapengguna]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-14 07:14:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard/dashboardadmin.php"
+[Method: GET, Route: datapengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dashboardadmin.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('dashboard/dashboardadmin', [], true)
+ 3 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datamaster/v_datapengguna', [], true)
+ 4 APPPATH\Controllers\Pengguna.php(19): view('datamaster/v_datapengguna', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+ERROR - 2026-06-14 11:47:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_aldino_perab...', 3306, '', 0)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#13 {main}
+CRITICAL - 2026-06-14 11:47:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: datapengguna]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Pengguna.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Pengguna->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')

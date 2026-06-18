@@ -1,0 +1,65 @@
+CRITICAL - 2026-06-12 17:05:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/dashboard.php"
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('layout/dashboard', [], true)
+ 3 APPPATH\Controllers\Layout.php(13): view('layout/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-12 17:07:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/dashboard.php"
+[Method: GET, Route: dashboardadmin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('layout/dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(9): view('layout/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dashboard->dashboardadmin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-12 17:07:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/dashboard.php"
+[Method: GET, Route: dashboardadmin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('layout/dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(9): view('layout/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dashboard->dashboardadmin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-12 17:07:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/dashboard.php"
+[Method: GET, Route: dashboardadmin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('layout/dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(9): view('layout/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dashboard->dashboardadmin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-06-12 17:07:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/dashboardadmin.php"
+[Method: GET, Route: dashboardadmin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/dashboardadmin.php')
+ 2 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('layout/dashboardadmin', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(9): view('layout/dashboardadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dashboard->dashboardadmin()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
