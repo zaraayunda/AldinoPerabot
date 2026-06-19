@@ -1436,3 +1436,100 @@ DEBUG - 2026-06-18 18:50:08 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-06-18 18:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-18 18:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-18 19:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-18 19:16:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_aldino_perab...', 3306, '', 0)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Layout.php(47): CodeIgniter\BaseModel->findAll()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\app\Controllers\Layout.php(47): CodeIgniter\BaseModel->findAll()
+#6 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+#7 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+#8 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\ZaraAyunda\SEMESTER8\SKRIPSIAN\PROGRAM\AldinoPerabot\system\rewrite.php(44): require_once('D:\\ZaraAyunda\\S...')
+#13 {main}
+CRITICAL - 2026-06-18 19:16:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: homepage]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk`
+WHERE `jenisproduk` = :jenisproduk:
+AND `statusproduk` = :statusproduk:', [...], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Layout.php(47): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 19:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 19:17:06 --> ErrorException: Undefined array key "iduser"
+[Method: GET, Route: homepage]
+in APPPATH\Views\homepagepelanggan\homepage.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\homepage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iduser"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/homepage', [], true)
+ 5 APPPATH\Controllers\Layout.php(51): view('homepagepelanggan/homepage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 19:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-18 19:17:12 --> ErrorException: Undefined array key "iduser"
+[Method: GET, Route: homepage]
+in APPPATH\Views\homepagepelanggan\homepage.php on line 81.
+ 1 APPPATH\Views\homepagepelanggan\homepage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iduser"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php', 81)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\homepagepelanggan\\homepage.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('homepagepelanggan/homepage', [], true)
+ 5 APPPATH\Controllers\Layout.php(51): view('homepagepelanggan/homepage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Layout->homepage()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Layout))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-06-18 19:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-18 19:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

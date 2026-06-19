@@ -53,6 +53,6 @@ class KeranjangController extends BaseController
         }
 
         return redirect()->back()
-                 ->with('success', 'Produk berhasil ditambahkan ke keranjang.');
+            ->with('success', 'Produk berhasil ditambahkan ke keranjang.');
     }
 }

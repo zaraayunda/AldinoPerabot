@@ -114,7 +114,7 @@ nav.navbar.bootsnav {
     background-color: transparent;
     border-bottom: transparent;
 }
-.wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
+.wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px rgba(0,0,0,.2); z-index:999999;}
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
@@ -305,7 +305,7 @@ ul.cart-list > li.total {
     z-index: 1;
     background: #f8f9fd;
 }
-.header-area{position: absolute;top:0;left:0;width: 100%;z-index: 99;}
+.header-area{position: absolute;top:0;left:0;width: 100%;z-index: 999999;}
 .single-slide-item{
     position: relative;
     background-size: cover;
@@ -549,7 +549,6 @@ ul.cart-list > li.total {
     position: relative;
     min-height: 310px;
     background: #f8f9fc;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,6 +559,8 @@ ul.cart-list > li.total {
 /* Image */
 .single-new-arrival-bg img {
     transition: transform .3s ease;
+    height: 200px;
+    width: 250px;
 }
 
 .single-new-arrival-bg:hover img {
@@ -669,7 +670,7 @@ ul.cart-list > li.total {
 
 /* INI BAGIAN PENTING */
 .action-icon .lnr {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
 
     display: block;
@@ -1304,6 +1305,43 @@ span.feature-review {margin-left: 10px;}
 
 .d-none {
     display: none;
+}
+
+.discount-badge{
+    position:absolute;
+    top:0;
+    right:0;
+    left:auto;
+    background:#ee4d2d;
+    color:#fff;
+    padding:8px 12px;
+    border-radius:0 0 0 12px;
+    font-weight:600;
+    z-index:2;
+}
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.new-price {
+    color: #8B5E3C;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.arrival-product-price {
+    color: #8B5E3C;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 /*========================Thank you=================

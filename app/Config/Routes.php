@@ -69,3 +69,5 @@ $routes->get(
     'masukkeranjang/(:segment)',
     'KeranjangController::simpan/$1'
 );
+$routes->get('/customproduk', 'PengajuanCustomController::index');
+$routes->post('/customproduk/simpan', 'PengajuanCustomController::simpan');

@@ -44,11 +44,11 @@ class Layout extends BaseController
             'produk' => $modelProduk
                 ->where('jenisproduk', 'katalog')
                 ->where('statusproduk', 'aktif')
-                ->findAll(),
+                ->findAll(8),
             'user' => $modelPengguna->find($iduser)
         ];
 
-        return view('homepagepelanggan/homepage', $data);
+        return view('pelanggan/homepage', $data);
     }
 
     public function loadMore()
@@ -62,7 +62,7 @@ class Layout extends BaseController
             ->where('statusproduk', 'aktif')
             ->findAll(4, $offset);
 
-        return view('homepagepelanggan/load_more_produk', [
+        return view('pelanggan/load_more_produk', [
             'produk' => $produk
         ]);
     }
@@ -87,6 +87,6 @@ class Layout extends BaseController
             'pelanggan' => $pelanggan
         ];
 
-        return view('homepagepelanggan/katalogproduk', $data);
+        return view('pelanggan/katalogproduk', $data);
     }
 }
