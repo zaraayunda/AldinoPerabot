@@ -55,4 +55,82 @@ class KeranjangController extends BaseController
         return redirect()->back()
             ->with('success', 'Produk berhasil ditambahkan ke keranjang.');
     }
+
+    public function tampilankeranjang()
+{
+    $modelKeranjang = new ModelKeranjang();
+    $modelPelanggan = new ModelPelanggan();
+
+    $iduser = session()->get('iduser');
+
+    $pelanggan = $modelPelanggan
+        ->where('iduser', $iduser)
+        ->first();
+
+    if (!$pelanggan) {
+
+        return redirect()->back()
+            ->with(
+                'error',
+                'Data pelanggan tidak ditemukan.'
+            );
+    }
+
+    $idpelanggan = $pelanggan['idpelanggan'];
+
+    $keranjang = $modelKeranjang
+        ->select(
+            '
+            keranjang.*,
+            produk.namaproduk,
+            produk.foto,
+            produk.harga,
+            produk.diskon
+        '
+        )
+        ->join(
+            'produk',
+            'produk.idproduk = keranjang.idproduk'
+        )
+        ->where(
+            'keranjang.idpelanggan',
+            $idpelanggan
+        )
+        ->where(
+            'keranjang.statuskeranjang',
+            'aktif'
+        )
+        ->findAll();
+
+    foreach ($keranjang as &$item) {
+
+        $hargaFinal = $item['harga'];
+
+        if (
+            !empty($item['diskon']) &&
+            $item['diskon'] > 0
+        ) {
+
+            $hargaFinal =
+                $item['harga'] -
+                ($item['harga'] * $item['diskon'] / 100);
+        }
+
+        $item['harga_final'] = $hargaFinal;
+
+        $item['subtotal'] =
+            $hargaFinal * $item['qty'];
+    }
+
+    $data = [
+
+        'keranjang' => $keranjang
+
+    ];
+
+    return view(
+        'pelanggan/v_keranjang',
+        $data
+    );
+}
 }

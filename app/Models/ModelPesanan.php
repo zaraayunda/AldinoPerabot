@@ -14,6 +14,7 @@ class ModelPesanan extends Model
         'idpelanggan',
         'tanggalpesanan',
         'totalharga',
+        'estimasiwaktu',
         'statuspesanan'
     ];
 

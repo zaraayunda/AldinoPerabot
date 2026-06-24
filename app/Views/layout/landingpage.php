@@ -112,7 +112,7 @@
 													<span class="lnr lnr-gift"></span>
 													Custom <span>Product</span>
 												</button>
-												<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('catalog') ?>'">
+												<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('login') ?>'">
 													Jelajahi <span>Catalog</span>
 												</button>
 											</div><!--/.welcome-hero-txt-->
@@ -155,7 +155,7 @@
 													<span class="lnr lnr-gift"></span>
 													Custom <span>Product</span>
 												</button>
-												<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('catalog') ?>'">
+												<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('login') ?>'">
 													Jelajahi <span>Catalog</span>
 												</button>
 											</div><!--/.welcome-hero-txt-->
@@ -198,7 +198,7 @@
 													<span class="lnr lnr-gift"></span>
 													Custom <span>Product</span>
 												</button>
-												<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('catalog') ?>'">
+												<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('login') ?>'">
 													Jelajahi <span>Catalog</span>
 												</button>
 											</div><!--/.welcome-hero-txt-->
@@ -243,22 +243,14 @@
 						<!-- Start Atribute Navigation -->
 						<div class="attr-nav">
 							<ul>
-								<li class="search">
-									<a href="#"><span class="lnr lnr-magnifier"></span></a>
-								</li><!--/.search-->
-								<li class="dropdown">
-									<a href="<?= base_url('login') ?>" class="dropdown-toggle" data-toggle="dropdown">
-										<span class="lnr lnr-cart"></span>
-										<!-- <span class="badge badge-bg-1">0</span> -->
+								<li class="login-btn-wrapper">
+									<a href="<?= base_url('login') ?>" class="login-btn">
+										<i class="lnr lnr-user"></i>
+										Login / Registrasi
 									</a>
 								</li>
-								<li class="nav-profile">
-									<a href="<?= base_url('login') ?>">
-										<span class="lnr lnr-user"></span>
-									</a>
-								</li><!--/.dropdown-->
 							</ul>
-						</div><!--/.attr-nav-->
+						</div>
 						<!-- End Atribute Navigation -->
 
 						<!-- Start Header Navigation -->
@@ -362,170 +354,74 @@
 	<!--populer-products end-->
 
 	<!--new-arrivals start -->
-	<section id="new-arrivals" class="new-arrivals">
-		<div class="container">
-			<div class="section-header">
-				<h2>Katalog Produk</h2>
-			</div><!--/.section-header-->
-			<div class="new-arrivals-content">
-				<div class="row">
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals1.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+    <section id="new-arrivals" class="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <h2>Katalog Produk</h2>
+            </div><!--/.section-header-->
+            <div class="new-arrivals-content">
+                <div class="row" id="produk-container">
+                    <?php if (!empty($produk)) : ?>
+                        <?php foreach ($produk as $row) : ?>
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">wooden chair</a></h4>
-							<p class="arrival-product-price">$65.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals2.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-new-arrival">
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">single armchair</a></h4>
-							<p class="arrival-product-price">$80.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals3.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                                    <div class="single-new-arrival-bg">
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">wooden armchair</a></h4>
-							<p class="arrival-product-price">$40.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals4.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                                        <img
+                                            src="<?= base_url('storage/fotoproduk/' . $row['foto']) ?>"
+                                            alt="<?= esc($row['namaproduk']) ?>">
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">stylish chair</a></h4>
-							<p class="arrival-product-price">$100.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals5.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                                        <div class="single-new-arrival-bg-overlay"></div>
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">modern chair</a></h4>
-							<p class="arrival-product-price">$120.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals6.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                                        <div class="new-arrival-cart">
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">mapple wood dinning table</a></h4>
-							<p class="arrival-product-price">$140.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals7.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                                            <a href="#" class="action-icon">
+                                                <span class="lnr lnr-cart"></span>
+                                            </a>
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">arm chair</a></h4>
-							<p class="arrival-product-price">$90.00</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="single-new-arrival">
-							<div class="single-new-arrival-bg">
-								<img src="<?= base_url() ?>/assets/images/collection/arrivals8.png" alt="new-arrivals images">
-								<div class="single-new-arrival-bg-overlay"></div>
-								<div class="new-arrival-cart">
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-cart"></span>
-									</a>
+                                            <a href="#" class="action-icon">
+                                                <span class="lnr lnr-eye"></span>
+                                            </a>
 
-									<a href="#" class="action-icon">
-										<span class="lnr lnr-eye"></span>
-									</a>
-								</div>
-							</div>
-							<h4><a href="#">Wooden Bed</a></h4>
-							<p class="arrival-product-price">$140.00</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.container-->
+                                        </div>
 
-	</section><!--/.new-arrivals-->
+                                    </div>
+
+                                    <h4>
+                                        <a href="#">
+                                            <?= esc($row['namaproduk']) ?>
+                                        </a>
+                                    </h4>
+
+                                    <p class="arrival-product-price">
+                                        Rp <?= number_format($row['harga'], 0, ',', '.') ?>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        <?php endforeach; ?>
+
+                    <?php else : ?>
+
+                        <div class="col-md-12 text-center">
+                            <h4>Produk belum tersedia</h4>
+                        </div>
+
+                    <?php endif; ?>
+
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="loadMore" onclick="window.location.href='<?= base_url('login') ?>'" class="btn btn-primary">
+                    Jelajahi Katalog
+                </button>
+            </div>
+        </div><!--/.container-->
+
+    </section><!--/.new-arrivals-->
 	<!--new-arrivals end -->
 	<!--sofa-collection start -->
 	<section id="sofa-collection">

@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-2 mb-3">
         <div class="stat-card">
-            <p>Proses <br>Produksi</p>
+            <p>Proses Produksi</p>
             <h4>
                 <?= count(array_filter($pesanan, fn($u) => $u['statuspesanan'] == 'proses_produksi')) ?>
             </h4>
@@ -87,6 +87,7 @@
                         <th>Harga</th>
                         <th>Diskon</th>
                         <th>Sub Total</th>
+                        <th>Estimasi</th>
                         <th>Status</th>
                         <th width="130">Aksi</th>
                     </tr>
@@ -167,7 +168,9 @@
                                             Rp <?= number_format($d['subtotal'], 0, ',', '.') ?>
                                         </td>
 
+
                                         <?php if ($index == 0) : ?>
+                                            <td rowspan="<?= $jumlahDetail ?>"><?= $row['estimasiwaktu'] ?></td>
 
                                             <td rowspan="<?= $jumlahDetail ?>" class="align-middle" style="min-width:170px;">
 

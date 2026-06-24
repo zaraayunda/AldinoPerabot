@@ -109,31 +109,41 @@
                                         </li>
 
                                         <li>
-                                            <a href="<?= base_url('pesanan') ?>">
+                                            <a href="<?= base_url('pesananpelanggan') ?>">
                                                 <i class="lnr lnr-cart"></i>
                                                 Pesanan Saya
                                             </a>
                                         </li>
 
                                         <li>
+                                            <a href="<?= base_url('pengajuan-custom') ?>">
+                                                <i class="lnr lnr-pencil"></i>
+                                                Pengajuan Custom
+                                            </a>
+                                        </li>
+
+                                        <!-- <li>
                                             <a href="<?= base_url('riwayat') ?>">
                                                 <i class="lnr lnr-history"></i>
                                                 Riwayat Pembelian
                                             </a>
-                                        </li>
+                                        </li> -->
 
-                                        <li>
+                                        <!-- <li>
                                             <a href="<?= base_url('pengaturan') ?>">
                                                 <i class="lnr lnr-cog"></i>
                                                 Pengaturan Akun
                                             </a>
-                                        </li>
+                                        </li> -->
 
                                         <li class="divider"></li>
 
                                         <li class="logout-item">
-                                            <a href="<?= base_url('logout') ?>" class="logout-btn">
+                                            <a href="<?= base_url('logout') ?>"
+                                                class="logout-btn">
+
                                                 Logout
+
                                             </a>
                                         </li>
 

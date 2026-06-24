@@ -16944,4 +16944,165 @@ td[rowspan] .status-pesanan{
     margin: auto;
 }
 
+/** CUSTOM **/
+
+.custom-header{
+    margin-bottom:30px;
+}
+
+.custom-icon{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#f8f4ea;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.custom-icon i{
+    font-size:42px;
+    color:#c7a857;
+}
+
+.custom-title{
+    font-weight:700;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.custom-subtitle{
+    color:#6b7280;
+    font-size:18px;
+}
+
+.sofa-image{
+    max-height:150px;
+}
+
+.custom-step-card{
+    background:#f8fbff;
+    border:1px solid #d9e5f5;
+    border-radius:20px;
+    padding:25px;
+}
+
+.step-item{
+    display:flex;
+    gap:15px;
+}
+
+.step-icon{
+    width:55px;
+    height:55px;
+    border-radius:15px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.step-icon i{
+    font-size:28px;
+    color:#3b82f6;
+}
+
+.step-item h6{
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.step-item p{
+    color:#6b7280;
+    margin:0;
+}
+
+.custom-empty-state{
+    margin-top:30px;
+    border:2px dashed #e5d4a2;
+    border-radius:25px;
+    padding:80px 30px;
+    text-align:center;
+}
+
+.empty-circle{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:#f8f4ea;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.empty-circle i{
+    font-size:42px;
+    color:var(--dark-brown);
+}
+
+.custom-empty-state h4{
+    margin-top:20px;
+    font-weight:700;
+}
+
+.custom-empty-state p{
+    color:#6b7280;
+    max-width:450px;
+    margin:15px auto 25px;
+}
+
+.btn-custom-add{
+    background:#c9a552;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:50px;
+}
+
+.btn-custom-add:hover{
+    background:#b99544;
+    color:white;
+}
+
+.privacy-box{
+    background:#f8fbff;
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.privacy-box i{
+    font-size:30px;
+    color:#3b82f6;
+}
+
+.produk-card{
+    border:none;
+    border-radius:22px;
+    box-shadow:
+        0 5px 25px rgba(0,0,0,0.07);
+    overflow:hidden;
+}
+
+.produk-header{
+    background:#fcfcfc;
+    border-bottom:1px solid #f1f1f1;
+    padding:20px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.produk-header h5{
+    font-weight:700;
+    color:#1f2937;
+}
+
+.produk-card .card-body{
+    padding:30px;
+}
+
 /*# sourceMappingURL=styles.min.css.map */

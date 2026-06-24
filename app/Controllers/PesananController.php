@@ -85,7 +85,8 @@ class PesananController extends BaseController
             'idpelanggan'    => $this->request->getPost('idpelanggan'),
             'tanggalpesanan' => $this->request->getPost('tanggalpesanan'),
             'totalharga'     => $this->request->getPost('totalharga'),
-            'statuspesanan'  => $this->request->getPost('statuspesanan')
+            'statuspesanan'  => $this->request->getPost('statuspesanan'),
+            'estimasiwaktu'  => $this->request->getPost('estimasiwaktu')
         ];
 
         // ==========================
@@ -229,6 +230,7 @@ class PesananController extends BaseController
             'tanggalpesanan'  => $this->request->getPost('tanggalpesanan'),
             'statuspesanan'   => $this->request->getPost('statuspesanan'),
             'totalharga'      => $this->request->getPost('totalharga'),
+            'estimasiwaktu'      => $this->request->getPost('estimasiwaktu')
         ];
 
         $modelPesanan->update($idpesanan, $dataPesanan);

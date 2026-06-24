@@ -71,3 +71,15 @@ $routes->get(
 );
 $routes->get('/customproduk', 'PengajuanCustomController::index');
 $routes->post('/customproduk/simpan', 'PengajuanCustomController::simpan');
+$routes->get('/datapengajuan', 'PengajuanCustomController::datapengajuan');
+// $routes->post('/pengajuan/updatestatus','PengajuanCustomController::updateStatus');
+$routes->get('/editpengajuan/(:segment)', 'PengajuanCustomController::edit/$1');
+$routes->post('/pengajuan/updateharga', 'PengajuanCustomController::updateHarga');
+$routes->get('/hapuspengajuan/(:segment)', 'PengajuanCustomController::hapus/$1');
+
+$routes->get('/pengajuan-custom', 'PengajuanCustomController::pengajuancustom');
+$routes->get('customproduk/setuju/(:segment)', 'PengajuanCustomController::customsetuju/$1');
+$routes->get('customproduk/batal/(:segment)', 'PengajuanCustomController::custombatal/$1');
+
+/** KERANJANG**/
+$routes->get('/keranjang', 'KeranjangController::tampilankeranjang');

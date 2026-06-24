@@ -74,13 +74,28 @@
 
                 <div class="row">
 
-                    <div class="col-md-8 mb-3">
+                    <div class="col-md-4 mb-3">
                         <label class="form-label">Alamat Pengantaran</label>
                         <input type="text"
                             id="alamat"
                             class="form-control"
                             value="<?= $pesanan['alamat'] ?>"
                             readonly>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+                            Estimasi Waktu (hari)
+                        </label>
+
+                        <input
+                            type="text"
+                            id="estimasiwaktu"
+                            name="estimasiwaktu"
+                            class="form-control"
+                            value="<?= $pesanan['estimasiwaktu'] ?>">
+
                     </div>
 
                     <div class="col-md-4 mb-3">

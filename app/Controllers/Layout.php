@@ -11,7 +11,20 @@ class Layout extends BaseController
 {
     public function index(): string
     {
-        return view('layout/landingpage');
+         $modelProduk = new ModelProduk();
+        $modelPengguna = new ModelPengguna();
+
+        $iduser = session()->get('iduser');
+
+        $data = [
+            'produk' => $modelProduk
+                ->where('jenisproduk', 'katalog')
+                ->where('statusproduk', 'aktif')
+                ->findAll(8),
+            'user' => $modelPengguna->find($iduser)
+        ];
+
+        return view('layout/landingpage', $data);
     }
     public function dashboard(): string
     {

@@ -13,7 +13,7 @@ class ModelKeranjang extends Model
         'idkeranjang',
         'idpelanggan',
         'idproduk',
-        'tglkeranjang',
+        'tanggalkeranjang',
         'qty',
         'statuskeranjang'
     ];

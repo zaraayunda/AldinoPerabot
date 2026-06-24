@@ -98,8 +98,7 @@
               <span class="hide-menu">Menu Transaksi</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link primary-hover-bg justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-email.html" aria-expanded="false">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('datapengajuan') ?>" aria-expanded="false">
                 <div class="d-flex align-items-center gap-6">
                   <span class="d-flex">
                     <iconify-icon icon="solar:letter-line-duotone" class=""></iconify-icon>

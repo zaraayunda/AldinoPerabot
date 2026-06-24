@@ -18,106 +18,245 @@
             class="position-relative overflow-hidden text-bg-light min-vh-100 d-flex align-items-center justify-content-center py-5">
             <div class="d-flex align-items-center justify-content-center w-100">
                 <div class="row justify-content-center w-100">
-                    <div class="col-md-8 col-lg-8 col-xxl-3">
+                    <div class="col-md-11 col-lg-10 col-xl-10">
                         <div class="card mb-0">
                             <div class="card-body">
-                                <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                                    <img src="<?= base_url() ?>/assets/dashboard/images/logos/logo.svg" alt="">
-                                </a>
-                                <p class="text-center">Jalan Lintas Solok – Padang KM 17, Ps. Usang Guguk, Sumatera Barat</p>
                                 <form action="<?= base_url('customproduk/simpan') ?>" method="post" enctype="multipart/form-data" onsubmit="return cekDetail()">
                                     <div class="card-body">
-                                        <h4 class="section-title">
-                                            Lengkapi Data Custom Produk
-                                        </h4>
+
                                         <input
                                             type="hidden"
                                             name="idpelanggan"
                                             value="<?= $pelanggan['idpelanggan'] ?>">
-                                        <!-- INPUT PRODUK CUSTOM -->
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <label class="form-label">
-                                                    Nama Produk
-                                                    <span class="required">*</span>
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    id="namaprodukcustom"
-                                                    class="form-control"
-                                                    placeholder="Masukkan nama produk">
+
+                                        <!-- HEADER -->
+                                        <div class="custom-header">
+
+                                            <div class="row align-items-center">
+
+                                                <div class="col-md-8">
+
+                                                    <div class="d-flex align-items-center">
+
+                                                        <div class="custom-icon">
+
+                                                            <i class="ti ti-armchair"></i>
+
+                                                        </div>
+
+                                                        <div class="ms-4">
+
+                                                            <h2 class="custom-title">
+                                                                Pengajuan Produk Custom
+                                                            </h2>
+
+                                                            <p class="custom-subtitle">
+                                                                Isi detail produk sesuai keinginan Anda.
+                                                                Tim Aldino Perabot akan meninjau dan memberikan
+                                                                penawaran harga terbaik.
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-4 text-end">
+
+                                                    <img
+                                                        src="<?= base_url('assets/images/collection/arrivals3.png') ?>"
+                                                        class="img-fluid sofa-image">
+
+                                                </div>
+
                                             </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label class="form-label">
-                                                    Jumlah
-                                                    <span class="required">*</span>
-                                                </label>
-                                                <input
-                                                    type="number"
-                                                    id="qty"
-                                                    class="form-control"
-                                                    placeholder="Masukkan jumlah">
+
+                                        </div>
+
+                                        <!-- STEP -->
+                                        <div class="custom-step-card">
+
+                                            <div class="row">
+
+                                                <div class="col-md-4">
+
+                                                    <div class="step-item">
+
+                                                        <div class="step-icon">
+                                                            <i class="ti ti-photo"></i>
+                                                        </div>
+
+                                                        <div>
+
+                                                            <h6>Upload Foto Referensi</h6>
+
+                                                            <p>
+                                                                Foto referensi membantu kami memahami
+                                                                desain yang Anda inginkan.
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-4">
+
+                                                    <div class="step-item">
+
+                                                        <div class="step-icon">
+                                                            <i class="ti ti-pencil"></i>
+                                                        </div>
+
+                                                        <div>
+
+                                                            <h6>Detail Spesifikasi</h6>
+
+                                                            <p>
+                                                                Semakin detail informasi yang Anda berikan,
+                                                                semakin akurat hasil yang kami berikan.
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-4">
+
+                                                    <div class="step-item">
+
+                                                        <div class="step-icon">
+                                                            <i class="ti ti-clock"></i>
+                                                        </div>
+
+                                                        <div>
+
+                                                            <h6>Proses Peninjauan</h6>
+
+                                                            <p>
+                                                                Pengajuan akan ditinjau dan Anda akan menerima
+                                                                penawaran harga dari admin.
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
                                             </div>
+
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 mb-3">
-                                                <label class="form-label">
-                                                    Foto Referensi
-                                                    <span class="required">*</span>
-                                                </label>
-                                                <input
-                                                    type="file"
-                                                    id="fotoreferensi"
-                                                    class="form-control">
+
+                                        <div id="produkContainer"></div>
+
+                                        <div
+                                            id="tambahButton"
+                                            class="text-center mt-4"
+                                            style="display:none;">
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-custom-add"
+                                                onclick="tambahProduk()">
+
+                                                <i class="ti ti-plus"></i>
+                                                Tambah Produk Lagi
+
+                                            </button>
+
+                                        </div>
+
+                                        <!-- EMPTY STATE -->
+                                        <div id="emptyState" class="custom-empty-state">
+
+                                            <div class="empty-circle">
+
+                                                <i class="ti ti-package"></i>
+
                                             </div>
+
+                                            <h4>
+                                                Belum ada produk yang ditambahkan
+                                            </h4>
+
+                                            <p>
+                                                Klik tombol di bawah ini untuk menambahkan
+                                                produk custom pertama Anda.
+                                            </p>
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-simpan"
+                                                onclick="tambahProduk()">
+
+                                                <i class="ti ti-plus"></i>
+                                                Tambah Produk Custom
+
+                                            </button>
+
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 mb-3">
-                                                <label class="form-label">
-                                                    Detail Produk
-                                                    <span class="required">*</span>
-                                                </label>
-                                                <textarea
-                                                    id="detailcustom"
-                                                    class="form-control"
-                                                    rows="4"
-                                                    placeholder="Masukkan detail produk seperti bahan, ukuran, warna">
-                                                </textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 mb-3">
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary w-100"
-                                                    onclick="tambahDetail()">
-                                                    + Tambah Produk
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Nama Produk</th>
-                                                        <th>Qty</th>
-                                                        <th>Foto</th>
-                                                        <th>Detail</th>
-                                                        <th>Aksi</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="detailCustom">
-                                                </tbody>
-                                            </table>
-                                        </div>
+
                                     </div>
+
                                     <div class="form-footer">
-                                        <button
-                                            type="submit"
-                                            class="btn btn-primary w-100 py-6 fs-4 mb-4">
-                                            Ajukan Custom
-                                        </button>
+
+                                        <div class="card-body">
+
+                                            <div class="row align-items-center">
+
+                                                <div class="col-md-6">
+<!-- 
+                                                    <div class="privacy-box">
+
+                                                        <i class="ti ti-shield-check"></i>
+
+                                                        <div>
+
+                                                            <strong>
+                                                                Privasi Terjamin
+                                                            </strong>
+
+                                                            <p class="mb-0">
+                                                                Data dan informasi produk Anda akan kami jaga kerahasiaannya.
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div> -->
+
+                                                </div>
+
+                                                <div class="col-md-6 text-end">
+
+                                                    <a
+                                                        onclick="history.back()"
+                                                        class="btn btn-kembali btn-lg">
+
+                                                        <i class="ti ti-arrow-left"></i>
+                                                        Kembali
+
+                                                    </a>
+
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-simpan btn-lg ms-2">
+
+                                                        <i class="ti ti-send"></i>
+                                                        Ajukan Custom
+
+                                                    </button>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </form>
                             </div>
@@ -157,63 +296,214 @@
     <?php endif; ?>
 
     <script>
-        let noDetail = 0;
-        function tambahDetail() {
-            let namaProduk = document.getElementById('namaprodukcustom').value;
-            let qty = document.getElementById('qty').value;
-            let foto = document.getElementById('fotoreferensi').files[0];
-            let detail = document.getElementById('detailcustom').value;
-            if ( namaProduk == '' || qty == '' || foto == undefined || detail == '' ) {
-                Swal.fire({
-                    icon: 'warning',
-                    title: 'Data belum lengkap',
-                    text: 'Lengkapi data produk custom terlebih dahulu'
-                });
-                return;
-            }
-            noDetail++;
-            let tbody = document.getElementById('detailCustom');
-            let row = `
-            <tr>
-                <td>${noDetail}</td>
-                <td>${namaProduk}
-                    <input type="hidden" name="namaprodukcustom[]" value="${namaProduk}">
-                </td>
-                <td>${qty}
-                    <input type="hidden" name="qty[]" value="${qty}">
-                </td>        
-                <td>${foto.name}</td>
-                <td>${detail}
-                    <input type="hidden" name="detailcustom[]" value="${detail}">
-                </td>
-                <td>
-                <button type="button" class="btn btn-danger btn-sm" onclick="hapusDetail(this)">
-                Hapus
-                </button>
-                </td>
-            </tr>
-            `;
-            tbody.innerHTML += row;
-            document.getElementById('namaprodukcustom').value = '';
-            document.getElementById('qty').value = '';
-            document.getElementById('fotoreferensi').value = '';
-            document.getElementById('detailcustom').value = '';
+        let nomorProduk = 0;
+
+        function tambahProduk() {
+
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('tambahButton').style.display = 'block';
+
+            nomorProduk++;
+
+            let html = `
+
+    <div class="card produk-card mb-4">
+
+        <div class="card-header produk-header">
+
+            <h5 class="mb-0 judul-produk">
+                <i class="ti ti-package me-2"></i>
+                Produk Custom #${nomorProduk}
+            </h5>
+
+            <button
+                type="button"
+                class="btn btn-danger btn-sm"
+                onclick="hapusProduk(this)">
+
+                <i class="ti ti-trash"></i>
+
+            </button>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="row">
+
+                <div class="col-md-8">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Nama Produk
+                        </label>
+
+                        <input
+                            type="text"
+                            name="namaprodukcustom[]"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Qty
+                        </label>
+
+                        <input
+                            type="number"
+                            name="qty[]"
+                            min="1"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Upload Foto Referensi
+                </label>
+
+                <input
+                    type="file"
+                    name="fotoreferensi[]"
+                    class="form-control"
+                    accept="image/*"
+                    onchange="previewFoto(this)"
+                    required>
+
+                <img
+                    src=""
+                    class="img-thumbnail mt-3 preview-foto"
+                    style="
+                        display:none;
+                        width:180px;
+                        height:140px;
+                        object-fit:cover;
+                        border-radius:15px;
+                    ">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Detail Produk
+                </label>
+
+                <textarea
+                    name="detailcustom[]"
+                    rows="4"
+                    class="form-control"
+                    required></textarea>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    `;
+
+            document
+                .getElementById('produkContainer')
+                .insertAdjacentHTML(
+                    'beforeend',
+                    html
+                );
         }
-        function hapusDetail(btn) {
-            btn.closest('tr').remove();
-        }
-        function cekDetail() {
+
+        function hapusProduk(btn) {
+
+            btn.closest('.produk-card').remove();
+
             let jumlah =
-                document.querySelectorAll('#detailCustom tr').length;
-            if (jumlah == 0) {
+                document.querySelectorAll('.produk-card')
+                .length;
+
+            if (jumlah === 0) {
+
+                document.getElementById(
+                    'emptyState'
+                ).style.display = 'block';
+
+                document.getElementById(
+                    'tambahButton'
+                ).style.display = 'none';
+
+                nomorProduk = 0;
+            }
+            updateNomorProduk();
+        }
+
+        function cekDetail() {
+
+            let jumlah =
+                document.querySelectorAll(
+                    '.produk-card'
+                ).length;
+
+            if (jumlah === 0) {
+
                 Swal.fire({
                     icon: 'warning',
-                    title: 'Belum ada produk',
-                    text: 'Tambahkan minimal satu produk custom'
+                    title: 'Peringatan',
+                    text: 'Minimal 1 produk harus ditambahkan'
                 });
+
                 return false;
             }
+
             return true;
+        }
+
+        function previewFoto(input) {
+
+            let preview =
+                input.parentElement.querySelector(
+                    '.preview-foto'
+                );
+
+            if (input.files && input.files[0]) {
+
+                preview.src =
+                    URL.createObjectURL(input.files[0]);
+
+                preview.style.display = 'block';
+            }
+        }
+
+        function updateNomorProduk() {
+
+            let cards =
+                document.querySelectorAll(
+                    '.produk-card'
+                );
+
+            cards.forEach(
+                (card, index) => {
+
+                    card.querySelector(
+                            '.judul-produk'
+                        ).innerHTML =
+                        `<i class="ti ti-package me-2"></i>
+                 Produk Custom #${index + 1}`;
+                }
+            );
+
+            nomorProduk = cards.length;
         }
     </script>
 </body>

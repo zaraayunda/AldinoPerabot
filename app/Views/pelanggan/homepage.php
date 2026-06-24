@@ -249,18 +249,42 @@
                         <!-- Start Atribute Navigation -->
                         <div class="attr-nav">
                             <ul>
+
+                                <!-- Search -->
                                 <li class="search">
-                                    <a href="#"><span class="lnr lnr-magnifier"></span></a>
-                                </li><!--/.search-->
-                                <li class="dropdown">
-                                    <a href="<?= base_url('keranjang') ?>" class="dropdown-toggle" data-toggle="dropdown">
-                                        <span class="lnr lnr-cart"></span>
-                                        <!-- <span class="badge badge-bg-1">0</span> -->
+                                    <a href="#">
+                                        <span class="lnr lnr-magnifier"></span>
                                     </a>
                                 </li>
+
+                                <!-- Keranjang -->
+                                <li class="cart-icon">
+
+                                    <a href="<?= base_url('keranjang') ?>">
+
+                                        <span class="lnr lnr-cart"></span>
+
+                                        <?php if (isset($jumlahKeranjang) && $jumlahKeranjang > 0) : ?>
+
+                                            <span class="badge badge-bg-1">
+                                                <?= $jumlahKeranjang ?>
+                                            </span>
+
+                                        <?php endif; ?>
+
+                                    </a>
+
+                                </li>
+
+                                <!-- Profile -->
                                 <li class="nav-profile dropdown">
-                                    <a href="#" class="dropdown-toggle profile-icon" data-toggle="dropdown">
+
+                                    <a href="#"
+                                        class="dropdown-toggle profile-icon"
+                                        data-toggle="dropdown">
+
                                         <span class="lnr lnr-user"></span>
+
                                     </a>
 
                                     <ul class="dropdown-menu profile-menu">
@@ -273,36 +297,48 @@
                                         </li>
 
                                         <li>
-                                            <a href="<?= base_url('pesanan') ?>">
+                                            <a href="<?= base_url('pesananpelanggan') ?>">
                                                 <i class="lnr lnr-cart"></i>
                                                 Pesanan Saya
                                             </a>
                                         </li>
 
                                         <li>
+                                            <a href="<?= base_url('pengajuan-custom') ?>">
+                                                <i class="lnr lnr-pencil"></i>
+                                                Pengajuan Custom
+                                            </a>
+                                        </li>
+
+                                        <!-- <li>
                                             <a href="<?= base_url('riwayat') ?>">
                                                 <i class="lnr lnr-history"></i>
                                                 Riwayat Pembelian
                                             </a>
-                                        </li>
+                                        </li> -->
 
-                                        <li>
+                                        <!-- <li>
                                             <a href="<?= base_url('pengaturan') ?>">
                                                 <i class="lnr lnr-cog"></i>
                                                 Pengaturan Akun
                                             </a>
-                                        </li>
+                                        </li> -->
 
                                         <li class="divider"></li>
 
                                         <li class="logout-item">
-                                            <a href="<?= base_url('logout') ?>" class="logout-btn">
+                                            <a href="<?= base_url('logout') ?>"
+                                                class="logout-btn">
+
                                                 Logout
+
                                             </a>
                                         </li>
 
                                     </ul>
+
                                 </li>
+
                             </ul>
                         </div><!--/.attr-nav-->
                         <!-- End Atribute Navigation -->

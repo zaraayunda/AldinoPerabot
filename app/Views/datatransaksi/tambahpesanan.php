@@ -92,7 +92,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-8 mb-3">
+                    <div class="col-md-4 mb-3">
 
                         <label class="form-label">
                             Alamat Pengantaran
@@ -104,6 +104,21 @@
                             class="form-control"
                             rows="3"
                             readonly></input>
+
+                    </div>
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+                            Estimasi Waktu (hari)
+                        </label>
+
+                        <input
+                            type="text"
+                            id="estimasiwaktu"
+                            name="estimasiwaktu"
+                            class="form-control"
+                            rows="3"
+                            ></input>
 
                     </div>
 
