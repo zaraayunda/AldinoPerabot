@@ -9,6 +9,7 @@ use App\Models\ModelDetailPesanan;
 use App\Models\ModelProduk;
 use App\Models\ModelKategori;
 use App\Models\ModelPelanggan;
+use App\Models\ModelPembayaran;
 
 class PesananController extends BaseController
 {
@@ -301,5 +302,122 @@ class PesananController extends BaseController
 
         return redirect()->to('datapesanan')
             ->with('success', 'Pesanan berhasil dihapus');
+    }
+
+    public function pesananpelanggan()
+    {
+        $modelPelanggan = new ModelPelanggan();
+        $modelPesanan = new ModelPesanan();
+        $modelDetail = new ModelDetailPesanan();
+        $modelProduk = new ModelProduk();
+        $modelPembayaran = new ModelPembayaran();
+
+        $iduser = session()->get('iduser');
+
+        if (!$iduser) {
+            return redirect()->to('/login');
+        }
+
+        $pelanggan = $modelPelanggan
+            ->where('iduser', $iduser)
+            ->first();
+
+        if (!$pelanggan) {
+            return redirect()->back()
+                ->with('error', 'Data pelanggan tidak ditemukan');
+        }
+
+        $pesanan = $modelPesanan
+            ->where('idpelanggan', $pelanggan['idpelanggan'])
+            ->orderBy('tanggalpesanan', 'DESC')
+            ->findAll();
+
+        foreach ($pesanan as &$row) {
+
+            $detail = $modelDetail
+                ->where('idpesanan', $row['idpesanan'])
+                ->findAll();
+
+            foreach ($detail as &$item) {
+
+                $produk = $modelProduk
+                    ->where('idproduk', $item['idproduk'])
+                    ->first();
+
+                $item['namaproduk'] =
+                    $produk['namaproduk'] ?? '-';
+
+                $item['foto'] =
+                    $produk['foto'] ?? '';
+
+                $item['subtotal'] =
+                    ($item['harga'] - $item['diskon'])
+                    * $item['qty'];
+            }
+
+            $row['detail'] = $detail;
+
+            // ==========================
+            // DATA PEMBAYARAN
+            // ==========================
+
+            $pembayaran = $modelPembayaran
+                ->where('idpesanan', $row['idpesanan'])
+                ->findAll();
+
+            $row['sudah_dp'] = false;
+            $row['sudah_lunas'] = false;
+            $row['jenis_pembayaran_terakhir'] = null;
+
+            foreach ($pembayaran as $bayar) {
+
+                if (
+                    $bayar['jenispembayaran'] == 'DP' &&
+                    $bayar['statuspembayaran'] == 'valid'
+                ) {
+                    $row['sudah_dp'] = true;
+                    $row['jenis_pembayaran_terakhir'] = 'DP';
+                }
+
+                if (
+                    $bayar['jenispembayaran'] == 'Full Payment' &&
+                    $bayar['statuspembayaran'] == 'valid'
+                ) {
+                    $row['sudah_lunas'] = true;
+                    $row['jenis_pembayaran_terakhir'] = 'Full Payment';
+                }
+
+                if (
+                    $bayar['jenispembayaran'] == 'Pelunasan' &&
+                    $bayar['statuspembayaran'] == 'valid'
+                ) {
+                    $row['sudah_lunas'] = true;
+                    $row['jenis_pembayaran_terakhir'] = 'Pelunasan';
+                }
+            }
+        }
+
+        return view(
+            'pelanggan/v_pesananpelanggan',
+            [
+                'pesanan' => $pesanan
+            ]
+        );
+    }
+
+    public function pesananbatal($idpesanan)
+    {
+        $modelPesanan = new ModelPesanan();
+
+        $modelPesanan->update($idpesanan, [
+            'statuspesanan' => 'batal'
+        ]);
+
+        session()->setFlashdata(
+            'success',
+            'Anda telah membatalkan pengajuan ini.'
+        );
+
+        return redirect()->to('/pesananpelanggan');
     }
 }

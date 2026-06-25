@@ -184,7 +184,7 @@
             </p>
         </div>
 
-        <form action="#" method="post">
+        <form action="<?= base_url('checkout') ?>" method="post">
 
 
             <?php if (!empty($keranjang)) : ?>
@@ -295,9 +295,10 @@
                                     '.'
                                 ) ?>
 
-                            </h4>
+                            </h4>                            
 
-                            <a
+                        </div>
+                        <a
                                 href="<?= base_url('hapuskeranjang/' . $item['idkeranjang']) ?>"
                                 class="btn-delete"
                                 title="Hapus dari Keranjang">
@@ -305,8 +306,6 @@
                                 <i class="ti ti-trash"></i>
 
                             </a>
-
-                        </div>
 
                     </div>
 
@@ -352,7 +351,7 @@
 
                         Total :
 
-                        <span id="total-price">
+                        <span id="total-price" name="totalharga">
 
                             Rp 0
 

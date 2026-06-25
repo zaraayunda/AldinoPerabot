@@ -141,7 +141,7 @@ foreach ($pelanggan as $p) {
 
                 <div class="row">
 
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label class="form-label">
                             Tanggal Pembayaran
                         </label>
@@ -153,8 +153,23 @@ foreach ($pelanggan as $p) {
                             value="<?= $pembayaran['tanggalpembayaran'] ?>"
                             required>
                     </div>
+                    <div class="col-md-6 mb-3">
 
-                    <div class="col-md-3 mb-3">
+                        <label class="form-label">
+                            Jumlah Bayar
+                        </label>
+
+                        <input
+                            type="number"
+                            name="jumlahbayar"
+                            class="form-control"
+                            value="<?= $pembayaran['jumlahbayar'] ?>"
+                            required>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4 mb-3">
 
                         <label class="form-label">
                             Jenis Pembayaran
@@ -183,23 +198,32 @@ foreach ($pelanggan as $p) {
                         </select>
 
                     </div>
-
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-4 mb-3">
 
                         <label class="form-label">
-                            Jumlah Bayar
+                            Metode Pembayaran
                         </label>
 
-                        <input
-                            type="number"
-                            name="jumlahbayar"
-                            class="form-control"
-                            value="<?= $pembayaran['jumlahbayar'] ?>"
+                        <select
+                            name="metode_pembayaran"
+                            class="form-select"
                             required>
+
+                            <option value="cash"
+                                <?= $pembayaran['metode_pembayaran'] == 'cash' ? 'selected' : '' ?>>
+                                Cash
+                            </option>
+
+                            <option value="transfer"
+                                <?= $pembayaran['metode_pembayaran'] == 'transfer' ? 'selected' : '' ?>>
+                                Transfer
+                            </option>
+
+                        </select>
 
                     </div>
 
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-4 mb-3">
 
                         <label class="form-label">
                             Status Pembayaran

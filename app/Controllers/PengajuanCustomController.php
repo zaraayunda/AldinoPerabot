@@ -492,13 +492,10 @@ class PengajuanCustomController extends BaseController
             $modelPesanan->insert([
 
                 'idpesanan' => $idpesanan,
-
                 'idpelanggan' => $idpelanggan,
-
                 'tanggalpesanan' => date('Y-m-d'),
-
                 'totalharga' => 0,
-
+                'estimasiwaktu' => null,
                 'statuspesanan' => 'dikonfirmasi'
 
             ]);

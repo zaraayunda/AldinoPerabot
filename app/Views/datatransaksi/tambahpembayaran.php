@@ -134,7 +134,7 @@
 
                 <div class="row align-items-end">
 
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label class="form-label">Tanggal Pembayaran</label>
                         <input
                             type="date"
@@ -143,8 +143,19 @@
                             value="<?= date('Y-m-d') ?>"
                             required>
                     </div>
-
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Jumlah Bayar
+                        </label>
+                        <input
+                            type="number"
+                            id="jumlahbayar"
+                            name="jumlahbayar"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-md-4 mb-3">
                         <label class="form-label">Jenis Pembayaran</label>
 
                         <select
@@ -162,17 +173,21 @@
                             </option>
                         </select>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <label class="form-label">
-                            Jumlah Bayar
-                        </label>
-                        <input
-                            type="number"
-                            id="jumlahbayar"
-                            name="jumlahbayar"
-                            class="form-control">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Metode Pembayaran</label>
+                        <select
+                            name="metode_pembayaran"
+                            class="form-select"
+                            required>
+                            <option value="cash">
+                                Cash
+                            </option>
+                            <option value="transfer">
+                                Transfer
+                            </option>
+                        </select>
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-4 mb-3">
                         <label class="form-label">Status Pembayaran</label>
                         <select
                             name="statuspembayaran"
@@ -224,7 +239,7 @@
                     </button>
 
                     <a
-                        href="<?= base_url('datapesanan') ?>"
+                        href="<?= base_url('datapembayaran') ?>"
                         class="btn btn-kembali ms-2">
                         Kembali
 

@@ -52,6 +52,8 @@ $routes->post('/pesanan/updatestatus','PesananController::updateStatus');
 $routes->get('/editpesanan/(:segment)', 'PesananController::edit/$1');
 $routes->post('pesanan/update', 'PesananController::update');
 $routes->get('/hapuspesanan/(:segment)', 'PesananController::hapus/$1');
+$routes->get('/pesananpelanggan', 'PesananController::pesananpelanggan');
+$routes->get('/pesananpelanggan/batal/(:segment)', 'PesananController::pesananbatal/$1');
 
 /** PEMBAYARAN */
 $routes->get('/datapembayaran', 'PembayaranController::index');
@@ -83,3 +85,5 @@ $routes->get('customproduk/batal/(:segment)', 'PengajuanCustomController::custom
 
 /** KERANJANG**/
 $routes->get('/keranjang', 'KeranjangController::tampilankeranjang');
+$routes->post('checkout', 'KeranjangController::checkout');
+$routes->post('checkout/simpan', 'KeranjangController::simpanCheckout');

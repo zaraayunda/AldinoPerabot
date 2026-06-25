@@ -161,7 +161,7 @@
                                             Rp <?= number_format($d['harga'], 0, ',', '.') ?>
                                         </td>
                                         <td>
-                                            Rp <?= number_format($d['diskon'], 0, ',', '.') ?>
+                                            <?= number_format($d['diskon'], 0, ',', '.') ?> %
                                         </td>
 
                                         <td>
@@ -170,7 +170,11 @@
 
 
                                         <?php if ($index == 0) : ?>
-                                            <td rowspan="<?= $jumlahDetail ?>"><?= $row['estimasiwaktu'] ?></td>
+                                            <td rowspan="<?= $jumlahDetail ?>">
+                                                <?= $row['estimasiwaktu'] !== null
+                                                    ? $row['estimasiwaktu'] . ' Hari'
+                                                    : 'Belum ditentukan' ?>
+                                            </td>
 
                                             <td rowspan="<?= $jumlahDetail ?>" class="align-middle" style="min-width:170px;">
 

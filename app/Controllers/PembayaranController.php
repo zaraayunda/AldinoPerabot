@@ -78,6 +78,7 @@ class PembayaranController extends BaseController
             'idpesanan' => 'required',
             'tanggalpembayaran' => 'required',
             'jenispembayaran' => 'required',
+            'metode_pembayaran' => 'required',
             'jumlahbayar' => 'required|numeric',
             'statuspembayaran' => 'required',
             'bukti_pembayaran' => [
@@ -114,6 +115,7 @@ class PembayaranController extends BaseController
             'idpesanan'         => $this->request->getPost('idpesanan'),
             'tanggalpembayaran' => $this->request->getPost('tanggalpembayaran'),
             'jenispembayaran'   => $this->request->getPost('jenispembayaran'),
+            'metode_pembayaran'   => $this->request->getPost('metode_pembayaran'),
             'jumlahbayar'       => $this->request->getPost('jumlahbayar'),
             'statuspembayaran'  => $this->request->getPost('statuspembayaran'),
             'bukti_pembayaran'  => $namaBukti
@@ -221,6 +223,7 @@ class PembayaranController extends BaseController
             'idpesanan'         => $this->request->getPost('idpesanan'),
             'tanggalpembayaran' => $this->request->getPost('tanggalpembayaran'),
             'jenispembayaran'   => $this->request->getPost('jenispembayaran'),
+            'metode_pembayaran'   => $this->request->getPost('metode_pembayaran'),
             'jumlahbayar'       => $this->request->getPost('jumlahbayar'),
             'statuspembayaran'  => $this->request->getPost('statuspembayaran'),
             'bukti_pembayaran'  => $namaBukti

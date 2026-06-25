@@ -76,6 +76,7 @@
                         <th>Nama Pelanggan</th>
                         <th>Total Pembayaran</th>
                         <th>Jenis Pembayaran</th>
+                        <th>Metode Pembayaran</th>
                         <th>Jumlah Bayar</th>
                         <th>Sisa</th>
                         <th>Bukti Pembayaran</th>
@@ -128,6 +129,9 @@
                                 </td>
                                 <td>
                                     <?= $row['jenispembayaran'] ?>
+                                </td>
+                                <td>
+                                    <?= $row['metode_pembayaran'] ?>
                                 </td>
                                 <td>
                                     Rp <?= number_format($bayar, 0, ',', '.') ?>

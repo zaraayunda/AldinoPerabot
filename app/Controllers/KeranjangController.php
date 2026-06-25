@@ -8,6 +8,8 @@ use App\Models\ModelProduk;
 use App\Models\ModelPengguna;
 use App\Models\ModelKeranjang;
 use App\Models\ModelPelanggan;
+use App\Models\ModelPesanan;
+use App\Models\ModelDetailPesanan;
 
 
 class KeranjangController extends BaseController
@@ -57,80 +59,250 @@ class KeranjangController extends BaseController
     }
 
     public function tampilankeranjang()
-{
-    $modelKeranjang = new ModelKeranjang();
-    $modelPelanggan = new ModelPelanggan();
+    {
+        $modelKeranjang = new ModelKeranjang();
+        $modelPelanggan = new ModelPelanggan();
 
-    $iduser = session()->get('iduser');
+        $iduser = session()->get('iduser');
 
-    $pelanggan = $modelPelanggan
-        ->where('iduser', $iduser)
-        ->first();
+        $pelanggan = $modelPelanggan
+            ->where('iduser', $iduser)
+            ->first();
 
-    if (!$pelanggan) {
+        if (!$pelanggan) {
 
-        return redirect()->back()
-            ->with(
-                'error',
-                'Data pelanggan tidak ditemukan.'
-            );
-    }
+            return redirect()->back()
+                ->with(
+                    'error',
+                    'Data pelanggan tidak ditemukan.'
+                );
+        }
 
-    $idpelanggan = $pelanggan['idpelanggan'];
+        $idpelanggan = $pelanggan['idpelanggan'];
 
-    $keranjang = $modelKeranjang
-        ->select(
-            '
+        $keranjang = $modelKeranjang
+            ->select(
+                '
             keranjang.*,
             produk.namaproduk,
             produk.foto,
             produk.harga,
             produk.diskon
         '
-        )
-        ->join(
-            'produk',
-            'produk.idproduk = keranjang.idproduk'
-        )
-        ->where(
-            'keranjang.idpelanggan',
-            $idpelanggan
-        )
-        ->where(
-            'keranjang.statuskeranjang',
-            'aktif'
-        )
-        ->findAll();
+            )
+            ->join(
+                'produk',
+                'produk.idproduk = keranjang.idproduk'
+            )
+            ->where(
+                'keranjang.idpelanggan',
+                $idpelanggan
+            )
+            ->where(
+                'keranjang.statuskeranjang',
+                'aktif'
+            )
+            ->findAll();
 
-    foreach ($keranjang as &$item) {
+        foreach ($keranjang as &$item) {
 
-        $hargaFinal = $item['harga'];
+            $hargaFinal = $item['harga'];
 
-        if (
-            !empty($item['diskon']) &&
-            $item['diskon'] > 0
-        ) {
+            if (
+                !empty($item['diskon']) &&
+                $item['diskon'] > 0
+            ) {
+
+                $hargaFinal =
+                    $item['harga'] -
+                    ($item['harga'] * $item['diskon'] / 100);
+            }
+
+            $item['harga_final'] = $hargaFinal;
+
+            $item['subtotal'] =
+                $hargaFinal * $item['qty'];
+        }
+
+        $data = [
+
+            'keranjang' => $keranjang
+
+        ];
+
+        return view(
+            'pelanggan/v_keranjang',
+            $data
+        );
+    }
+
+    public function checkout()
+    {
+        $idkeranjang = $this->request->getPost('idkeranjang');
+
+        if (empty($idkeranjang)) {
+
+            return redirect()->back()
+                ->with(
+                    'warning',
+                    'Pilih minimal satu produk terlebih dahulu.'
+                );
+        }
+
+        $modelKeranjang = new ModelKeranjang();
+
+        $data['produk'] = $modelKeranjang
+            ->select('
+            keranjang.*,
+            produk.namaproduk,
+            produk.harga,
+            produk.diskon,
+            produk.foto
+        ')
+            ->join(
+                'produk',
+                'produk.idproduk = keranjang.idproduk'
+            )
+            ->whereIn(
+                'keranjang.idkeranjang',
+                $idkeranjang
+            )
+            ->findAll();
+
+        foreach ($data['produk'] as &$item) {
 
             $hargaFinal =
                 $item['harga'] -
                 ($item['harga'] * $item['diskon'] / 100);
+
+            $item['harga_final'] = $hargaFinal;
+
+            $item['subtotal'] =
+                $hargaFinal * $item['qty'];
         }
 
-        $item['harga_final'] = $hargaFinal;
+        $data['idkeranjang'] = $idkeranjang;
 
-        $item['subtotal'] =
-            $hargaFinal * $item['qty'];
+        return view(
+            'pelanggan/v_checkout',
+            $data
+        );
     }
+    
+    public function simpanCheckout()
+    {
+        $db = \Config\Database::connect();
 
-    $data = [
+        $db->transBegin();
 
-        'keranjang' => $keranjang
+        try {
 
-    ];
+            $modelPesanan = new ModelPesanan();
+            $modelDetail = new ModelDetailPesanan();
+            $modelKeranjang = new ModelKeranjang();
+            $modelPelanggan = new ModelPelanggan();
 
-    return view(
-        'pelanggan/v_keranjang',
-        $data
-    );
-}
+            $iduser = session()->get('iduser');
+
+            $pelanggan = $modelPelanggan
+                ->where('iduser', $iduser)
+                ->first();
+
+            $idpelanggan = $pelanggan['idpelanggan'];
+
+            $idkeranjang =
+                $this->request->getPost('idkeranjang');
+
+            $keranjang = $modelKeranjang
+                ->join(
+                    'produk',
+                    'produk.idproduk = keranjang.idproduk'
+                )
+                ->whereIn(
+                    'keranjang.idkeranjang',
+                    $idkeranjang
+                )
+                ->findAll();
+
+            $total = 0;
+
+            foreach ($keranjang as $item) {
+
+                $hargaFinal =
+                    $item['harga'] -
+                    ($item['harga'] * $item['diskon'] / 100);
+
+                $total +=
+                    $hargaFinal * $item['qty'];
+            }
+
+            $idpesanan =
+                $modelPesanan->generateId();
+
+            $modelPesanan->insert([
+
+                'idpesanan' => $idpesanan,
+
+                'idpelanggan' => $idpelanggan,
+
+                'tanggalpesanan' => date('Y-m-d'),
+
+                'totalharga' => $total,
+
+                'estimasiwaktu' => null,
+
+                'statuspesanan' => 'menunggu_konfirmasi'
+            ]);
+
+            foreach ($keranjang as $item) {
+
+                $hargaFinal =
+                    $item['harga'] -
+                    ($item['harga'] * $item['diskon'] / 100);
+
+                $subtotal =
+                    $hargaFinal * $item['qty'];
+
+                $modelDetail->insert([
+
+                    'idpesanan' => $idpesanan,
+
+                    'idproduk' => $item['idproduk'],
+
+                    'qty' => $item['qty'],
+
+                    'harga' => $item['harga'],
+
+                    'diskon' => $item['diskon'],
+
+                    'subtotal' => $subtotal
+                ]);
+
+                $modelKeranjang->update(
+                    $item['idkeranjang'],
+                    [
+                        'statuskeranjang' => 'checkout'
+                    ]
+                );
+            }
+
+            $db->transCommit();
+
+            return redirect()
+                ->to('/homepage')
+                ->with(
+                    'success',
+                    'Pesanan berhasil dibuat.'
+                );
+        } catch (\Exception $e) {
+
+            $db->transRollback();
+
+            return redirect()->back()
+                ->with(
+                    'error',
+                    $e->getMessage()
+                );
+        }
+    }
 }

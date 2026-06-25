@@ -13,6 +13,7 @@ class ModelPembayaran extends Model
         'idpembayaran',
         'idpesanan',
         'jenispembayaran',
+        'metode_pembayaran',
         'jumlahbayar',
         'bukti_pembayaran',
         'statuspembayaran',

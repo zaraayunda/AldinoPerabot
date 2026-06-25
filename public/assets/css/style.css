@@ -43,14 +43,13 @@ body{
 	font-size:16px;
 	color:#a09e9c;
 	background: #fff;
-    text-transform: capitalize;
     max-width:1920px;
     margin:0 auto;
 	overflow-x:hidden;
 }
 
 a,a:hover,a:active,a:focus {
-	display:inline-block;
+	
 	text-decoration:none;
 	color: #616060;
 	font-size:16px;
@@ -134,7 +133,6 @@ nav.navbar.bootsnav ul.nav > li > a {
     color: #616060;
     font-size: 16px;
     font-weight: 500;
-    text-transform: capitalize;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
     -ms-transition: 0.3s linear; 
@@ -275,7 +273,6 @@ ul.cart-list > li.total {
     color: #fff;
     font-size: 12px;
     font-weight: 500;
-    text-transform: capitalize;
     border-radius: 3px;
 }
 /*.cart-list*/
@@ -1554,12 +1551,11 @@ span.feature-review {margin-left: 10px;}
     font-weight:700;
 }
 
-.card-action{
-    padding:20px 30px;
-
-    display:flex;
-    justify-content:flex-end;
-    gap:12px;
+.card-action {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 20px;
+    
 }
 
 .btn-cancel{
@@ -1926,6 +1922,171 @@ span.feature-review {margin-left: 10px;}
     color:#fff;
 
     transform:translateY(-2px);
+}
+
+    .checkout-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .checkout-card {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        background: #fff;
+
+        border: 1px solid #ececec;
+        border-radius: 16px;
+
+        padding: 20px;
+        margin-bottom: 18px;
+    }
+
+    .checkout-image {
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    .checkout-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .checkout-detail {
+        flex: 1;
+    }
+
+    .checkout-detail h4 {
+        color: #2c2c2c;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .checkout-detail p {
+        color: #666;
+    }
+
+    .checkout-detail .price {
+        margin-top: 8px;
+        color: #8B7355;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .checkout-subtotal {
+        text-align: right;
+    }
+
+    .checkout-subtotal small {
+        color: #999;
+    }
+
+    .checkout-subtotal h4 {
+        margin-top: 5px;
+        color: #8B7355;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .checkout-summary {
+        margin-top: 30px;
+
+        background: #fff;
+
+        border-radius: 18px;
+
+        padding: 25px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    }
+
+    .checkout-summary h5 {
+        color: #666;
+        margin-bottom: 8px;
+    }
+
+    .checkout-summary h2 {
+        color: #8B7355;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .btn-checkout-final {
+        border: none;
+
+        background: #8B7355;
+        color: #fff;
+
+        padding: 15px 40px;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        transition: .3s;
+    }
+
+    .btn-checkout-final:hover {
+        background: #705b42;
+    }
+
+    .btn-batal-pesanan {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-batal-pesanan:hover {
+    opacity: .9;
+}
+.approved-box {
+    background: #eafaf1;
+    border-left: 4px solid #28a745;
+}
+.production-box {
+    background: #eef5ff;
+    border-left: 4px solid #007bff;
+}
+
+.delivery-box {
+    background: #f3efff;
+    border-left: 4px solid #6f42c1;
+}
+
+.completed-box {
+    background: #e8fff0;
+    border-left: 4px solid #20c997;
+}
+.btn-payment {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8B7355;
+    color: #fff !important;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-payment:hover {
+    background: #6f5b43;
+    color: #fff;
 }
 
 /*========================Thank you=================

@@ -205,7 +205,7 @@
             <button
                 class="status-btn"
                 data-status="batal">
-                Batal
+                Dibatalkan
             </button>
         </div>
 
