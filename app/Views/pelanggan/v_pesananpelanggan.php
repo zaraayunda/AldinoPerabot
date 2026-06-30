@@ -461,19 +461,77 @@
                                 Silakan lakukan pembayaran agar pesanan dapat diproses lebih lanjut.
                             </p>
 
-                            <?php if (!$row['sudah_lunas']) : ?>
+                            <div class="payment-action">
 
-                                <br>
+                                <?php
+                                $jenis  = $row['jenis_pembayaran_terakhir'];
+                                $status = $row['status_pembayaran_terakhir'];
+                                ?>
 
-                                <a href="<?= base_url('pembayaran/create/' . $row['idpesanan']) ?>"
-                                    class="btn-payment">
+                                <!-- Belum pernah melakukan pembayaran -->
+                                <?php if (empty($jenis)) : ?>
 
-                                    Bayar Sekarang
+                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Bayar Sekarang
+                                    </a>
 
-                                </a>
+                                    <!-- Ada pembayaran yang sedang diperiksa admin -->
+                                <?php elseif ($status == 'menunggu_pembayaran') : ?>
 
-                            <?php endif; ?>
+                                    <p style="margin-top:12px;color:#e67e22;font-weight:600;">
+                                        Pembayaran sedang diperiksa oleh admin.
+                                    </p>
 
+                                    <!-- Pembayaran ditolak -->
+                                <?php elseif ($status == 'ditolak') : ?>
+
+                                    <!-- <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Upload Ulang Bukti Pembayaran
+                                    </a> -->
+
+                                    <p style="margin-top:10px;color:red;">
+                                        Pembayaran ditolak. Silakan hubungi admin untuk verifikasi ulang.
+                                    </p>
+
+                                    <!-- DP sudah divalidasi -->
+                                <?php elseif (
+                                    $jenis == 'DP' &&
+                                    $status == 'valid'
+                                ) : ?>
+
+                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Bayar Pelunasan
+                                    </a>
+
+                                    <?php
+                                    $sisa = $row['totalharga'] - $row['total_bayar'];
+                                    ?>
+
+                                    <?php if ($sisa > 0) : ?>
+                                        <p style="margin-top:12px;font-weight:600;color:#d35400;">
+                                            Sisa pembayaran:<br>
+                                            <span style="font-size:18px">
+                                                Rp <?= number_format($sisa, 0, ',', '.') ?>
+                                            </span>
+                                        </p>
+                                    <?php endif; ?>
+
+                                    <!-- Full Payment atau Pelunasan sudah valid -->
+                                <?php elseif (
+                                    ($jenis == 'Full Payment' || $jenis == 'Pelunasan') &&
+                                    $status == 'valid'
+                                ) : ?>
+
+                                    <p style="margin-top:12px;color:green;font-weight:bold;">
+                                        ✅ Pembayaran telah lunas.
+                                    </p>
+
+                                <?php endif; ?>
+
+                            </div>
                         </div>
 
                     </div>
@@ -497,21 +555,77 @@
                                 Produk Anda sedang dalam proses produksi.
                             </p>
 
-                            <?php if (
-                                $row['sudah_dp'] &&
-                                !$row['sudah_lunas']
-                            ) : ?>
+                            <div class="payment-action">
 
-                                <br>
+                                <?php
+                                $jenis  = $row['jenis_pembayaran_terakhir'];
+                                $status = $row['status_pembayaran_terakhir'];
+                                ?>
 
-                                <a href="<?= base_url('pembayaran/create/' . $row['idpesanan']) ?>"
-                                    class="btn-payment">
+                                <!-- Belum pernah melakukan pembayaran -->
+                                <?php if (empty($jenis)) : ?>
 
-                                    Bayar Pelunasan
+                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Bayar Sekarang
+                                    </a>
 
-                                </a>
+                                    <!-- Ada pembayaran yang sedang diperiksa admin -->
+                                <?php elseif ($status == 'menunggu_pembayaran') : ?>
 
-                            <?php endif; ?>
+                                    <p style="margin-top:12px;color:#e67e22;font-weight:600;">
+                                        Pembayaran sedang diperiksa oleh admin.
+                                    </p>
+
+                                    <!-- Pembayaran ditolak -->
+                                <?php elseif ($status == 'ditolak') : ?>
+
+                                    <!-- <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Upload Ulang Bukti Pembayaran
+                                    </a> -->
+
+                                    <p style="margin-top:10px;color:red;">
+                                        Pembayaran ditolak. Silakan hubungi admin untuk verifikasi ulang.
+                                    </p>
+
+                                    <!-- DP sudah divalidasi -->
+                                <?php elseif (
+                                    $jenis == 'DP' &&
+                                    $status == 'valid'
+                                ) : ?>
+
+                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Bayar Pelunasan
+                                    </a>
+
+                                    <?php
+                                    $sisa = $row['totalharga'] - $row['total_bayar'];
+                                    ?>
+
+                                    <?php if ($sisa > 0) : ?>
+                                        <p style="margin-top:12px;font-weight:600;color:#d35400;">
+                                            Sisa pembayaran:<br>
+                                            <span style="font-size:18px">
+                                                Rp <?= number_format($sisa, 0, ',', '.') ?>
+                                            </span>
+                                        </p>
+                                    <?php endif; ?>
+
+                                    <!-- Full Payment atau Pelunasan sudah valid -->
+                                <?php elseif (
+                                    ($jenis == 'Full Payment' || $jenis == 'Pelunasan') &&
+                                    $status == 'valid'
+                                ) : ?>
+
+                                    <p style="margin-top:12px;color:green;font-weight:bold;">
+                                        ✅ Pembayaran telah lunas.
+                                    </p>
+
+                                <?php endif; ?>
+
+                            </div>
 
                         </div>
 
@@ -536,6 +650,77 @@
                                 Produk sedang dalam perjalanan menuju alamat tujuan.
                             </p>
 
+                            <div class="payment-action">
+
+                                <?php
+                                $jenis  = $row['jenis_pembayaran_terakhir'];
+                                $status = $row['status_pembayaran_terakhir'];
+                                ?>
+
+                                <!-- Belum pernah melakukan pembayaran -->
+                                <?php if (empty($jenis)) : ?>
+
+                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Bayar Sekarang
+                                    </a>
+
+                                    <!-- Ada pembayaran yang sedang diperiksa admin -->
+                                <?php elseif ($status == 'menunggu_pembayaran') : ?>
+
+                                    <p style="margin-top:12px;color:#e67e22;font-weight:600;">
+                                        Pembayaran sedang diperiksa oleh admin.
+                                    </p>
+
+                                    <!-- Pembayaran ditolak -->
+                                <?php elseif ($status == 'ditolak') : ?>
+
+                                    <!-- <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Upload Ulang Bukti Pembayaran
+                                    </a> -->
+
+                                    <p style="margin-top:10px;color:red;">
+                                        Pembayaran ditolak. Silakan hubungi admin untuk verifikasi ulang.
+                                    </p>
+
+                                    <!-- DP sudah divalidasi -->
+                                <?php elseif (
+                                    $jenis == 'DP' &&
+                                    $status == 'valid'
+                                ) : ?>
+
+                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
+                                        class="btn-payment">
+                                        Bayar Pelunasan
+                                    </a>
+
+                                    <?php
+                                    $sisa = $row['totalharga'] - $row['total_bayar'];
+                                    ?>
+
+                                    <?php if ($sisa > 0) : ?>
+                                        <p style="margin-top:12px;font-weight:600;color:#d35400;">
+                                            Sisa pembayaran:<br>
+                                            <span style="font-size:18px">
+                                                Rp <?= number_format($sisa, 0, ',', '.') ?>
+                                            </span>
+                                        </p>
+                                    <?php endif; ?>
+
+                                    <!-- Full Payment atau Pelunasan sudah valid -->
+                                <?php elseif (
+                                    ($jenis == 'Full Payment' || $jenis == 'Pelunasan') &&
+                                    $status == 'valid'
+                                ) : ?>
+
+                                    <p style="margin-top:12px;color:green;font-weight:bold;">
+                                        ✅ Pembayaran telah lunas.
+                                    </p>
+
+                                <?php endif; ?>
+
+                            </div>
                         </div>
 
                     </div>

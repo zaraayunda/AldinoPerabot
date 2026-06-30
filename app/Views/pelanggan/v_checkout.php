@@ -1,3 +1,51 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <!-- title of site -->
+    <title>Aldino Perabot</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="<?= base_url() ?>/assets/logo/logoaldino.png" />
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/font-awesome.min.css">
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/linearicons.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/owl.theme.default.min.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/responsive.css">
+
+</head>
+
 <div class="checkout-container">
 
     <div class="page-header">
@@ -151,3 +199,23 @@
 
 </div>
 
+<script src="<?= base_url() ?>/assets/js/jquery.js"></script>
+
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!--bootstrap.min.js-->
+    <script src="<?= base_url() ?>/assets/js/bootstrap.min.js"></script>
+
+    <!-- bootsnav js -->
+    <script src="<?= base_url() ?>/assets/js/bootsnav.js"></script>
+
+    <!--owl.carousel.js-->
+    <script src="<?= base_url() ?>/assets/js/owl.carousel.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+    <!--Custom JS-->
+    <script src="<?= base_url() ?>/assets/js/custom.js"></script>

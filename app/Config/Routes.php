@@ -63,6 +63,8 @@ $routes->post('/pembayaran/simpan', 'PembayaranController::simpan');
 $routes->get('/editpembayaran/(:segment)', 'PembayaranController::edit/$1');
 $routes->post('pembayaran/update', 'PembayaranController::update');
 $routes->get('/hapuspembayaran/(:segment)', 'PembayaranController::hapus/$1');
+$routes->get('/pembayaran_pelanggan/(:segment)', 'PembayaranController::pelangganbayar/$1');
+$routes->post('/pembayaranpelanggan/simpan', 'PembayaranController::simpanpelanggan');
 
 /** PELANGGAN - HOMEPAGE */
 $routes->get('/homepage', 'Layout::homepage');

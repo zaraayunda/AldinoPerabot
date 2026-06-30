@@ -306,10 +306,10 @@ class PesananController extends BaseController
 
     public function pesananpelanggan()
     {
-        $modelPelanggan = new ModelPelanggan();
-        $modelPesanan = new ModelPesanan();
-        $modelDetail = new ModelDetailPesanan();
-        $modelProduk = new ModelProduk();
+        $modelPelanggan  = new ModelPelanggan();
+        $modelPesanan    = new ModelPesanan();
+        $modelDetail     = new ModelDetailPesanan();
+        $modelProduk     = new ModelProduk();
         $modelPembayaran = new ModelPembayaran();
 
         $iduser = session()->get('iduser');
@@ -334,6 +334,10 @@ class PesananController extends BaseController
 
         foreach ($pesanan as &$row) {
 
+            // ==========================
+            // DETAIL PESANAN
+            // ==========================
+
             $detail = $modelDetail
                 ->where('idpesanan', $row['idpesanan'])
                 ->findAll();
@@ -344,15 +348,11 @@ class PesananController extends BaseController
                     ->where('idproduk', $item['idproduk'])
                     ->first();
 
-                $item['namaproduk'] =
-                    $produk['namaproduk'] ?? '-';
-
-                $item['foto'] =
-                    $produk['foto'] ?? '';
+                $item['namaproduk'] = $produk['namaproduk'] ?? '-';
+                $item['foto']       = $produk['foto'] ?? '';
 
                 $item['subtotal'] =
-                    ($item['harga'] - $item['diskon'])
-                    * $item['qty'];
+                    ($item['harga'] - $item['diskon']) * $item['qty'];
             }
 
             $row['detail'] = $detail;
@@ -363,37 +363,53 @@ class PesananController extends BaseController
 
             $pembayaran = $modelPembayaran
                 ->where('idpesanan', $row['idpesanan'])
+                ->orderBy('idpembayaran', 'DESC') // kalau ada idpembayaran lebih bagus pakai itu
                 ->findAll();
 
-            $row['sudah_dp'] = false;
-            $row['sudah_lunas'] = false;
-            $row['jenis_pembayaran_terakhir'] = null;
+            // Default
+            $row['sudah_dp']                    = false;
+            $row['sudah_lunas']                 = false;
+            $row['total_bayar']                 = 0;
+            $row['jenis_pembayaran_terakhir']   = null;
+            $row['status_pembayaran_terakhir']  = null;
 
+            // Ambil data pembayaran terakhir
+            if (!empty($pembayaran)) {
+
+                $terakhir = $pembayaran[0];
+
+                $row['jenis_pembayaran_terakhir'] =
+                    $terakhir['jenispembayaran'];
+
+                $row['status_pembayaran_terakhir'] =
+                    $terakhir['statuspembayaran'];
+            }
+
+            // Hitung pembayaran yang sudah VALID
             foreach ($pembayaran as $bayar) {
 
-                if (
-                    $bayar['jenispembayaran'] == 'DP' &&
-                    $bayar['statuspembayaran'] == 'valid'
-                ) {
-                    $row['sudah_dp'] = true;
-                    $row['jenis_pembayaran_terakhir'] = 'DP';
+                if ($bayar['statuspembayaran'] != 'valid') {
+                    continue;
                 }
 
-                if (
-                    $bayar['jenispembayaran'] == 'Full Payment' &&
-                    $bayar['statuspembayaran'] == 'valid'
-                ) {
-                    $row['sudah_lunas'] = true;
-                    $row['jenis_pembayaran_terakhir'] = 'Full Payment';
-                }
+                $row['total_bayar'] += $bayar['jumlahbayar'];
 
-                if (
-                    $bayar['jenispembayaran'] == 'Pelunasan' &&
-                    $bayar['statuspembayaran'] == 'valid'
-                ) {
-                    $row['sudah_lunas'] = true;
-                    $row['jenis_pembayaran_terakhir'] = 'Pelunasan';
+                switch ($bayar['jenispembayaran']) {
+
+                    case 'DP':
+                        $row['sudah_dp'] = true;
+                        break;
+
+                    case 'Full Payment':
+                    case 'Pelunasan':
+                        $row['sudah_lunas'] = true;
+                        break;
                 }
+            }
+
+            // Jika sudah lunas otomatis berarti sudah DP
+            if ($row['sudah_lunas']) {
+                $row['sudah_dp'] = true;
             }
         }
 
