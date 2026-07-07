@@ -43,6 +43,36 @@
     <!--responsive.css-->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/responsive.css">
 
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/bootstrap.css">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/flexslider.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
 </head>
 
 <body>
@@ -68,20 +98,46 @@
 
                     <div class="container">
                         <!-- Start Atribute Navigation -->
+
                         <div class="attr-nav">
+
                             <ul>
+
+                                <!-- Search -->
                                 <li class="search">
-                                    <a href="#"><span class="lnr lnr-magnifier"></span></a>
-                                </li><!--/.search-->
-                                <li class="dropdown">
-                                    <a href="<?= base_url('keranjang') ?>" class="dropdown-toggle" data-toggle="dropdown">
-                                        <span class="lnr lnr-cart"></span>
-                                        <!-- <span class="badge badge-bg-1">0</span> -->
+                                    <a href="#">
+                                        <span class="lnr lnr-magnifier"></span>
                                     </a>
                                 </li>
+
+                                <!-- Keranjang -->
+                                <li class="cart-icon">
+
+                                    <a href="<?= base_url('keranjang') ?>">
+
+                                        <span class="lnr lnr-cart"></span>
+
+                                        <?php if (isset($jumlahKeranjang) && $jumlahKeranjang > 0) : ?>
+
+                                            <span class="badge badge-bg-1">
+                                                <?= $jumlahKeranjang ?>
+                                            </span>
+
+                                        <?php endif; ?>
+
+                                    </a>
+
+                                </li>
+
+                                <!-- Profile -->
                                 <li class="nav-profile dropdown">
-                                    <a href="#" class="dropdown-toggle profile-icon" data-toggle="dropdown">
+
+                                    <a href="#"
+                                        class="dropdown-toggle profile-icon"
+                                        data-toggle="dropdown">
+
                                         <span class="lnr lnr-user"></span>
+
                                     </a>
 
                                     <ul class="dropdown-menu profile-menu">
@@ -101,9 +157,9 @@
                                         </li>
 
                                         <li>
-                                            <a href="<?= base_url('pesanan-custom') ?>">
+                                            <a href="<?= base_url('pengajuan-custom') ?>">
                                                 <i class="lnr lnr-pencil"></i>
-                                                pesanan Custom
+                                                Pengajuan Custom
                                             </a>
                                         </li>
 
@@ -133,7 +189,9 @@
                                         </li>
 
                                     </ul>
+
                                 </li>
+
                             </ul>
                         </div><!--/.attr-nav-->
                         <!-- End Atribute Navigation -->
@@ -151,11 +209,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class=" scroll active"><a href="<?= base_url('/') ?>">home</a></li>
-                                <li class="scroll"><a href="#new-arrivals">new arrival</a></li>
-                                <li class="scroll"><a href="#feature">features</a></li>
-                                <li class="scroll"><a href="#blog">blog</a></li>
-                                <li class="scroll"><a href="#newsletter">contact</a></li>
+                                <li><a href="<?= base_url('homepage') ?>">Home</a></li>
+                                <li><a href="<?= base_url('katalogproduk') ?>">Product</a></li>
+                                <li><a href="<?= base_url('about') ?>">About</a></li>
+                                <li><a href="<?= base_url('contact') ?>">Contact</a></li>
                             </ul><!--/.nav -->
                         </div><!-- /.navbar-collapse -->
                     </div><!--/.container-->
@@ -360,6 +417,14 @@
                                 </span>
 
                             </div>
+                            <div class="product-meta">
+
+                                <span>
+                                    Diskon :
+                                    <?= $detail['diskon'] ?>%
+                                </span>
+
+                            </div>
 
                         </div>
 
@@ -391,23 +456,102 @@
 
                 <?php endforeach; ?>
 
-                <div class="total-wrapper">
 
-                    <span>
-                        Total Pesanan
-                    </span>
+                <?php
+                $subtotalProduk = 0;
 
-                    <h2>
+                foreach ($row['detail'] as $item) {
+                    $subtotalProduk += $item['subtotal'];
+                }
+                ?>
 
-                        Rp
-                        <?= number_format(
-                            $row['totalharga'],
-                            0,
-                            ',',
-                            '.'
-                        ) ?>
+                <div class="summary-card">
 
-                    </h2>
+                    <div class="summary-header">
+                        <h5>Ringkasan Pembayaran</h5>
+                    </div>
+
+                    <div class="summary-body">
+
+                        <!-- Subtotal Produk -->
+
+                        <div class="summary-row">
+
+                            <span class="summary-label">
+                                Subtotal Produk
+                            </span>
+
+                            <span class="summary-price">
+                                Rp <?= number_format($subtotalProduk, 0, ',', '.') ?>
+                            </span>
+
+                        </div>
+
+                        <!-- Ongkir -->
+
+                        <div class="summary-row">
+
+                            <span class="summary-label">
+                                Biaya Pengiriman
+                            </span>
+
+                            <span class="summary-price">
+
+                                <?php if (!empty($row['biayaantar'])) : ?>
+
+                                    Rp <?= number_format($row['biayaantar'], 0, ',', '.') ?>
+
+                                <?php else : ?>
+
+                                    <span class="waiting-price">
+                                        Menunggu penetapan admin
+                                    </span>
+
+                                <?php endif; ?>
+
+                            </span>
+
+                        </div>
+
+                        <!-- Grand Total -->
+
+                        <div class="summary-total">
+
+                            <span class="summary-label">
+                                Total Pembayaran
+                            </span>
+
+                            <span class="summary-price">
+
+                                <?php if (!empty($row['biayaantar'])) : ?>
+
+                                    Rp <?= number_format($row['total'], 0, ',', '.') ?>
+
+                                <?php else : ?>
+
+                                    <span class="waiting-price">
+                                        -
+                                    </span>
+
+                                <?php endif; ?>
+
+                            </span>
+
+                        </div>
+
+                        <?php if (empty($row['biayaantar'])) : ?>
+
+                            <div class="summary-note">
+
+                                <i class="lnr lnr-info-circle"></i>
+
+                                Biaya pengiriman akan ditentukan oleh admin berdasarkan alamat pengiriman dan jumlah produk. Setelah ditetapkan, total pembayaran akan diperbarui secara otomatis.
+
+                            </div>
+
+                        <?php endif; ?>
+
+                    </div>
 
                 </div>
                 <?php if ($row['statuspesanan'] == 'menunggu_konfirmasi'): ?>
@@ -451,15 +595,15 @@
                         <i class="lnr lnr-checkmark-circle"></i>
 
                         <div>
+                            <div>
+                                <strong>
+                                    Pesanan Telah Dikonfirmasi
+                                </strong>
 
-                            <strong>
-                                Pesanan Telah Dikonfirmasi
-                            </strong>
-
-                            <p>
-                                Pesanan telah dikonfirmasi oleh admin.
-                                Silakan lakukan pembayaran agar pesanan dapat diproses lebih lanjut.
-                            </p>
+                                <p>
+                                    Silakan lakukan pembayaran agar pesanan dapat diproses lebih lanjut.
+                                </p>
+                            </div>
 
                             <div class="payment-action">
 
@@ -471,10 +615,21 @@
                                 <!-- Belum pernah melakukan pembayaran -->
                                 <?php if (empty($jenis)) : ?>
 
-                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
-                                        class="btn-payment">
+                                    <button
+                                        type="button"
+                                        class="btn-payment"
+                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+
                                         Bayar Sekarang
-                                    </a>
+
+                                    </button>
+                                    <!-- <button
+                                        data-url="<?= base_url('pesananpelanggan/batal/' . $row['idpesanan']) ?>"
+                                        class="btn-cancel btn-batal-pesanan">
+
+                                        Batalkan
+
+                                    </button> -->
 
                                     <!-- Ada pembayaran yang sedang diperiksa admin -->
                                 <?php elseif ($status == 'menunggu_pembayaran') : ?>
@@ -501,13 +656,26 @@
                                     $status == 'valid'
                                 ) : ?>
 
-                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
-                                        class="btn-payment">
+                                    <button
+                                        type="button"
+                                        class="btn-payment"
+                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+
                                         Bayar Pelunasan
-                                    </a>
+
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success mt-2"
+                                        onclick="window.open('<?= base_url('faktur/' . $row['idpesanan']) ?>', '_blank')">
+
+                                        <i class="fa fa-file-invoice"></i>
+                                        Cetak Faktur
+
+                                    </button>
 
                                     <?php
-                                    $sisa = $row['totalharga'] - $row['total_bayar'];
+                                    $sisa = $row['total'] - $row['total_bayar'];
                                     ?>
 
                                     <?php if ($sisa > 0) : ?>
@@ -528,6 +696,15 @@
                                     <p style="margin-top:12px;color:green;font-weight:bold;">
                                         ✅ Pembayaran telah lunas.
                                     </p>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success mt-2"
+                                        onclick="window.open('<?= base_url('faktur/' . $row['idpesanan']) ?>', '_blank')">
+
+                                        <i class="fa fa-file-invoice"></i>
+                                        Cetak Faktur
+
+                                    </button>
 
                                 <?php endif; ?>
 
@@ -564,11 +741,14 @@
 
                                 <!-- Belum pernah melakukan pembayaran -->
                                 <?php if (empty($jenis)) : ?>
+                                    <button
+                                        type="button"
+                                        class="btn-payment"
+                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
 
-                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
-                                        class="btn-payment">
                                         Bayar Sekarang
-                                    </a>
+
+                                    </button>
 
                                     <!-- Ada pembayaran yang sedang diperiksa admin -->
                                 <?php elseif ($status == 'menunggu_pembayaran') : ?>
@@ -595,13 +775,26 @@
                                     $status == 'valid'
                                 ) : ?>
 
-                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
-                                        class="btn-payment">
+                                    <button
+                                        type="button"
+                                        class="btn-payment"
+                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+
                                         Bayar Pelunasan
-                                    </a>
+
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success mt-2"
+                                        onclick="window.open('<?= base_url('faktur/' . $row['idpesanan']) ?>', '_blank')">
+
+                                        <i class="fa fa-file-invoice"></i>
+                                        Cetak Faktur
+
+                                    </button>
 
                                     <?php
-                                    $sisa = $row['totalharga'] - $row['total_bayar'];
+                                    $sisa = $row['total'] - $row['total_bayar'];
                                     ?>
 
                                     <?php if ($sisa > 0) : ?>
@@ -622,6 +815,15 @@
                                     <p style="margin-top:12px;color:green;font-weight:bold;">
                                         ✅ Pembayaran telah lunas.
                                     </p>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success mt-2"
+                                        onclick="window.open('<?= base_url('faktur/' . $row['idpesanan']) ?>', '_blank')">
+
+                                        <i class="fa fa-file-invoice"></i>
+                                        Cetak Faktur
+
+                                    </button>
 
                                 <?php endif; ?>
 
@@ -660,10 +862,14 @@
                                 <!-- Belum pernah melakukan pembayaran -->
                                 <?php if (empty($jenis)) : ?>
 
-                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
-                                        class="btn-payment">
+                                    <button
+                                        type="button"
+                                        class="btn-payment"
+                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+
                                         Bayar Sekarang
-                                    </a>
+
+                                    </button>
 
                                     <!-- Ada pembayaran yang sedang diperiksa admin -->
                                 <?php elseif ($status == 'menunggu_pembayaran') : ?>
@@ -690,13 +896,26 @@
                                     $status == 'valid'
                                 ) : ?>
 
-                                    <a href="<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>"
-                                        class="btn-payment">
+                                    <button
+                                        type="button"
+                                        class="btn-payment"
+                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+
                                         Bayar Pelunasan
-                                    </a>
+
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success mt-2"
+                                        onclick="window.open('<?= base_url('faktur/' . $row['idpesanan']) ?>', '_blank')">
+
+                                        <i class="fa fa-file-invoice"></i>
+                                        Cetak Faktur
+
+                                    </button>
 
                                     <?php
-                                    $sisa = $row['totalharga'] - $row['total_bayar'];
+                                    $sisa = $row['total'] - $row['total_bayar'];
                                     ?>
 
                                     <?php if ($sisa > 0) : ?>
@@ -717,6 +936,15 @@
                                     <p style="margin-top:12px;color:green;font-weight:bold;">
                                         ✅ Pembayaran telah lunas.
                                     </p>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success mt-2"
+                                        onclick="window.open('<?= base_url('faktur/' . $row['idpesanan']) ?>', '_blank')">
+
+                                        <i class="fa fa-file-invoice"></i>
+                                        Cetak Faktur
+
+                                    </button>
 
                                 <?php endif; ?>
 
@@ -837,14 +1065,22 @@
         <div class="container">
             <div class="hm-footer-copyright text-center">
                 <div class="footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/USERNAME" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/dino_ok86?igsh=MWs3MTgya2dzOGxkYw==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@dinook5?_r=1&_t=ZS-97fKVSNCGdF" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
                 </div>
                 <p>
-                    &copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
+                    &copy;2026. Aldino Perabot. All Rights Reserved.
                 </p><!--/p-->
             </div><!--/.text-center-->
         </div><!--/.container-->

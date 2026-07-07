@@ -56,6 +56,7 @@
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/style.css">
@@ -88,6 +89,7 @@
 
     <!--welcome-hero start -->
     <header id="home" class="welcome-hero">
+
         <!-- top-area Start -->
         <div class="top-area">
             <div class="header-area">
@@ -108,7 +110,9 @@
 
                     <div class="container">
                         <!-- Start Atribute Navigation -->
+
                         <div class="attr-nav">
+
                             <ul>
 
                                 <!-- Search -->
@@ -217,11 +221,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class=" scroll active"><a href="<?= base_url('/') ?>">home</a></li>
-                                <li class="scroll"><a href="#new-arrivals">new arrival</a></li>
-                                <li class="scroll"><a href="#feature">features</a></li>
-                                <li class="scroll"><a href="#blog">blog</a></li>
-                                <li class="scroll"><a href="#newsletter">contact</a></li>
+                                <li><a href="<?= base_url('homepage') ?>">Home</a></li>
+                                <li><a href="<?= base_url('katalogproduk') ?>">Product</a></li>
+                                <li><a href="<?= base_url('about') ?>">About</a></li>
+                                <li><a href="<?= base_url('contact') ?>">Contact</a></li>
                             </ul><!--/.nav -->
                         </div><!-- /.navbar-collapse -->
                     </div><!--/.container-->
@@ -242,31 +245,39 @@
 
 
     <!--footer start-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="hm-footer-copyright text-center">
-                <div class="footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
-                </div>
-                <p>
-                    &copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
-                </p><!--/p-->
-            </div><!--/.text-center-->
-        </div><!--/.container-->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="hm-footer-copyright text-center">
+				<div class="footer-social">
+					<div class="social-media">
+						<a href="https://www.facebook.com/USERNAME" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
 
-        <div id="scroll-Top">
-            <div class="return-to-top">
-                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-            </div>
+						<a href="https://www.instagram.com/dino_ok86?igsh=MWs3MTgya2dzOGxkYw==" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
 
-        </div><!--/.scroll-Top-->
+						<a href="https://www.tiktok.com/@dinook5?_r=1&_t=ZS-97fKVSNCGdF" target="_blank">
+							<i class="fab fa-tiktok"></i>
+						</a>
+					</div>
+				</div>
+				<p>
+					&copy;2026. Aldino Perabot. All Rights Reserved.
+				</p><!--/p-->
+			</div><!--/.text-center-->
+		</div><!--/.container-->
 
-    </footer><!--/.footer-->
-    <!--footer end-->
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.footer-->
+	<!--footer end-->
 
     <!-- Include all js compiled plugins (below), or include individual files as needed -->
 

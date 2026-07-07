@@ -85,7 +85,8 @@ class PesananController extends BaseController
             'idpesanan'      => $idpesanan,
             'idpelanggan'    => $this->request->getPost('idpelanggan'),
             'tanggalpesanan' => $this->request->getPost('tanggalpesanan'),
-            'totalharga'     => $this->request->getPost('totalharga'),
+            'biayaantar'     => $this->request->getPost('biayaantar'),
+            'total'     => $this->request->getPost('total'),
             'statuspesanan'  => $this->request->getPost('statuspesanan'),
             'estimasiwaktu'  => $this->request->getPost('estimasiwaktu')
         ];
@@ -230,7 +231,8 @@ class PesananController extends BaseController
             'idpelanggan'     => $this->request->getPost('idpelanggan'),
             'tanggalpesanan'  => $this->request->getPost('tanggalpesanan'),
             'statuspesanan'   => $this->request->getPost('statuspesanan'),
-            'totalharga'      => $this->request->getPost('totalharga'),
+            'biayaantar'      => $this->request->getPost('biayaantar'),
+            'total'      => $this->request->getPost('total'),
             'estimasiwaktu'      => $this->request->getPost('estimasiwaktu')
         ];
 
@@ -350,9 +352,7 @@ class PesananController extends BaseController
 
                 $item['namaproduk'] = $produk['namaproduk'] ?? '-';
                 $item['foto']       = $produk['foto'] ?? '';
-
-                $item['subtotal'] =
-                    ($item['harga'] - $item['diskon']) * $item['qty'];
+                $item['subtotal'] =($item['harga'] - ($item['harga'] * $item['diskon'] / 100)) * $item['qty'];
             }
 
             $row['detail'] = $detail;

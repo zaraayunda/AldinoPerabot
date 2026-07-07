@@ -132,24 +132,82 @@
               <span class="hide-menu">Menu Laporan</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link primary-hover-bg justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-invoice.html" aria-expanded="false">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanuser') ?>" aria-expanded="false">
                 <div class="d-flex align-items-center gap-6">
                   <span class="d-flex">
                     <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
                   </span>
-                  <span class="hide-menu">Laporan Kategori Produk</span>
+                  <span class="hide-menu">Laporan Data User</span>
                 </div>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link primary-hover-bg justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-notes.html" aria-expanded="false">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpelanggan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Pelanggan</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporankategori') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data<br>Kategori Produk</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanproduk') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Produk</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpengajuancustom') ?>" aria-expanded="false">
                 <div class="d-flex align-items-center gap-6">
                   <span class="d-flex">
                     <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
                   </span>
-                  <span class="hide-menu">Laporan Data Produk</span>
+                  <span class="hide-menu">Laporan Data <br> Pengajuan Custom</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpesanan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Pesanan</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('lapstatuspesanan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Data Status Pesanan</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpenjualan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Penjualan</span>
                 </div>
               </a>
             </li>
@@ -205,24 +263,82 @@
               <span class="hide-menu">Menu Laporan</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link primary-hover-bg justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-invoice.html" aria-expanded="false">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanuser') ?>" aria-expanded="false">
                 <div class="d-flex align-items-center gap-6">
                   <span class="d-flex">
                     <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
                   </span>
-                  <span class="hide-menu">Laporan Kategori Produk</span>
+                  <span class="hide-menu">Laporan Data User</span>
                 </div>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link primary-hover-bg justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-notes.html" aria-expanded="false">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpelanggan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Pelanggan</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporankategori') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data<br>Kategori Produk</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanproduk') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Produk</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpengajuancustom') ?>" aria-expanded="false">
                 <div class="d-flex align-items-center gap-6">
                   <span class="d-flex">
                     <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
                   </span>
-                  <span class="hide-menu">Laporan Data Produk</span>
+                  <span class="hide-menu">Laporan Data <br> Pengajuan Custom</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpesanan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Pesanan</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('lapstatuspesanan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Data Status Pesanan</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link primary-hover-bg justify-content-between" href="<?= base_url('laporanpenjualan') ?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-6">
+                  <span class="d-flex">
+                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
+                  </span>
+                  <span class="hide-menu">Laporan Data Penjualan</span>
                 </div>
               </a>
             </li>

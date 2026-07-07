@@ -86,6 +86,8 @@ class Layout extends BaseController
         $modelPengguna = new ModelPengguna();
         $modelPelanggan = new ModelPelanggan();
         $iduser = session()->get('iduser');
+
+        
         $pelanggan = $modelPelanggan
             ->where('iduser', $iduser)
             ->first();
@@ -101,5 +103,14 @@ class Layout extends BaseController
         ];
 
         return view('pelanggan/katalogproduk', $data);
+    }
+
+    public function about(): string
+    {
+        return view('layout/about');
+    }
+    public function contact(): string
+    {
+        return view('layout/contact');
     }
 }

@@ -125,7 +125,7 @@
                                                 <input type="text"
                                                     class="form-control fw-bold text-success"
                                                     readonly
-                                                    value="Rp <?= number_format($pesanan['totalharga'], 0, ',', '.'); ?>">
+                                                    value="Rp <?= number_format($pesanan['total'], 0, ',', '.'); ?>">
 
                                             </div>
 
@@ -149,7 +149,7 @@
 
                                                 <h4 class="text-primary">
 
-                                                    Rp <?= number_format($pesanan['totalharga'], 0, ',', '.'); ?>
+                                                    Rp <?= number_format($pesanan['total'], 0, ',', '.'); ?>
 
                                                 </h4>
 
@@ -189,7 +189,7 @@
 
                                                 <h4 class="text-danger">
 
-                                                    Rp <?= number_format($pesanan['totalharga'] - $sudah_bayar, 0, ',', '.'); ?>
+                                                    Rp <?= number_format($pesanan['total'] - $sudah_bayar, 0, ',', '.'); ?>
 
                                                 </h4>
 
@@ -264,33 +264,75 @@
 
                                                 <select
                                                     name="metode_pembayaran"
+                                                    id="metode_pembayaran"
                                                     class="form-select">
-
-                                                    <option value="Cash">Cash</option>
-
-                                                    <option value="Transfer">Transfer</option>
-
+                                                    <option value="cash">Cash</option>
+                                                    <option value="transfer">Transfer</option>
                                                 </select>
 
                                             </div>
+                                            <div id="infoTransfer" class="info-transfer" style="display:none;">
+
+                                                <div class="transfer-header">
+                                                    <div>
+                                                        <h5>Silakan lakukan pembayaran ke rekening berikut.</h5>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="transfer-body">
+
+                                                    <div class="transfer-item">
+                                                        <span>Bank</span>
+                                                        <strong>Bank BRI</strong>
+                                                    </div>
+
+                                                    <div class="transfer-item">
+                                                        <span>No. Rekening</span>
+                                                        <strong>1234 5678 9012</strong>
+                                                    </div>
+
+                                                    <div class="transfer-item">
+                                                        <span>Atas Nama</span>
+                                                        <strong>Zara Ayunda</strong>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="transfer-footer">
+
+                                                    <i class="ti ti-info-circle"></i>
+
+                                                    Setelah melakukan transfer, silakan unggah bukti pembayaran agar dapat diverifikasi oleh admin.
+
+                                                </div>
+
+                                            </div>
+
+                                            <?php
+                                            $minimalDP = ceil($pesanan['total'] * 0.3);
+                                            ?>
 
                                             <div class="mb-3">
-
                                                 <label>Jumlah Pembayaran</label>
 
                                                 <input
                                                     type="number"
+                                                    id="jumlahbayar"
                                                     name="jumlahbayar"
                                                     class="form-control"
+                                                    min="<?= $minimalDP ?>"
                                                     <?= $mode == "pelunasan" ? "readonly" : "" ?>
-                                                    value="<?= $mode == "pelunasan" ? $pesanan['totalharga'] - $sudah_bayar : "" ?>">
+                                                    value="<?= $mode == "pelunasan" ? $pesanan['total'] - $sudah_bayar : "" ?>">
 
                                                 <small class="text-muted">
-
-                                                    Minimal DP adalah 30% dari total pesanan.
-
+                                                    Minimal DP adalah 30% dari total pesanan
+                                                    (Rp <?= number_format($minimalDP, 0, ',', '.') ?>).
                                                 </small>
 
+                                                <div id="errorDP" class="text-danger mt-1" style="display:none;">
+                                                    Jumlah pembayaran minimal Rp <?= number_format($minimalDP, 0, ',', '.') ?>.
+                                                </div>
                                             </div>
 
                                             <div class="mb-3">
@@ -342,5 +384,52 @@
         <script src="<?= base_url() ?>/assets/dashboard/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const metode = document.getElementById("metode_pembayaran");
+        const infoTransfer = document.getElementById("infoTransfer");
+
+        function cekMetode() {
+
+            if (metode.value === "transfer") {
+
+                infoTransfer.style.display = "block";
+
+            } else {
+
+                infoTransfer.style.display = "none";
+
+            }
+
+        }
+
+        cekMetode();
+
+        metode.addEventListener("change", cekMetode);
+
+    });
+    
+    const input = document.getElementById('jumlahbayar');
+    const error = document.getElementById('errorDP');
+    const minimalDP = <?= $minimalDP ?>;
+
+    input.addEventListener('input', function() {
+        if (this.value === '') {
+            this.classList.remove('is-invalid');
+            error.style.display = 'none';
+            return;
+        }
+
+        if (parseInt(this.value) < minimalDP) {
+            this.classList.add('is-invalid');
+            error.style.display = 'block';
+        } else {
+            this.classList.remove('is-invalid');
+            error.style.display = 'none';
+        }
+    });
+</script>
 
 </html>

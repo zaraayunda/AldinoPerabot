@@ -107,9 +107,9 @@
 
                             $pelangganId = $pesanan['idpelanggan'] ?? null;
 
-                            $total = $pesanan['totalharga'] ?? 0;
+                            $total = $pesanan['total'] ?? 0;
                             $bayar = $row['jumlahbayar'] ?? 0;
-                            $sisa = $total - $bayar;
+                            $sisa = $row['sisa'];
                             ?>
 
                             <tr>

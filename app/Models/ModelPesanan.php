@@ -13,7 +13,8 @@ class ModelPesanan extends Model
         'idpesanan',
         'idpelanggan',
         'tanggalpesanan',
-        'totalharga',
+        'biayaantar',
+        'total',
         'estimasiwaktu',
         'statuspesanan'
     ];

@@ -19,10 +19,45 @@ class PembayaranController extends BaseController
         $modelDetailPesanan = new ModelDetailPesanan();
         $modelPelanggan = new ModelPelanggan();
 
+        // Ambil semua pesanan
+        $pesanan = $modelPesanan->findAll();
+
+        // Ambil pembayaran dan URUTKAN
+        $pembayaran = $modelPembayaran
+            ->orderBy('idpesanan', 'ASC')
+            ->orderBy('tanggalpembayaran', 'ASC')
+            ->findAll();
+
+        // Mapping total harga
+        $pesananMap = [];
+        foreach ($pesanan as $p) {
+            $pesananMap[$p['idpesanan']] = $p;
+        }
+
+        // Menyimpan total pembayaran tiap pesanan
+        $akumulasiBayar = [];
+
+        foreach ($pembayaran as &$row) {
+
+            $idPesanan = $row['idpesanan'];
+
+            if (!isset($akumulasiBayar[$idPesanan])) {
+                $akumulasiBayar[$idPesanan] = 0;
+            }
+
+            // Tambahkan pembayaran sekarang
+            $akumulasiBayar[$idPesanan] += $row['jumlahbayar'];
+
+            $totalHarga = $pesananMap[$idPesanan]['total'] ?? 0;
+
+            // Tambahkan field baru
+            $row['sisa'] = $totalHarga - $akumulasiBayar[$idPesanan];
+        }
+
         $data = [
-            'pesanan' => $modelPesanan->findAll(),
+            'pesanan' => $pesanan,
             'detailpesanan' => $modelDetailPesanan->findAll(),
-            'pembayaran' => $modelPembayaran->findAll(),
+            'pembayaran' => $pembayaran,
             'pelanggan' => $modelPelanggan->findAll()
         ];
 
@@ -301,7 +336,7 @@ class PembayaranController extends BaseController
         $mode = 'awal';
 
         $sudah_bayar = 0;
-        $sisa_bayar  = $pesanan['totalharga'];
+        $sisa_bayar  = $pesanan['total'];
         $jumlah_bayar = '';
 
         // ===========================
@@ -317,7 +352,7 @@ class PembayaranController extends BaseController
                     if ($row['statuspembayaran'] == 'valid') {
 
                         $sudah_bayar = $row['jumlahbayar'];
-                        $sisa_bayar  = $pesanan['totalharga'] - $row['jumlahbayar'];
+                        $sisa_bayar  = $pesanan['total'] - $row['jumlahbayar'];
                         $jumlah_bayar = $sisa_bayar;
 
                         $mode = 'pelunasan';
@@ -403,7 +438,7 @@ class PembayaranController extends BaseController
             return redirect()->back()->with('error', 'Pesanan tidak ditemukan.');
         }
 
-        $total = $pesanan['totalharga'];
+        $total = $pesanan['total'];
 
         // ===========================
         // Validasi sesuai jenis pembayaran

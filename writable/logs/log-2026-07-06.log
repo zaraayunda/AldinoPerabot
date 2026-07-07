@@ -1,0 +1,1298 @@
+DEBUG - 2026-07-06 14:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 14:40:07 --> ErrorException: Undefined variable $idkeranjang
+[Method: GET, Route: hapuskeranjang/22]
+in APPPATH\Controllers\KeranjangController.php on line 315.
+ 1 APPPATH\Controllers\KeranjangController.php(315): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idkeranjang', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\KeranjangController.php', 315)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KeranjangController->hapusCheckout('22')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KeranjangController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 14:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 14:43:59 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 164.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(164): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 14:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 14:45:38 --> ErrorException: Undefined array key "biayaantar"
+[Method: GET, Route: datapesanan]
+in APPPATH\Views\datatransaksi\v_datapesanan.php on line 168.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biayaantar"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php', 168)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 14:46:01 --> ErrorException: Undefined array key "biayaantar"
+[Method: GET, Route: datapesanan]
+in APPPATH\Views\datatransaksi\v_datapesanan.php on line 168.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biayaantar"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php', 168)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 14:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 14:51:12 --> ErrorException: Undefined array key "biayaantar"
+[Method: GET, Route: datapesanan]
+in APPPATH\Views\datatransaksi\v_datapesanan.php on line 168.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biayaantar"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php', 168)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 14:53:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 168.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(168): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 14:53:56 --> ErrorException: Undefined array key "total"
+[Method: GET, Route: datapesanan]
+in APPPATH\Views\datatransaksi\v_datapesanan.php on line 172.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php', 172)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 14:54:23 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 168.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(168): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 14:54:23 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 168.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(168): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 14:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 14:55:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 172.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(172): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 14:55:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 14:55:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 172.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(172): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 14:55:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 14:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 14:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:11:55 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 172.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(172): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:11:55 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:11:55 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 172.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(172): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:11:55 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:14:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:14:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:14:52 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:14:52 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 15:24:47 --> ErrorException: Undefined variable $totalProduk
+[Method: GET, Route: editpesanan/PSN000001]
+in APPPATH\Views\datatransaksi\editpesanan.php on line 404.
+ 1 APPPATH\Views\datatransaksi\editpesanan.php(404): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalProduk', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php', 404)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/editpesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(217): view('datatransaksi/editpesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->edit('PSN000001')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 15:31:10 --> ErrorException: Undefined variable $totalHarga
+[Method: GET, Route: editpesanan/PSN000001]
+in APPPATH\Views\datatransaksi\editpesanan.php on line 210.
+ 1 APPPATH\Views\datatransaksi\editpesanan.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalHarga', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php', 210)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/editpesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(217): view('datatransaksi/editpesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->edit('PSN000001')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 15:33:54 --> ErrorException: Undefined variable $totalHarga
+[Method: GET, Route: editpesanan/PSN000001]
+in APPPATH\Views\datatransaksi\editpesanan.php on line 406.
+ 1 APPPATH\Views\datatransaksi\editpesanan.php(406): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalHarga', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php', 406)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\editpesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/editpesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(217): view('datatransaksi/editpesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->edit('PSN000001')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 15:37:42 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pesananpelanggan]
+in APPPATH\Views\pelanggan\v_pesananpelanggan.php on line 469.
+ 1 APPPATH\Views\pelanggan\v_pesananpelanggan.php(469): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\pelanggan\\v_pesananpelanggan.php', 469)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\pelanggan\\v_pesananpelanggan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('pelanggan/v_pesananpelanggan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(416): view('pelanggan/v_pesananpelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->pesananpelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:48:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\pelanggan\v_pesananpelanggan.php on line 474.
+ 1 APPPATH\Views\pelanggan\v_pesananpelanggan.php(474): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\pelanggan\\v_pesananpelanggan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('pelanggan/v_pesananpelanggan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(416): view('pelanggan/v_pesananpelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->pesananpelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:48:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\pelanggan\v_pesananpelanggan.php on line 487.
+ 1 APPPATH\Views\pelanggan\v_pesananpelanggan.php(487): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\pelanggan\\v_pesananpelanggan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('pelanggan/v_pesananpelanggan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(416): view('pelanggan/v_pesananpelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->pesananpelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 15:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:58:30 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:58:30 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:58:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:58:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 15:58:47 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 15:58:47 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 15:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:00:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:00:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:00:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:00:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:00:41 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:00:41 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:01:07 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:01:07 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:02:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:02:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:03:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:03:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:03:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:03:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:05:23 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:05:23 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:06:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:06:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:06:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:07:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:07:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:07:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:07:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:07:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 178.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(178): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+WARNING - 2026-07-06 16:07:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:08:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-07-06 16:08:28 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\datatransaksi\v_datapesanan.php on line 175.
+ 1 APPPATH\Views\datatransaksi\v_datapesanan.php(175): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\datatransaksi\\v_datapesanan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('datatransaksi/v_datapesanan', [], true)
+ 5 APPPATH\Controllers\PesananController.php(32): view('datatransaksi/v_datapesanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PesananController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesananController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-06 16:16:30 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:42 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:45 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:46 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:47 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:47 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:47 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:48 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:17:48 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:18:15 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:18:18 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:18:18 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:18:18 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:18:22 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Controllers\PembayaranController.php on line 339.
+ 1 APPPATH\Controllers\PembayaranController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Controllers\\PembayaranController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+CRITICAL - 2026-07-06 16:19:10 --> ErrorException: Undefined array key "totalharga"
+[Method: GET, Route: pembayaran_pelanggan/PSN000002]
+in APPPATH\Views\pelanggan\v_pembayaranpelanggan.php on line 128.
+ 1 APPPATH\Views\pelanggan\v_pembayaranpelanggan.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalharga"', 'D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\pelanggan\\v_pembayaranpelanggan.php', 128)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\app\\Views\\pelanggan\\v_pembayaranpelanggan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1254): CodeIgniter\View\View->render('pelanggan/v_pembayaranpelanggan', [], true)
+ 5 APPPATH\Controllers\PembayaranController.php(422): view('pelanggan/v_pembayaranpelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PembayaranController->pelangganbayar('PSN000002')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembayaranController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ZaraAyunda\\SEMESTER8\\SKRIPSIAN\\PROGRAM\\AldinoPerabot\\public\\index.php')
+DEBUG - 2026-07-06 16:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 16:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-06 17:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -188,7 +188,7 @@ class KeranjangController extends BaseController
             $data
         );
     }
-    
+
     public function simpanCheckout()
     {
         $db = \Config\Database::connect();
@@ -247,7 +247,7 @@ class KeranjangController extends BaseController
 
                 'tanggalpesanan' => date('Y-m-d'),
 
-                'totalharga' => $total,
+                'total' => $total,
 
                 'estimasiwaktu' => null,
 
@@ -304,5 +304,56 @@ class KeranjangController extends BaseController
                     $e->getMessage()
                 );
         }
+    }
+
+    public function hapusKeranjang($idkeranjang)
+    {
+        $modelKeranjang = new ModelKeranjang();
+        // =========================
+        // 1. CEK DATA PESANAN
+        // =========================
+        $idkeranjang = $modelKeranjang->find($idkeranjang);
+
+        if (!$idkeranjang) {
+            return redirect()->to('keranjang')
+                ->with('error', 'Data keranjang tidak ditemukan');
+        }
+
+        // =========================
+        // 3. HAPUS PESANAN UTAMA
+        // =========================
+        $modelKeranjang->delete($idkeranjang);
+
+        return redirect()->to('keranjang')
+            ->with('success', 'Data berhasil dihapus');
+    }
+
+    public function tambahqty($idkeranjang)
+    {
+        $model = new ModelKeranjang();
+
+        $data = $model->find($idkeranjang);
+
+        $model->update($idkeranjang, [
+            'qty' => $data['qty'] + 1
+        ]);
+
+        return redirect()->back();
+    }
+
+    public function kurangqty($idkeranjang)
+    {
+        $model = new ModelKeranjang();
+
+        $data = $model->find($idkeranjang);
+
+        if ($data['qty'] > 1) {
+
+            $model->update($idkeranjang, [
+                'qty' => $data['qty'] - 1
+            ]);
+        }
+
+        return redirect()->back();
     }
 }

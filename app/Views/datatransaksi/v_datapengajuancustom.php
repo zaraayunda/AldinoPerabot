@@ -63,7 +63,7 @@
             <table class="table table-bordered table-hover align-middle" id="datapengajuan">
                 <thead>
                     <tr>
-                        <th width="60">No</th>
+                        <th width="20">No</th>
                         <th>ID Pengajuan</th>
                         <th>Tanggal</th>
                         <th>Nama Pelanggan</th>
@@ -73,7 +73,7 @@
                         <th>Jumlah</th>
                         <th>Harga</th>
                         <th>Status</th>
-                        <th width="130">Aksi</th>
+                        <th width="150">Aksi</th>
                     </tr>
                 </thead>
                 <?php
@@ -176,18 +176,24 @@
 
                                             </td>
 
-                                            <td rowspan="<?= $jumlahDetail ?>" class="text-center align-middle">
+                                            <td rowspan="<?= $jumlahDetail ?>" class="text-center align-middle" style="min-width:150px;">
+                                                <div class="d-flex justify-content-center gap-2">                                                
 
-                                                <a href="<?= base_url('editpengajuan/' . $row['idpengajuan']) ?>"
-                                                    class="btn btn-warning btn-sm">
-                                                    <i class="ti ti-edit"></i>
-                                                </a>
-
-                                                <a href="<?= base_url('hapuspengajuan/' . $row['idpengajuan']) ?>"
-                                                    class="btn btn-danger btn-sm btn-hapus">
-                                                    <i class="ti ti-trash"></i>
-                                                </a>
-
+                                                    <?php if ($row['statuscustom'] != 'batal') : ?>
+                                                        <a href="<?= base_url('batalkanpengajuan/' . $row['idpengajuan']) ?>"
+                                                            class="btn btn-secondary btn-sm btn-batal">
+                                                            <i class="ti ti-x"></i>
+                                                        </a>
+                                                        <a href="<?= base_url('editpengajuan/' . $row['idpengajuan']) ?>"
+                                                        class="btn btn-warning btn-sm">
+                                                        <i class="ti ti-edit"></i>
+                                                    </a>
+                                                    <?php endif; ?>
+                                                     <a href="<?= base_url('hapuspengajuan/' . $row['idpengajuan']) ?>"
+                                                        class="btn btn-danger btn-sm btn-hapus">
+                                                        <i class="ti ti-trash"></i>
+                                                    </a>
+                                                </div>
                                             </td>
 
                                         <?php endif; ?>
@@ -301,6 +307,35 @@
                 cancelButtonColor: '#dc3545',
                 confirmButtonText: 'Ya, Hapus!',
                 cancelButtonText: 'Batal',
+                reverseButtons: true
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    window.location.href = url;
+                }
+
+            });
+
+        });
+
+    });
+    document.querySelectorAll('.btn-batal').forEach(button => {
+
+        button.addEventListener('click', function(e) {
+
+            e.preventDefault();
+
+            const url = this.getAttribute('href');
+
+            Swal.fire({
+                title: 'Batal Pengajuan?',
+                text: 'Anda yakin ingin membatalkan pengajuan ini?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#4d4428',
+                cancelButtonColor: '#dc3545',
+                confirmButtonText: 'Ya!',
+                cancelButtonText: 'Kembali',
                 reverseButtons: true
             }).then((result) => {
 

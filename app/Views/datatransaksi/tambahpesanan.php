@@ -40,7 +40,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label class="form-label">Tanggal Pesanan</label>
                         <input
                             type="date"
@@ -50,7 +50,7 @@
                             required>
                     </div>
 
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label class="form-label">Pelanggan</label>
 
                         <div class="input-group">
@@ -76,6 +76,9 @@
                             </button>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+
                     <div class="col-md-4 mb-3">
 
                         <label class="form-label">
@@ -88,11 +91,7 @@
                             class="form-control"
                             readonly>
                     </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-8 mb-3">
 
                         <label class="form-label">
                             Alamat Pengantaran
@@ -106,6 +105,10 @@
                             readonly></input>
 
                     </div>
+                </div>
+
+                <div class="row">
+
                     <div class="col-md-4 mb-3">
 
                         <label class="form-label">
@@ -113,12 +116,25 @@
                         </label>
 
                         <input
-                            type="text"
+                            type="number"
                             id="estimasiwaktu"
                             name="estimasiwaktu"
                             class="form-control"
-                            rows="3"
-                            ></input>
+                            rows="3"></input>
+
+                    </div>
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+                            Biaya Pengantaran
+                        </label>
+
+                        <input
+                            type="number"
+                            id="biayaantar"
+                            name="biayaantar"
+                            class="form-control"
+                            rows="3"></input>
 
                     </div>
 
@@ -279,13 +295,13 @@
                     <div class="col-md-3 ms-auto">
 
                         <label class="form-label">
-                            Total Harga
+                            Total Pesanan
                         </label>
 
                         <input
                             type="number"
-                            name="totalharga"
-                            id="totalharga"
+                            name="total"
+                            id="total"
                             class="form-control"
                             readonly>
 
@@ -542,27 +558,30 @@
     });
 
     let totalHarga = 0;
+    let totalProduk = 0;
 
-function tambahDetail() {
+    function tambahDetail() {
 
-    let idproduk = document.getElementById('idproduk').value;
-    let namaproduk = document.getElementById('namaproduk').value;
-    let harga = parseInt(document.getElementById('harga').value);
-    let diskon = parseInt(document.getElementById('diskon').value);
-    let qty = parseInt(document.getElementById('qty').value);
+        let idproduk = document.getElementById('idproduk').value;
+        let namaproduk = document.getElementById('namaproduk').value;
+        let harga = parseInt(document.getElementById('harga').value);
+        let diskon = parseInt(document.getElementById('diskon').value);
+        let qty = parseInt(document.getElementById('qty').value);
 
-    if (!idproduk || !qty) {
-        alert('Pilih produk dan isi qty');
-        return;
-    }
+        if (!idproduk || !qty) {
+            alert('Pilih produk dan isi qty');
+            return;
+        }
 
-    let subtotal = (harga * qty) - ((harga * qty) * (diskon / 100));
+        let subtotal = (harga * qty) - ((harga * qty) * (diskon / 100));
 
-    totalHarga += subtotal;
+        totalProduk += subtotal;
+        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
+        let totalHarga = totalProduk + biayaantar;
 
-    document.getElementById('totalharga').value = totalHarga;
+        document.getElementById('total').value = totalHarga;
 
-    let row = `
+        let row = `
         <tr>
 
             <td>
@@ -603,16 +622,18 @@ function tambahDetail() {
         </tr>
     `;
 
-    document
-        .getElementById('detailPesanan')
-        .insertAdjacentHTML('beforeend', row);
-}
+        document
+            .getElementById('detailPesanan')
+            .insertAdjacentHTML('beforeend', row);
+    }
 
     function hapusBaris(button, subtotal) {
+        totalProduk -= subtotal;
 
-        totalHarga -= subtotal;
+        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
+        let totalHarga = totalProduk + biayaantar;
 
-        document.getElementById('totalharga').value = totalHarga;
+        document.getElementById('total').value = totalHarga;
 
         button.closest('tr').remove();
 

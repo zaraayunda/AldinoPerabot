@@ -87,6 +87,8 @@
                         <th>Harga</th>
                         <th>Diskon</th>
                         <th>Sub Total</th>
+                        <th>Biaya Antar</th>
+                        <th>Total</th>
                         <th>Estimasi</th>
                         <th>Status</th>
                         <th width="130">Aksi</th>
@@ -163,17 +165,28 @@
                                         <td>
                                             <?= number_format($d['diskon'], 0, ',', '.') ?> %
                                         </td>
-
                                         <td>
                                             Rp <?= number_format($d['subtotal'], 0, ',', '.') ?>
                                         </td>
+
+                                        <?php if ($index == 0) : ?>
+                                            <td rowspan="<?= $jumlahDetail ?>">
+                                               <?= $row['biayaantar'] !== null
+                                                    ? 'Rp '. number_format($row['biayaantar'], 0, ',', '.')
+                                                    : '<span class="text-danger fw-semibold">Belum ditentukan</span>'  ?>
+                                            </td>
+                                            <td rowspan="<?= $jumlahDetail ?>" class="align-middle">
+                                                Rp <?= number_format($row['total'], 0, ',', '.') ?>
+                                            </td>
+
+                                        <?php endif; ?>                                  
 
 
                                         <?php if ($index == 0) : ?>
                                             <td rowspan="<?= $jumlahDetail ?>">
                                                 <?= $row['estimasiwaktu'] !== null
                                                     ? $row['estimasiwaktu'] . ' Hari'
-                                                    : 'Belum ditentukan' ?>
+                                                    : '<span class="text-danger fw-semibold">Belum ditentukan</span>' ?>
                                             </td>
 
                                             <td rowspan="<?= $jumlahDetail ?>" class="align-middle" style="min-width:170px;">
@@ -185,6 +198,7 @@
                                                     <?= $row['statuspesanan'] == 'proses_produksi' ? 'border-primary text-primary' : '' ?>
                                                     <?= $row['statuspesanan'] == 'proses_pengantaran' ? 'border-secondary text-secondary' : '' ?>
                                                     <?= $row['statuspesanan'] == 'selesai' ? 'border-success text-success' : '' ?>"
+                                                    <?= $row['statuspesanan'] == 'batal' ? 'border-danger text-danger' : '' ?>"
                                                     data-id="<?= $row['idpesanan'] ?>">
 
                                                     <option value="menunggu_konfirmasi"
@@ -212,11 +226,16 @@
                                                         🟢 Selesai
                                                     </option>
 
+                                                    <option value="batal"
+                                                        <?= $row['statuspesanan'] == 'batal' ? 'selected' : '' ?>>
+                                                        🔴 Dibatalkan
+                                                    </option>
+
                                                 </select>
 
                                             </td>
 
-                                            <td rowspan="<?= $jumlahDetail ?>" class="text-center align-middle">
+                                            <td rowspan="<?= $jumlahDetail ?>" class="text-center align-middle" style="min-width:100px;">
 
                                                 <a href="<?= base_url('editpesanan/' . $row['idpesanan']) ?>"
                                                     class="btn btn-warning btn-sm">
@@ -243,14 +262,14 @@
                     <?php else : ?>
 
                         <tr>
-                            <td colspan="10" class="text-center text-muted py-4">
+                            <td colspan="14" class="text-center text-muted py-4">
                                 Data pesanan belum tersedia
                             </td>
                         </tr>
 
                     <?php endif; ?>
                     <tr id="no-result" style="display:none;">
-                        <td colspan="10" class="text-center text-danger">
+                        <td colspan="14" class="text-center text-danger">
                             Data tidak ditemukan
                         </td>
                     </tr>

@@ -34,7 +34,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label class="form-label">Tanggal Pesanan</label>
                         <input type="date"
                             name="tanggalpesanan"
@@ -43,7 +43,7 @@
                             required>
                     </div>
 
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label class="form-label">Pelanggan</label>
 
                         <div class="input-group">
@@ -61,6 +61,9 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="row">
+
                     <div class="col-md-4 mb-3">
                         <label class="form-label">No HP</label>
                         <input type="text"
@@ -69,12 +72,7 @@
                             value="<?= $pesanan['nohp'] ?>"
                             readonly>
                     </div>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-8 mb-3">
                         <label class="form-label">Alamat Pengantaran</label>
                         <input type="text"
                             id="alamat"
@@ -82,6 +80,10 @@
                             value="<?= $pesanan['alamat'] ?>"
                             readonly>
                     </div>
+
+                </div>
+
+                <div class="row">
 
                     <div class="col-md-4 mb-3">
 
@@ -95,6 +97,20 @@
                             name="estimasiwaktu"
                             class="form-control"
                             value="<?= $pesanan['estimasiwaktu'] ?>">
+
+                    </div>
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+                            Biaya Pengantaran
+                        </label>
+
+                        <input
+                            type="text"
+                            id="biayaantar"
+                            name="biayaantar"
+                            class="form-control"
+                            value="<?= $pesanan['biayaantar'] ?>">
 
                     </div>
 
@@ -191,10 +207,10 @@
 
                         <tbody id="detailPesanan">
                             <?php
-                            $totalHarga = 0;
+                            $totalProduk = 0;
                             foreach ($detailpesanan as $d) :
                                 $subtotal = ($d['harga'] * $d['qty']) - (($d['harga'] * $d['qty']) * ($d['diskon'] / 100));
-                                $totalHarga += $subtotal;
+                                $totalProduk += $subtotal;
                             ?>
 
                                 <tr>
@@ -243,16 +259,19 @@
                     </table>
 
                 </div>
+                <?php
+                $totalKeseluruhan = $totalProduk + ($pesanan['biayaantar'] ?? 0);
+                ?>
 
                 <div class="row">
 
                     <div class="col-md-3 ms-auto">
-                        <label class="form-label">Total Harga</label>
+                        <label class="form-label">Total Pesanan</label>
                         <input type="number"
-                            name="totalharga"
-                            id="totalharga"
+                            name="total"
+                            id="total"
                             class="form-control"
-                            value="<?= $totalHarga ?>"
+                            value="<?= $totalKeseluruhan  ?>"
                             readonly>
                     </div>
 
@@ -384,7 +403,7 @@
 
     });
 
-    let totalHarga = <?= $totalHarga ?>;
+    let totalProduk = <?= $totalProduk  ?>;
 
     function tambahDetail() {
 
@@ -399,9 +418,11 @@
             return;
         }
         let subtotal = (harga * qty) - ((harga * qty) * (diskon / 100));
-        totalHarga += subtotal;
+        totalProduk += subtotal;
+        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
+        let totalHarga = totalProduk + biayaantar;
 
-        document.getElementById('totalharga').value = totalHarga;
+        document.getElementById('total').value = totalHarga;
 
         let row = `
         <tr>
@@ -424,8 +445,12 @@
     }
 
     function hapusBaris(button, subtotal) {
-        totalHarga -= subtotal;
-        document.getElementById('totalharga').value = totalHarga;
+        totalProduk -= subtotal;
+
+        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
+        let totalHarga = totalProduk + biayaantar;
+
+        document.getElementById('total').value = totalHarga;
         button.closest('tr').remove();
     }
 </script>

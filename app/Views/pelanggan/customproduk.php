@@ -400,7 +400,7 @@
             <div class="mb-3">
 
                 <label class="form-label">
-                    Detail Produk
+                    Detail 
                 </label>
 
                 <textarea

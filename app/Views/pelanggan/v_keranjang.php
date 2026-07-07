@@ -11,7 +11,6 @@
 
     <!--font-family-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 
     <!-- title of site -->
     <title>Aldino Perabot</title>
@@ -44,11 +43,42 @@
     <!--responsive.css-->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/responsive.css">
 
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/bootstrap.css">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/flexslider.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
 </head>
 
 <body>
     <!--welcome-hero start -->
     <header id="home" class="welcome-hero">
+
         <!-- top-area Start -->
         <div class="top-area">
             <div class="header-area">
@@ -69,20 +99,46 @@
 
                     <div class="container">
                         <!-- Start Atribute Navigation -->
+
                         <div class="attr-nav">
+
                             <ul>
+
+                                <!-- Search -->
                                 <li class="search">
-                                    <a href="#"><span class="lnr lnr-magnifier"></span></a>
-                                </li><!--/.search-->
-                                <li class="dropdown">
-                                    <a href="<?= base_url('keranjang') ?>" class="dropdown-toggle" data-toggle="dropdown">
-                                        <span class="lnr lnr-cart"></span>
-                                        <!-- <span class="badge badge-bg-1">0</span> -->
+                                    <a href="#">
+                                        <span class="lnr lnr-magnifier"></span>
                                     </a>
                                 </li>
+
+                                <!-- Keranjang -->
+                                <li class="cart-icon">
+
+                                    <a href="<?= base_url('keranjang') ?>">
+
+                                        <span class="lnr lnr-cart"></span>
+
+                                        <?php if (isset($jumlahKeranjang) && $jumlahKeranjang > 0) : ?>
+
+                                            <span class="badge badge-bg-1">
+                                                <?= $jumlahKeranjang ?>
+                                            </span>
+
+                                        <?php endif; ?>
+
+                                    </a>
+
+                                </li>
+
+                                <!-- Profile -->
                                 <li class="nav-profile dropdown">
-                                    <a href="#" class="dropdown-toggle profile-icon" data-toggle="dropdown">
+
+                                    <a href="#"
+                                        class="dropdown-toggle profile-icon"
+                                        data-toggle="dropdown">
+
                                         <span class="lnr lnr-user"></span>
+
                                     </a>
 
                                     <ul class="dropdown-menu profile-menu">
@@ -134,7 +190,9 @@
                                         </li>
 
                                     </ul>
+
                                 </li>
+
                             </ul>
                         </div><!--/.attr-nav-->
                         <!-- End Atribute Navigation -->
@@ -152,11 +210,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class=" scroll active"><a href="<?= base_url('/') ?>">home</a></li>
-                                <li class="scroll"><a href="#new-arrivals">new arrival</a></li>
-                                <li class="scroll"><a href="#feature">features</a></li>
-                                <li class="scroll"><a href="#blog">blog</a></li>
-                                <li class="scroll"><a href="#newsletter">contact</a></li>
+                                <li><a href="<?= base_url('homepage') ?>">Home</a></li>
+                                <li><a href="<?= base_url('katalogproduk') ?>">Product</a></li>
+                                <li><a href="<?= base_url('about') ?>">About</a></li>
+                                <li><a href="<?= base_url('contact') ?>">Contact</a></li>
                             </ul><!--/.nav -->
                         </div><!-- /.navbar-collapse -->
                     </div><!--/.container-->
@@ -232,48 +289,55 @@
 
                             <div class="cart-meta">
 
-                                <span>
-                                    Qty :
-                                    <?= $item['qty'] ?>
-                                </span>
+                                <div class="qty-control">
+
+                                    <a
+                                        href="<?= base_url('kurangqty/' . $item['idkeranjang']) ?>"
+                                        class="qty-btn">
+
+                                        <i class="fa fa-minus"></i>
+
+                                    </a>
+
+                                    <span class="qty-value">
+
+                                        <?= $item['qty'] ?>
+
+                                    </span>
+
+                                    <a
+                                        href="<?= base_url('tambahqty/' . $item['idkeranjang']) ?>"
+                                        class="qty-btn">
+
+                                        <i class="fa fa-plus"></i>
+
+                                    </a>
+
+                                </div>
 
                             </div>
 
                             <div class="price-area">
 
+                                <h5 class="current-price">
+                                    Rp <?= number_format($item['harga_final'], 0, ',', '.') ?>
+                                </h5>
+
                                 <?php if ($item['diskon'] > 0) : ?>
 
-                                    <span class="discount-pill">
+                                    <div class="price-info">
 
-                                        -<?= $item['diskon'] ?>%
+                                        <small class="old-price">
+                                            Rp <?= number_format($item['harga'], 0, ',', '.') ?>
+                                        </small>
 
-                                    </span>
+                                        <span class="discount-pill">
+                                            -<?= $item['diskon'] ?>%
+                                        </span>
 
-                                    <small class="old-price">
-
-                                        Rp
-                                        <?= number_format(
-                                            $item['harga'],
-                                            0,
-                                            ',',
-                                            '.'
-                                        ) ?>
-
-                                    </small>
+                                    </div>
 
                                 <?php endif; ?>
-
-                                <h5>
-
-                                    Rp
-                                    <?= number_format(
-                                        $item['harga_final'],
-                                        0,
-                                        ',',
-                                        '.'
-                                    ) ?>
-
-                                </h5>
 
                             </div>
 
@@ -295,17 +359,17 @@
                                     '.'
                                 ) ?>
 
-                            </h4>                            
+                            </h4>
 
                         </div>
                         <a
-                                href="<?= base_url('hapuskeranjang/' . $item['idkeranjang']) ?>"
-                                class="btn-delete"
-                                title="Hapus dari Keranjang">
+                            href="<?= base_url('hapuskeranjang/' . $item['idkeranjang']) ?>"
+                            class="btn-delete"
+                            title="Hapus dari Keranjang">
 
-                                <i class="ti ti-trash"></i>
+                            <i class="fas fa-trash-alt"></i>
 
-                            </a>
+                        </a>
 
                     </div>
 
@@ -380,14 +444,22 @@
         <div class="container">
             <div class="hm-footer-copyright text-center">
                 <div class="footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/USERNAME" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/dino_ok86?igsh=MWs3MTgya2dzOGxkYw==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@dinook5?_r=1&_t=ZS-97fKVSNCGdF" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
                 </div>
                 <p>
-                    &copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
+                    &copy;2026. Aldino Perabot. All Rights Reserved.
                 </p><!--/p-->
             </div><!--/.text-center-->
         </div><!--/.container-->

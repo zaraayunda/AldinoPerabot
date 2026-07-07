@@ -170,7 +170,7 @@ class PengajuanCustomController extends BaseController
                 ->to('/homepage')
                 ->with(
                     'success',
-                    'Data produk berhasil diajukan, silahkan tunggu konfirmasi admin.'
+                    'Data produk berhasil diajukan, silahkan tunggu konfirmasi admin. Anda dapat memantau proses pengajuan melalui menu "Pengajuan Custom".'
                 );
         } catch (\Exception $e) {
 
@@ -494,7 +494,8 @@ class PengajuanCustomController extends BaseController
                 'idpesanan' => $idpesanan,
                 'idpelanggan' => $idpelanggan,
                 'tanggalpesanan' => date('Y-m-d'),
-                'totalharga' => 0,
+                'biayaantar' => null,
+                'total' => 0,
                 'estimasiwaktu' => null,
                 'statuspesanan' => 'dikonfirmasi'
 
@@ -576,7 +577,7 @@ class PengajuanCustomController extends BaseController
             $modelPesanan->update(
                 $idpesanan,
                 [
-                    'totalharga' => $totalharga
+                    'total' => $totalharga
                 ]
             );
 
@@ -623,6 +624,21 @@ class PengajuanCustomController extends BaseController
     }
 
     public function custombatal($idpengajuan)
+    {
+        $modelPengajuan = new ModelPengajuanCustom();
+
+        $modelPengajuan->update($idpengajuan, [
+            'statuscustom' => 'batal'
+        ]);
+
+        session()->setFlashdata(
+            'success',
+            'Anda telah membatalkan pengajuan ini.'
+        );
+
+        return redirect()->to('/pengajuan-custom');
+    }
+    public function batalkanpengajuan($idpengajuan)
     {
         $modelPengajuan = new ModelPengajuanCustom();
 

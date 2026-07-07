@@ -17105,4 +17105,139 @@ td[rowspan] .status-pesanan{
     padding:30px;
 }
 
+/* Bagian Judul */
+.header-title{
+    padding:25px 30px 18px;
+    border-bottom:1px solid #e9ecef;
+    text-align:center;
+}
+
+.header-title h2{
+    font-weight:700;
+    color:#4d4428;
+    margin:0;
+}
+
+.header-title p{
+    font-size:14px;
+    margin-top:6px;
+}
+
+/* Bagian Tombol */
+.header-action{
+    padding:20px 30px;
+    background:#fafafa;
+    text-align:center;
+}
+
+.action-label{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+    font-weight:600;
+    color:#555;
+}
+
+.btn-cetak{
+    min-width:220px;
+    height:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+    border-radius:10px;
+    transition:.25s;
+}
+
+.btn-cetak i{
+    font-size:18px;
+}
+
+.btn-cetak:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+}
+
+.info-transfer{
+    margin-top:18px;
+    background:#faf7f2;
+    border:2px solid #b79b72;
+    border-left:7px solid #c8b879;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.transfer-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#c8b879;
+    color:#fff;
+    padding:15px 20px;
+}
+
+.transfer-header i{
+    font-size:34px;
+    background:rgba(255,255,255,.15);
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+}
+
+.transfer-header h5{
+    margin:0;
+    font-weight:700;
+    letter-spacing:.4px;
+}
+
+.transfer-header span{
+    font-size:13px;
+    opacity:.9;
+}
+
+.transfer-body{
+    padding:18px 22px;
+}
+
+.transfer-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px dashed #c8b879;
+}
+
+.transfer-item:last-child{
+    border-bottom:none;
+}
+
+.transfer-item span{
+    color:#7a6b5b;
+    font-weight:600;
+}
+
+.transfer-item strong{
+    color:#4d3423;
+    font-size:16px;
+    letter-spacing:.5px;
+}
+
+.transfer-footer{
+    background:#f3ede4;
+    border-top:1px solid #d9c8af;
+    padding:15px 20px;
+    color:#5f5246;
+    font-size:13px;
+    line-height:1.6;
+}
+
+.transfer-footer i{
+    color:#8b6b47;
+    margin-right:6px;
+}
 /*# sourceMappingURL=styles.min.css.map */

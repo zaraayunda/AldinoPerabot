@@ -56,6 +56,7 @@
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/product/css/style.css">
@@ -90,142 +91,107 @@
     <header id="home" class="welcome-hero">
 
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <!--/.carousel-indicator -->
-            <ol class="carousel-indicators">
-                <li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
-                <li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
-                <li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
-            </ol><!-- /ol-->
-            <!--/.carousel-indicator -->
+			<!--/.carousel-indicator -->
+			<ol class="carousel-indicators">
+				<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+				<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+				<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+			</ol><!-- /ol-->
+			<!--/.carousel-indicator -->
 
-            <!--/.carousel-inner -->
-            <div class="carousel-inner" role="listbox">
-                <!-- .item -->
-                <div class="item active">
-                    <div class="single-slide-item slide1">
-                        <div class="container">
-                            <div class="welcome-hero-content">
-                                <div class="row">
-                                    <div class="col-sm-7">
-                                        <div class="single-welcome-hero">
-                                            <div class="welcome-hero-txt">
-                                                <h4>Aldino Perabot</h4>
-                                                <h2>Produk Berkualitas Baik</h2>
-                                                <p>
-                                                    Produk yang ditawarkan memiliki kualitas premium dengan desain yang modern, menarik, dan sesuai dengan kebutuhan masa kini. Dibuat oleh pengrajin yang ahli di bidangnya, setiap produk melalui proses produksi yang teliti untuk memastikan hasil yang kokoh, tahan lama, serta memiliki nilai estetika yang mampu memberikan kepuasan bagi pelanggan.
-                                                </p>
-                                                <button class="btn-cart welcome-add-cart" onclick="window.location.href='<?= base_url('customproduk') ?>'">
-                                                    <span class="lnr lnr-gift"></span>
-                                                    Custom <span>Product</span>
-                                                </button>
-                                                <button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('katalogproduk') ?>'">
-                                                    Jelajahi <span>Catalog</span>
-                                                </button>
-                                            </div><!--/.welcome-hero-txt-->
-                                        </div><!--/.single-welcome-hero-->
-                                    </div><!--/.col-->
-                                    <div class="col-sm-5">
-                                        <div class="single-welcome-hero">
-                                            <div class="welcome-hero-img">
-                                                <img src="<?= base_url() ?>/assets/images/slider/slider1.png" alt="slider image">
-                                            </div><!--/.welcome-hero-txt-->
-                                        </div><!--/.single-welcome-hero-->
-                                    </div><!--/.col-->
-                                </div><!--/.row-->
-                            </div><!--/.welcome-hero-content-->
-                        </div><!-- /.container-->
-                    </div><!-- /.single-slide-item-->
+			<!--/.carousel-inner -->
+			<div class="carousel-inner" role="listbox">
+				<!-- .item -->
+				<div class="item active">
+					<div class="single-slide-item slide1">
+						<div class="container">
+							<div class="welcome-hero-content">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="single-welcome-hero">
+											<div class="welcome-hero-txt">
+												<h4></h4>
+												<h2>Selamat Datang di <br>Aldino Perabot</h2>
+												<p>
+													Wujudkan hunian dan ruang kerja yang nyaman bersama Aldino Perabot. Kami menyediakan berbagai pilihan furnitur berkualitas dengan desain modern, material terbaik, serta pengerjaan yang rapi dan presisi. Kami menghadirkan solusi furnitur yang dapat disesuaikan dengan kebutuhan, ukuran ruangan, serta konsep desain yang Anda inginkan.
+												</p>
+											</div><!--/.welcome-hero-txt-->
+										</div><!--/.single-welcome-hero-->
+									</div><!--/.col-->
+									<div class="col-sm-5">
+										<div class="single-welcome-hero">
+											<div class="welcome-hero-img">
+												<img src="<?= base_url() ?>/assets/images/slider/slider1.png" alt="slider image">
+											</div><!--/.welcome-hero-txt-->
+										</div><!--/.single-welcome-hero-->
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.welcome-hero-content-->
+						</div><!-- /.container-->
+					</div><!-- /.single-slide-item-->
 
-                </div><!-- /.item .active-->
+				</div><!-- /.item .active-->
 
-                <div class="item">
-                    <div class="single-slide-item slide2">
-                        <div class="container">
-                            <div class="welcome-hero-content">
-                                <div class="row">
-                                    <div class="col-sm-7">
-                                        <div class="single-welcome-hero">
-                                            <div class="welcome-hero-txt">
-                                                <h4>great design collection</h4>
-                                                <h2>mapple wood accent chair</h2>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                                                </p>
-                                                <div class="packages-price">
-                                                    <p>
-                                                        $ 199.00
-                                                        <del>$ 299.00</del>
-                                                    </p>
-                                                </div>
-                                                <button class="btn-cart welcome-add-cart" onclick="window.location.href='<?= base_url('customproduk') ?>'">
-                                                    <span class="lnr lnr-gift"></span>
-                                                    Custom <span>Product</span>
-                                                </button>
-                                                <button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('katalogproduk') ?>'">
-                                                    Jelajahi <span>Catalog</span>
-                                                </button>
-                                            </div><!--/.welcome-hero-txt-->
-                                        </div><!--/.single-welcome-hero-->
-                                    </div><!--/.col-->
-                                    <div class="col-sm-5">
-                                        <div class="single-welcome-hero">
-                                            <div class="welcome-hero-img">
-                                                <img src="<?= base_url() ?>/assets/images/slider/slider2.png" alt="slider image">
-                                            </div><!--/.welcome-hero-txt-->
-                                        </div><!--/.single-welcome-hero-->
-                                    </div><!--/.col-->
-                                </div><!--/.row-->
-                            </div><!--/.welcome-hero-content-->
-                        </div><!-- /.container-->
-                    </div><!-- /.single-slide-item-->
+				<div class="item">
+					<div class="single-slide-item slide2">
+						<div class="container">
+							<div class="welcome-hero-content">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="single-welcome-hero">
+											<div class="welcome-hero-txt">
+												<h2>Mengapa Memilih Aldino Perabot?</h2>
+												<p>
+													Setiap produk dibuat dengan menggunakan material pilihan, proses pengerjaan yang teliti, serta memperhatikan detail agar menghasilkan furnitur yang kuat, fungsional, dan memiliki tampilan yang elegan. Aldino Perabot melayani berbagai jenis pesanan, mulai dari produk siap pakai hingga furnitur custom yang dapat disesuaikan dengan ukuran, desain, warna, dan fungsi sesuai keinginan pelanggan.
+												</p>
+											</div><!--/.welcome-hero-txt-->
+										</div><!--/.single-welcome-hero-->
+									</div><!--/.col-->
+									<div class="col-sm-5">
+										<div class="single-welcome-hero">
+											<div class="welcome-hero-img">
+												<img src="<?= base_url() ?>/assets/images/slider/slider2.png" alt="slider image">
+											</div><!--/.welcome-hero-txt-->
+										</div><!--/.single-welcome-hero-->
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.welcome-hero-content-->
+						</div><!-- /.container-->
+					</div><!-- /.single-slide-item-->
 
-                </div><!-- /.item .active-->
+				</div><!-- /.item .active-->
 
-                <div class="item">
-                    <div class="single-slide-item slide3">
-                        <div class="container">
-                            <div class="welcome-hero-content">
-                                <div class="row">
-                                    <div class="col-sm-7">
-                                        <div class="single-welcome-hero">
-                                            <div class="welcome-hero-txt">
-                                                <h4>great design collection</h4>
-                                                <h2>valvet accent arm chair</h2>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                                                </p>
-                                                <div class="packages-price">
-                                                    <p>
-                                                        $ 299.00
-                                                        <del>$ 399.00</del>
-                                                    </p>
-                                                </div>
-                                                <button class="btn-cart welcome-add-cart" onclick="window.location.href='<?= base_url('customproduk') ?>'">
-                                                    <span class="lnr lnr-gift"></span>
-                                                    Custom <span>Product</span>
-                                                </button>
-                                                <button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='<?= base_url('katalogproduk') ?>'">
-                                                    Jelajahi <span>Catalog</span>
-                                                </button>
-                                            </div><!--/.welcome-hero-txt-->
-                                        </div><!--/.single-welcome-hero-->
-                                    </div><!--/.col-->
-                                    <div class="col-sm-5">
-                                        <div class="single-welcome-hero">
-                                            <div class="welcome-hero-img">
-                                                <img src="<?= base_url() ?>/assets/images/slider/slider3.png" alt="slider image">
-                                            </div><!--/.welcome-hero-txt-->
-                                        </div><!--/.single-welcome-hero-->
-                                    </div><!--/.col-->
-                                </div><!--/.row-->
-                            </div><!--/.welcome-hero-content-->
-                        </div><!-- /.container-->
-                    </div><!-- /.single-slide-item-->
+				<div class="item">
+					<div class="single-slide-item slide3">
+						<div class="container">
+							<div class="welcome-hero-content">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="single-welcome-hero">
+											<div class="welcome-hero-txt">
+												<h2>Kami Mendengarkan Kebutuhan Anda</h2>
+												<p>
+													Tidak semua pelanggan memiliki kebutuhan yang sama. Ada yang membutuhkan furnitur minimalis, klasik, modern, hingga desain khusus sesuai ukuran ruangan. Aldino Perabot hadir untuk memberikan solusi melalui layanan custom produk sehingga setiap produk benar-benar sesuai dengan keinginan pelanggan..
+												</p>
+											</div><!--/.welcome-hero-txt-->
+										</div><!--/.single-welcome-hero-->
+									</div><!--/.col-->
+									<div class="col-sm-5">
+										<div class="single-welcome-hero">
+											<div class="welcome-hero-img">
+												<img src="<?= base_url() ?>/assets/images/slider/slider3.png" alt="slider image">
+											</div><!--/.welcome-hero-txt-->
+										</div><!--/.single-welcome-hero-->
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.welcome-hero-content-->
+						</div><!-- /.container-->
+					</div><!-- /.single-slide-item-->
 
-                </div><!-- /.item .active-->
-            </div><!-- /.carousel-inner-->
+				</div><!-- /.item .active-->
+			</div><!-- /.carousel-inner-->
 
-        </div><!--/#header-carousel-->
+		</div><!--/#header-carousel-->
 
         <!-- top-area Start -->
         <div class="top-area">
@@ -247,7 +213,9 @@
 
                     <div class="container">
                         <!-- Start Atribute Navigation -->
+
                         <div class="attr-nav">
+
                             <ul>
 
                                 <!-- Search -->
@@ -356,11 +324,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class=" scroll active"><a href="<?= base_url('/') ?>">home</a></li>
-                                <li class="scroll"><a href="#new-arrivals">new arrival</a></li>
-                                <li class="scroll"><a href="#feature">features</a></li>
-                                <li class="scroll"><a href="#blog">blog</a></li>
-                                <li class="scroll"><a href="#newsletter">contact</a></li>
+                                <li><a href="<?= base_url('homepage') ?>">Home</a></li>
+                                <li><a href="<?= base_url('katalogproduk') ?>">Product</a></li>
+                                <li><a href="<?= base_url('about') ?>">About</a></li>
+                                <li><a href="<?= base_url('contact') ?>">Contact</a></li>
                             </ul><!--/.nav -->
                         </div><!-- /.navbar-collapse -->
                     </div><!--/.container-->
@@ -376,72 +343,70 @@
     <!--welcome-hero end -->
 
     <!--populer-products start -->
-    <section id="populer-products" class="populer-products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Produk Unggulan</h2>
-            </div><!--/.section-header-->
-            <br>
-            <div class="populer-products-content">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="single-populer-products">
-                            <div class="single-populer-product-img mt40">
-                                <img src="<?= base_url() ?>/assets/images/populer-products/p1.png" alt="populer-products images">
-                            </div>
-                            <h2><a href="#">Lemari</a></h2>
-                            <div class="single-populer-products-para">
-                                <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut fugit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-populer-products">
-                            <div class="single-inner-populer-products">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="single-inner-populer-product-img">
-                                            <img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-12">
-                                        <div class="single-inner-populer-product-txt">
-                                            <h2>
-                                                <a href="#">
-                                                    Kunsen <span>and</span> chair
-                                                </a>
-                                            </h2>
-                                            <p>
-                                                Edi ut perspiciatis unde omnis iste natusina error sit voluptatem accusantium doloret mque laudantium, totam rem aperiam.
-                                            </p>
-                                            <button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='#'">
-                                                discover more
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-populer-products">
-                            <div class="single-populer-products">
-                                <div class="single-populer-product-img">
-                                    <img src="<?= base_url() ?>/assets/images/populer-products/p3.png" alt="populer-products images">
-                                </div>
-                                <h2><a href="#">Meja</a></h2>
-                                <div class="single-populer-products-para">
-                                    <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut fugit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->
+	<section id="populer-products" class="populer-products">
+		<div class="container">
+			<div class="section-header">
+				<h2>Produk dan Layanan</h2>
+			</div><!--/.section-header-->
+			<br>
+			<div class="populer-products-content">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-populer-products">
+							<div class="single-inner-populer-products">
+								<div class="row">
+									<div class="col-md-4 col-sm-12">
+										<div class="single-inner-populer-product-img">
+											<img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-12">
+										<div class="single-inner-populer-product-txt">
+											<h4> Custom Produk Sesuai Kebutuhan</h4>
+											<p>
+												Kami melayani pembuatan furnitur custom yang dapat disesuaikan dengan ukuran, desain, warna, hingga material pilihan agar sesuai dengan kebutuhan rumah, kantor, maupun tempat usaha Anda.
+											</p>
+											<button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='<?= base_url('customproduk') ?>'">
+												Pesan Custom
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-populer-products">
+							<div class="single-inner-populer-products">
+								<div class="row">
+									<div class="col-md-4 col-sm-12">
+										<div class="single-inner-populer-product-img">
+											<img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-12">
+										<div class="single-inner-populer-product-txt">
+											<h4>
+												Jejalahi Katalog Produk
+											</h4>
+											<p>
+												Aldino Perabot menghadirkan berbagai pilihan furnitur yang mengutamakan kualitas, kenyamanan, dan desain modern untuk melengkapi kebutuhan rumah maupun tempat usaha Anda.
+											</p>
+											<button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='#new-arrivals'">
+												Lihat Produk
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container-->
 
-    </section><!--/.populer-products-->
-    <!--populer-products end-->
+	</section><!--/.populer-products-->
+	<!--populer-products end-->
 
     <!--new-arrivals start -->
     <section id="new-arrivals" class="new-arrivals">
@@ -553,292 +518,123 @@
     </section><!--/.sofa-collection-->
     <!--sofa-collection end -->
 
-    <!--feature start -->
-    <section id="feature" class="feature">
-        <div class="container">
-            <div class="section-header">
-                <h2>featured products</h2>
-            </div><!--/.section-header-->
-            <div class="feature-content">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="single-feature">
-                            <img src="<?= base_url() ?>/assets/images/features/f1.jpg" alt="feature image">
-                            <div class="single-feature-txt text-center">
-                                <p>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                    <span class="feature-review">(45 review)</span>
-                                </p>
-                                <h3><a href="#">designed sofa</a></h3>
-                                <h5>$160.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-feature">
-                            <img src="<?= base_url() ?>/assets/images/features/f2.jpg" alt="feature image">
-                            <div class="single-feature-txt text-center">
-                                <p>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                    <span class="feature-review">(45 review)</span>
-                                </p>
-                                <h3><a href="#">dinning table </a></h3>
-                                <h5>$200.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-feature">
-                            <img src="<?= base_url() ?>/assets/images/features/f3.jpg" alt="feature image">
-                            <div class="single-feature-txt text-center">
-                                <p>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                    <span class="feature-review">(45 review)</span>
-                                </p>
-                                <h3><a href="#">chair and table</a></h3>
-                                <h5>$100.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-feature">
-                            <img src="<?= base_url() ?>/assets/images/features/f4.jpg" alt="feature image">
-                            <div class="single-feature-txt text-center">
-                                <p>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-                                    <span class="feature-review">(45 review)</span>
-                                </p>
-                                <h3><a href="#">modern arm chair</a></h3>
-                                <h5>$299.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->
+    <!-- Company Information Start -->
+	<section id="newsletter" class="newsletter">
+		<div class="container">
 
-    </section><!--/.feature-->
-    <!--feature end -->
+			<div class="section-header">
+				<h2>Hubungi & Kunjungi Kami</h2>
+				<p>
+					Kami selalu siap melayani kebutuhan furnitur Anda.
+					Kunjungi workshop kami atau hubungi tim Aldino Perabot
+					untuk konsultasi maupun pemesanan.
+				</p>
+			</div>
 
-    <!--blog start -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <div class="section-header">
-                <h2>latest blog</h2>
-            </div><!--/.section-header-->
-            <div class="blog-content">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="single-blog">
-                            <div class="single-blog-img">
-                                <img src="<?= base_url() ?>/assets/images/blog/b1.jpg" alt="blog image">
-                                <div class="single-blog-img-overlay"></div>
-                            </div>
-                            <div class="single-blog-txt">
-                                <h2><a href="#">Why Brands are Looking at Local Language</a></h2>
-                                <h3>By <a href="#">Robert Norby</a> / 18th March 2018</h3>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt....
-                                </p>
-                            </div>
-                        </div>
+			<div class="row">
 
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="single-blog">
-                            <div class="single-blog-img">
-                                <img src="<?= base_url() ?>/assets/images/blog/b2.jpg" alt="blog image">
-                                <div class="single-blog-img-overlay"></div>
-                            </div>
-                            <div class="single-blog-txt">
-                                <h2><a href="#">Why Brands are Looking at Local Language</a></h2>
-                                <h3>By <a href="#">Robert Norby</a> / 18th March 2018</h3>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt....
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="single-blog">
-                            <div class="single-blog-img">
-                                <img src="<?= base_url() ?>/assets/images/blog/b3.jpg" alt="blog image">
-                                <div class="single-blog-img-overlay"></div>
-                            </div>
-                            <div class="single-blog-txt">
-                                <h2><a href="#">Why Brands are Looking at Local Language</a></h2>
-                                <h3>By <a href="#">Robert Norby</a> / 18th March 2018</h3>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt....
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->
+				<!-- Informasi -->
+				<div class="col-md-5">
 
-    </section><!--/.blog-->
-    <!--blog end -->
+					<div class="company-info">
 
-    <!-- clients strat -->
-    <section id="clients" class="clients">
-        <div class="container">
-            <div class="owl-carousel owl-theme" id="client">
-                <div class="item">
-                    <a href="#">
-                        <img src="<?= base_url() ?>/assets/images/clients/c1.png" alt="brand-image" />
-                    </a>
-                </div><!--/.item-->
-                <div class="item">
-                    <a href="#">
-                        <img src="<?= base_url() ?>/assets/images/clients/c2.png" alt="brand-image" />
-                    </a>
-                </div><!--/.item-->
-                <div class="item">
-                    <a href="#">
-                        <img src="<?= base_url() ?>/assets/images/clients/c3.png" alt="brand-image" />
-                    </a>
-                </div><!--/.item-->
-                <div class="item">
-                    <a href="#">
-                        <img src="<?= base_url() ?>/assets/images/clients/c4.png" alt="brand-image" />
-                    </a>
-                </div><!--/.item-->
-                <div class="item">
-                    <a href="#">
-                        <img src="<?= base_url() ?>/assets/images/clients/c5.png" alt="brand-image" />
-                    </a>
-                </div><!--/.item-->
-            </div><!--/.owl-carousel-->
+						<h3>Aldino Perabot</h3>
 
-        </div><!--/.container-->
+						<p>
+							Aldino Perabot merupakan usaha yang bergerak di bidang
+							pembuatan dan penjualan berbagai produk furnitur berkualitas.
+							Kami melayani pembuatan furnitur rumah, kantor, hingga
+							kebutuhan usaha dengan mengutamakan kualitas, ketelitian,
+							dan kepuasan pelanggan.
+						</p>
 
-    </section><!--/.clients-->
-    <!-- clients end -->
+						<ul>
 
-    <!--newsletter strat -->
-    <section id="newsletter" class="newsletter">
-        <div class="container">
-            <div class="hm-footer-details">
-                <div class="row">
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <div class="hm-footer-widget">
-                            <div class="hm-foot-title">
-                                <h4>information</h4>
-                            </div><!--/.hm-foot-title-->
-                            <div class="hm-foot-menu">
-                                <ul>
-                                    <li><a href="#">about us</a></li><!--/li-->
-                                    <li><a href="#">contact us</a></li><!--/li-->
-                                    <li><a href="#">news</a></li><!--/li-->
-                                    <li><a href="#">store</a></li><!--/li-->
-                                </ul><!--/ul-->
-                            </div><!--/.hm-foot-menu-->
-                        </div><!--/.hm-footer-widget-->
-                    </div><!--/.col-->
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <div class="hm-footer-widget">
-                            <div class="hm-foot-title">
-                                <h4>collections</h4>
-                            </div><!--/.hm-foot-title-->
-                            <div class="hm-foot-menu">
-                                <ul>
-                                    <li><a href="#">wooden chair</a></li><!--/li-->
-                                    <li><a href="#">royal cloth sofa</a></li><!--/li-->
-                                    <li><a href="#">accent chair</a></li><!--/li-->
-                                    <li><a href="#">bed</a></li><!--/li-->
-                                    <li><a href="#">hanging lamp</a></li><!--/li-->
-                                </ul><!--/ul-->
-                            </div><!--/.hm-foot-menu-->
-                        </div><!--/.hm-footer-widget-->
-                    </div><!--/.col-->
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <div class="hm-footer-widget">
-                            <div class="hm-foot-title">
-                                <h4>my accounts</h4>
-                            </div><!--/.hm-foot-title-->
-                            <div class="hm-foot-menu">
-                                <ul>
-                                    <li><a href="#">my account</a></li><!--/li-->
-                                    <li><a href="#">wishlist</a></li><!--/li-->
-                                    <li><a href="#">Community</a></li><!--/li-->
-                                    <li><a href="#">order history</a></li><!--/li-->
-                                    <li><a href="#">my cart</a></li><!--/li-->
-                                </ul><!--/ul-->
-                            </div><!--/.hm-foot-menu-->
-                        </div><!--/.hm-footer-widget-->
-                    </div><!--/.col-->
-                    <div class=" col-md-3 col-sm-6  col-xs-12">
-                        <div class="hm-footer-widget">
-                            <div class="hm-foot-title">
-                                <h4>newsletter</h4>
-                            </div><!--/.hm-foot-title-->
-                            <div class="hm-foot-para">
-                                <p>
-                                    Subscribe to get latest news,update and information.
-                                </p>
-                            </div><!--/.hm-foot-para-->
-                            <div class="hm-foot-email">
-                                <div class="foot-email-box">
-                                    <input type="text" class="form-control" placeholder="Enter Email Here....">
-                                </div><!--/.foot-email-box-->
-                                <div class="foot-email-subscribe">
-                                    <span><i class="fa fa-location-arrow"></i></span>
-                                </div><!--/.foot-email-icon-->
-                            </div><!--/.hm-foot-email-->
-                        </div><!--/.hm-footer-widget-->
-                    </div><!--/.col-->
-                </div><!--/.row-->
-            </div><!--/.hm-footer-details-->
+							<li>
+								<i class="fa fa-map-marker"></i>
+								Jl. Lintas Sumatera Kilometer 17, Koto Gadang Guguak, Kecamatan Gunung Talang, Kabupaten Solok.
+							</li>
 
-        </div><!--/.container-->
+							<li>
+								<i class="fa fa-phone"></i>
+								+62 852 7477 6577
+							</li>
 
-    </section><!--/newsletter-->
-    <!--newsletter end -->
+							<li>
+								<i class="fa fa-envelope"></i>
+								aldinoperabot@gmail.com
+							</li>
+
+							<li>
+								<i class="fa fa-clock-o"></i>
+								Setiap Hari :
+								08.00 - 17.00 WIB
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<!-- Maps -->
+				<div class="col-lg-7 col-md-7">
+
+					<div class="maps-card">
+
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510629.1322606219!2d100.05446267343753!3d-0.9323417999999959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b4b25fe0d94e9%3A0x144bda80efa73177!2sAldino%20Perabot!5e0!3m2!1sen!2sid!4v1782894635520!5m2!1sen!2sid"
+							width="100%"
+							height="420"
+							style="border:0;"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="strict-origin-when-cross-origin">
+						</iframe>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
 
     <!--footer start-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="hm-footer-copyright text-center">
-                <div class="footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
-                </div>
-                <p>
-                    &copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
-                </p><!--/p-->
-            </div><!--/.text-center-->
-        </div><!--/.container-->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="hm-footer-copyright text-center">
+				<div class="footer-social">
+					<div class="social-media">
+						<a href="https://www.facebook.com/USERNAME" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
 
-        <div id="scroll-Top">
-            <div class="return-to-top">
-                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-            </div>
+						<a href="https://www.instagram.com/dino_ok86?igsh=MWs3MTgya2dzOGxkYw==" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
 
-        </div><!--/.scroll-Top-->
+						<a href="https://www.tiktok.com/@dinook5?_r=1&_t=ZS-97fKVSNCGdF" target="_blank">
+							<i class="fab fa-tiktok"></i>
+						</a>
+					</div>
+				</div>
+				<p>
+					&copy;2026. Aldino Perabot. All Rights Reserved.
+				</p><!--/p-->
+			</div><!--/.text-center-->
+		</div><!--/.container-->
 
-    </footer><!--/.footer-->
-    <!--footer end-->
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.footer-->
+	<!--footer end-->
 
     <!-- Include all js compiled plugins (below), or include individual files as needed -->
 

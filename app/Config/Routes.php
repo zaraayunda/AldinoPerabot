@@ -11,6 +11,8 @@ $routes->post('/login/ceklogin', 'Login::ceklogin');
 $routes->get('/logout', 'Login::logout');
 $routes->post('/registrasi/simpan', 'Login::simpanregistrasi');
 $routes->get('/homepage/loadmore', 'Layout::loadMore');
+$routes->get('/about', 'Layout::about');
+$routes->get('/contact', 'Layout::contact');
 
 /** PENGGUNA */
 $routes->get('/datapengguna', 'Pengguna::index');
@@ -84,8 +86,30 @@ $routes->get('/hapuspengajuan/(:segment)', 'PengajuanCustomController::hapus/$1'
 $routes->get('/pengajuan-custom', 'PengajuanCustomController::pengajuancustom');
 $routes->get('customproduk/setuju/(:segment)', 'PengajuanCustomController::customsetuju/$1');
 $routes->get('customproduk/batal/(:segment)', 'PengajuanCustomController::custombatal/$1');
+$routes->get('batalkanpengajuan/(:segment)', 'PengajuanCustomController::batalkanpengajuan/$1');
 
 /** KERANJANG**/
 $routes->get('/keranjang', 'KeranjangController::tampilankeranjang');
 $routes->post('checkout', 'KeranjangController::checkout');
 $routes->post('checkout/simpan', 'KeranjangController::simpanCheckout');
+$routes->get('/hapuskeranjang/(:segment)', 'KeranjangController::hapusKeranjang/$1');
+$routes->get('/tambahqty/(:segment)', 'KeranjangController::tambahqty/$1');
+$routes->get('/kurangqty/(:segment)', 'KeranjangController::kurangqty/$1');
+
+/** LAPORAN **/
+$routes->get('/laporanuser', 'LaporanController::laporanuser');
+$routes->get('/cetaklaporan/user', 'LaporanController::cetaklapuser');
+$routes->get('/laporanpelanggan', 'LaporanController::laporanpelanggan');
+$routes->get('/cetaklaporan/pelanggan', 'LaporanController::cetaklappelanggan');
+$routes->get('/laporankategori', 'LaporanController::laporankategori');
+$routes->get('/cetaklaporan/kategori', 'LaporanController::cetaklapkategori');
+$routes->get('/laporanproduk', 'LaporanController::laporanproduk');
+$routes->get('/cetaklaporan/produk', 'LaporanController::cetaklapproduk');
+$routes->get('/laporanpengajuancustom', 'LaporanController::laporanpengajuancustom');
+$routes->get('/cetaklaporan/pengajuan', 'LaporanController::cetaklappengajuan');
+$routes->get('/laporanpesanan', 'LaporanController::laporanpesanan');
+$routes->get('/cetaklaporan/pesanan', 'LaporanController::cetaklappesanan');
+$routes->get('/laporanpenjualan', 'LaporanController::laporanpenjualan');
+$routes->get('/cetaklaporan/penjualan', 'LaporanController::cetaklappenjualan');
+
+$routes->get('faktur/(:segment)', 'LaporanController::faktur/$1');
