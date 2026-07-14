@@ -24,7 +24,7 @@ class PembayaranController extends BaseController
 
         // Ambil pembayaran dan URUTKAN
         $pembayaran = $modelPembayaran
-            ->orderBy('idpesanan', 'ASC')
+            ->orderBy('idpembayaran', 'ASC')
             ->orderBy('tanggalpembayaran', 'ASC')
             ->findAll();
 

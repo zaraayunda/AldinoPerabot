@@ -35,9 +35,31 @@ class Pengguna extends BaseController
 
         $rules = [
             'namauser' => 'required',
-            'email' => 'required|valid_email',
-            'username' => 'required|is_unique[user.username]',
-            'password' => 'required|min_length[6]',
+            'email' => [
+                'rules' => 'required|valid_email|is_unique[user.email]',
+                'label' => 'Email',
+                'errors' => [
+                    'required' => 'Email wajib diisi.',
+                    'valid_email' => 'Format email tidak valid.',
+                    'is_unique' => 'Email sudah digunakan.'
+                ]
+            ],
+            'username' => [
+                'rules' => 'required|is_unique[user.username]',
+                'label' => 'Username',
+                'errors' => [
+                    'required' => 'Username wajib diisi.',
+                    'is_unique' => 'Username sudah digunakan.'
+                ]
+            ],
+            'password' => [
+                'rules' => 'required|min_length[8]',
+                'label' => 'Password',
+                'errors' => [
+                    'required' => 'Password wajib diisi.',
+                    'min_length' => 'Password minimal 8 karakter.'
+                ]
+            ],
             'role' => 'required',
             'status' => 'required'
         ];

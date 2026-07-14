@@ -518,78 +518,17 @@
     </style>
 
 
-
-    <?php if ($success = session()->getFlashdata('success')) : ?>
-
-        <script>
-            Swal.fire({
-
-                icon: 'success',
-
-                title: 'Berhasil',
-
-                text: '<?= $success ?>',
-
-                confirmButtonColor: '#8B7355',
-
-                confirmButtonText: 'OK',
-
-                allowOutsideClick: false,
-
-                allowEscapeKey: false
-
-            });
-        </script>
-
-    <?php endif; ?>
-
-    <?php if ($warning = session()->getFlashdata('warning')) : ?>
-
-        <script>
-            Swal.fire({
-
-                icon: 'warning',
-
-                title: 'Perhatian',
-
-                text: '<?= $warning ?>',
-
-                confirmButtonColor: '#8B7355',
-
-                confirmButtonText: 'OK',
-
-                allowOutsideClick: false,
-
-                allowEscapeKey: false
-
-            });
-        </script>
-
-    <?php endif; ?>
-
-    <?php if ($error = session()->getFlashdata('error')) : ?>
-
-        <script>
-            Swal.fire({
-
-                icon: 'error',
-
-                title: 'Gagal',
-
-                text: '<?= $error ?>',
-
-                confirmButtonColor: '#8B7355',
-
-                confirmButtonText: 'OK',
-
-                allowOutsideClick: false,
-
-                allowEscapeKey: false
-
-            });
-        </script>
-
-    <?php endif; ?>
+<?php if (session()->getFlashdata('msg')) : ?>
+<script>
+Swal.fire({
+    icon: '<?= session()->getFlashdata('icon') ?>',
+    title: '<?= session()->getFlashdata('title') ?>',
+    html: '<?= esc(session()->getFlashdata('msg')) ?>',
+    confirmButtonColor: '#8B5E3C',
+    confirmButtonText: 'OK'
+});
+</script>
+<?php endif; ?>
     <script>
         document.addEventListener(
             'DOMContentLoaded',

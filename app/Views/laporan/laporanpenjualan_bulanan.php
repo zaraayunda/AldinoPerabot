@@ -245,6 +245,7 @@
                 <th>Nama Produk</th>
                 <th>Jumlah</th>
                 <th>Harga</th>
+                <th>Diskon</th>
                 <th width="120">Sub Total</th>
             </tr>
 
@@ -305,7 +306,7 @@
 
                 $totalBayar = $pembayaranMap[$row['idpesanan']] ?? 0;
 
-                $sisa = $row['totalharga'] - $totalBayar;
+                $sisa = $row['total'] - $totalBayar;
 
                 if ($totalBayar == 0) {
 
@@ -370,6 +371,9 @@
                             <td>
                                 Rp <?= number_format($d['harga'], 0, ',', '.') ?>
                             </td>
+                            <td>
+                                Rp <?= number_format($d['diskon'], 0, ',', '.') ?>
+                            </td>
 
                             <td>
                                 Rp <?= number_format($d['subtotal'], 0, ',', '.') ?>
@@ -384,7 +388,7 @@
             <?php endforeach; ?>
             <tr class="total-row">
 
-                <td colspan="8">
+                <td colspan="9">
                     <strong>Total Penjualan</strong>
                 </td>
 

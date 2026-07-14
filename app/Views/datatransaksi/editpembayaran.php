@@ -112,9 +112,9 @@ foreach ($pelanggan as $p) {
 
                         <input
                             type="number"
-                            id="totalharga"
+                            id="total"
                             class="form-control"
-                            value="<?= $pesananTerpilih['totalharga'] ?>"
+                            value="<?= $pesananTerpilih['total'] ?>"
                             readonly>
                     </div>
 

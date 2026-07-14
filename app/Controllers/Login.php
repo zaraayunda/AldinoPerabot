@@ -29,13 +29,21 @@ class Login extends BaseController
                         session()->set('email', $cek['email']);
                         session()->set('masuk', TRUE);
                         session()->set('role', $cek['role']);
-                        return redirect()->to('/dashboard');
+                        return redirect()->to('/dashboard/tampil');
                     } else {
-                        $session->setFlashdata('msg', 'Password Salah');
+                        $session->setFlashdata([
+                            'icon'  => 'error',
+                            'title' => 'Login Gagal',
+                            'msg'   => 'Password salah!'
+                        ]);
                         return redirect()->to('/login');
                     }
                 } else {
-                    $session->setFlashdata('msg', 'Akun terblokir');
+                    $session->setFlashdata([
+                        'icon'  => 'error',
+                        'title' => 'Akun Terblokir',
+                        'msg'   => 'Silakan hubungi admin.'
+                    ]);
                     return redirect()->to('/login');
                 }
             }
@@ -53,7 +61,7 @@ class Login extends BaseController
                         session()->set('email', $cek['email']);
                         session()->set('masuk', TRUE);
                         session()->set('role', $cek['role']);
-                        return redirect()->to('/dashboard');
+                        return redirect()->to('/dashboard/tampil');
                     } else {
                         $session->setFlashdata('msg', 'Password Salah');
                         return redirect()->to('/login');
@@ -77,16 +85,28 @@ class Login extends BaseController
                         session()->set('role', $cek['role']);
                         return redirect()->to('/homepage');
                     } else {
-                        $session->setFlashdata('msg', 'Password Salah');
+                        $session->setFlashdata([
+                            'icon'  => 'error',
+                            'title' => 'Login Gagal',
+                            'msg'   => 'Password salah!'
+                        ]);
                         return redirect()->to('/login');
                     }
                 } else {
-                    $session->setFlashdata('msg', 'Akun terblokir');
+                    $session->setFlashdata([
+                        'icon'  => 'error',
+                        'title' => 'Akun Terblokir',
+                        'msg'   => 'Silakan hubungi admin.'
+                    ]);
                     return redirect()->to('/login');
                 }
             }
         } else {
-            $session->setFlashdata('msg', 'Username tidak ditemukan');
+            $session->setFlashdata([
+                'icon'  => 'warning',
+                'title' => 'Username Tidak Ditemukan',
+                'msg'   => 'Silakan periksa kembali username Anda.'
+            ]);
             return redirect()->to('/login');
         }
     }
@@ -161,7 +181,7 @@ class Login extends BaseController
                 PASSWORD_DEFAULT
             ),
             'role' => 'pelanggan',
-            'status' => $this->request->getPost('status')
+            'status' => 'aktif'
         ];
 
         $modelPengguna->insert($dataUser);
@@ -177,11 +197,9 @@ class Login extends BaseController
 
         $modelPelanggan->insert($dataPelanggan);
 
-        return redirect()
-            ->to('/login')
-            ->with(
-                'success',
-                'Anda telah berhasil registrasi. Silakan login menggunakan akun Anda.'
-        );
+        return redirect()->to('/login')
+            ->with('msg', 'Anda telah berhasil registrasi. Silakan login menggunakan akun Anda.')
+            ->with('title', 'Registrasi Berhasil')
+            ->with('icon', 'success');
     }
 }

@@ -582,34 +582,20 @@ ul.cart-list > li.total {
 }
 
 /* Sale Badge */
-.sale {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    width: 60px;
-    height: 30px;
-
-    line-height: 30px;
-    text-align: center;
-
-    z-index: 20;
+.sale{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#e74c3c;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:700;
+    z-index:99;
+    box-shadow:0 3px 8px rgba(0,0,0,.2);
 }
 
-.sale p {
-    margin: 0;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.sale.bg-1 {
-    background: #d8924c;
-}
-
-.sale.bg-2 {
-    background: #47d93c;
-}
 
 /* Action Buttons */
 .new-arrival-cart{
@@ -2437,4 +2423,2383 @@ span.feature-review {margin-left: 10px;}
 }
 
 
+/*=================================================
+            MODAL DETAIL PRODUK
+==================================================*/
+
+.detail-modal{
+    border:0;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+}
+
+/*=================================================
+                    HEADER
+==================================================*/
+
+.detail-header{
+
+    position:relative;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:22px 30px;
+
+    background:linear-gradient(135deg,#75553A,#9A7654);
+
+    border:none;
+}
+
+.detail-header::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-130px;
+    right:-80px;
+}
+
+.detail-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+    height:150px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    bottom:-80px;
+    left:-50px;
+}
+
+.header-title{
+
+    position:relative;
+    z-index:2;
+}
+
+.header-title h3{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:26px;
+
+    font-weight:700;
+}
+
+.header-title h3 i{
+
+    color:#FFE6B8;
+
+    margin-right:10px;
+}
+
+.header-title small{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:rgba(255,255,255,.85);
+
+    font-size:13px;
+
+    letter-spacing:.5px;
+}
+
+/*=================================================
+                CLOSE BUTTON
+==================================================*/
+
+.btn-close-modal-x{
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    border:none;
+
+    font-size:30px;
+
+    transition:.35s;
+
+    opacity:1;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.btn-close-modal-x:hover{
+
+    background:#fff;
+
+    color:#8B6B4A;
+
+    transform:rotate(90deg);
+}
+
+/*=================================================
+                    BODY
+==================================================*/
+
+.modal-body{
+
+    padding:35px;
+
+    background:#F9F7F3;
+}
+
+/*=================================================
+                    FOTO
+==================================================*/
+
+.detail-image{
+
+    background:#fff;
+
+    border:1px solid #E8DED2;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    min-height:450px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.detail-image img{
+
+    width:100%;
+
+    max-height:320px;
+
+    object-fit:contain;
+
+    transition:.4s;
+}
+
+.detail-image img:hover{
+
+    transform:scale(1.05);
+}
+
+/*=================================================
+                NAMA PRODUK
+==================================================*/
+
+#modalNama{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#4E4034;
+
+    margin-bottom:10px;
+}
+
+/*=================================================
+                    GARIS
+==================================================*/
+
+.detail-divider{
+
+    width:70px;
+
+    height:4px;
+
+    border-radius:30px;
+
+    background:#B8926A;
+
+    margin:18px 0 25px;
+}
+
+/*=================================================
+                TABLE INFORMASI
+==================================================*/
+
+.table-detail{
+
+    width:100%;
+
+    border-collapse:separate;
+
+    border-spacing:0 12px;
+}
+
+.table-detail tr{
+
+    background:#fff;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.04);
+
+    transition:.25s;
+}
+
+.table-detail tr:hover{
+
+    transform:translateX(5px);
+}
+
+.table-detail td{
+
+    padding:15px 18px;
+}
+
+.table-detail td:first-child{
+
+    width:140px;
+
+    background:#F3EEE8;
+
+    color:#6A5A49;
+
+    font-weight:600;
+
+    border-radius:10px 0 0 10px;
+}
+
+.table-detail td:last-child{
+
+    font-weight:700;
+
+    color:#8B6B4A;
+
+    border-radius:0 10px 10px 0;
+}
+
+/*=================================================
+                DESKRIPSI
+==================================================*/
+
+.detail-item{
+
+    margin-top:20px;
+}
+
+.detail-item span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+    color:#5A4634;
+}
+
+.deskripsi-box{
+
+    background:#fff;
+
+    border:1px solid #E8DED2;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    min-height:140px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.04);
+}
+
+.deskripsi-box p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.9;
+
+    text-align:justify;
+}
+
+/*=================================================
+                    FOOTER
+==================================================*/
+
+.detail-footer{
+
+    padding:22px 30px;
+
+    background:#fff;
+
+    border-top:1px solid #ECE3D8;
+}
+
+/*=================================================
+                BUTTON TUTUP
+==================================================*/
+
+.btn-close-custom{
+
+    background:#ECE4DB;
+
+    color:#665340;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:11px 30px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-close-custom:hover{
+
+    background:#DDD0BE;
+
+    color:#4D392B;
+}
+
+/*=================================================
+            BUTTON KERANJANG
+==================================================*/
+
+button.btn-cart-modal,
+.btn.btn-cart-modal{
+
+    background:#8B6B4A !important;
+
+    color:#fff !important;
+
+    border:1px solid #8B6B4A !important;
+
+    border-radius:12px;
+
+    padding:12px 32px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(139,107,74,.28);
+}
+
+button.btn-cart-modal i,
+.btn.btn-cart-modal i{
+
+    margin-right:8px;
+}
+
+button.btn-cart-modal:hover,
+.btn.btn-cart-modal:hover{
+
+    background:#6F5338 !important;
+
+    border-color:#6F5338 !important;
+
+    color:#fff !important;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 28px rgba(0,0,0,.18);
+}
+
+button.btn-cart-modal:focus,
+.btn.btn-cart-modal:focus{
+
+    color:#fff !important;
+
+    outline:none;
+
+    box-shadow:0 0 0 4px rgba(139,107,74,.2);
+}
+
+/*=================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .modal-body{
+
+        padding:20px;
+    }
+
+    .detail-image{
+
+        min-height:250px;
+
+        margin-bottom:25px;
+    }
+
+    #modalNama{
+
+        font-size:24px;
+    }
+
+    .detail-footer{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:12px;
+    }
+
+    .btn-close-custom,
+    .btn-cart-modal{
+
+        width:100%;
+    }
+
+    .detail-header{
+
+        padding:18px 20px;
+    }
+
+    .header-title h3{
+
+        font-size:22px;
+    }
+}
+
+/*=====================================================
+            GLOBAL SECTION
+======================================================*/
+
+section{
+    position:relative;
+}
+
+.section-title{
+    margin-bottom:60px;
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    color:#5D4634;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.section-title p{
+
+    color:#777;
+
+    font-size:16px;
+
+    line-height:28px;
+}
+
+
+
+/*=====================================================
+                HERO ABOUT
+======================================================*/
+
+.about-hero{
+
+    padding:120px 0 90px;
+
+    background:#FAF8F5;
+}
+
+.about-label{
+
+    display:inline-block;
+
+    background:#EFE4D7;
+
+    color:#8B6B4A;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+}
+
+.about-label i{
+
+    margin-right:8px;
+}
+
+.about-hero h1{
+
+    font-size:54px;
+
+    font-weight:700;
+
+    line-height:72px;
+
+    color:#4F3E2F;
+
+    margin-bottom:25px;
+}
+
+.about-hero h1 span{
+
+    color:#A67C52;
+}
+
+.about-hero p{
+
+    font-size:17px;
+
+    color:#666;
+
+    line-height:34px;
+
+    margin-bottom:35px;
+
+    text-align:justify;
+}
+
+.hero-button{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+}
+
+.btn-about-primary{
+
+    background:#8B6B4A;
+
+    color:#fff;
+
+    padding:14px 32px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:600;
+
+    box-shadow:0 10px 25px rgba(139,107,74,.25);
+}
+
+.btn-about-primary:hover{
+
+    background:#6F5338;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transform:translateY(-3px);
+}
+
+.btn-about-secondary{
+
+    border:2px solid #8B6B4A;
+
+    color:#8B6B4A;
+
+    padding:14px 32px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:600;
+}
+
+.btn-about-secondary:hover{
+
+    background:#8B6B4A;
+
+    color:#fff;
+
+    text-decoration:none;
+}
+
+.about-image{
+
+    text-align:center;
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    transition:.4s;
+}
+
+.about-image img:hover{
+
+    transform:scale(1.03);
+}
+
+
+
+/*=====================================================
+                CERITA KAMI
+======================================================*/
+
+.company-story{
+
+    padding:100px 0;
+
+    background:#fff;
+}
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+.story-year{
+
+    display:inline-block;
+
+    background:#F1E5D8;
+
+    color:#8B6B4A;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.story-content h3{
+
+    color:#4F3E2F;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    line-height:48px;
+
+    margin-bottom:25px;
+}
+
+.story-content p{
+
+    color:#666;
+
+    line-height:32px;
+
+    font-size:16px;
+
+    margin-bottom:18px;
+
+    text-align:justify;
+}
+
+
+
+/*=====================================================
+                STATISTIK
+======================================================*/
+
+.company-counter{
+
+    padding:90px 0;
+
+    background:linear-gradient(135deg,#7C5A3D,#A37A53);
+}
+
+.counter-box{
+
+    text-align:center;
+
+    color:#fff;
+
+    padding:35px 20px;
+
+    transition:.3s;
+}
+
+.counter-box:hover{
+
+    transform:translateY(-8px);
+}
+
+.counter-box i{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    line-height:80px;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+}
+
+.counter-box h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+    color:#fff;
+}
+
+.counter-box p{
+
+    font-size:17px;
+
+    color:#f5f5f5;
+}
+
+
+
+/*=====================================================
+                WHY US
+======================================================*/
+
+.why-us{
+
+    padding:100px 0;
+
+    background:#FAF8F5;
+}
+
+.why-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    height:100%;
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.why-card i{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    background:#8B6B4A;
+
+    color:#fff;
+
+    line-height:80px;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+}
+
+.why-card h4{
+
+    color:#5D4634;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.why-card p{
+
+    color:#666;
+
+    line-height:30px;
+
+    font-size:15px;
+}
+
+
+
+/*=====================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:991px){
+
+    .about-hero{
+
+        padding:90px 0 70px;
+    }
+
+    .about-hero h1{
+
+        font-size:42px;
+
+        line-height:58px;
+    }
+
+    .about-image{
+
+        margin-top:50px;
+    }
+
+    .story-image{
+
+        margin-bottom:35px;
+    }
+
+    .counter-box{
+
+        margin-bottom:30px;
+    }
+
+    .why-card{
+
+        margin-bottom:30px;
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    .about-hero{
+
+        text-align:center;
+    }
+
+    .about-hero h1{
+
+        font-size:34px;
+
+        line-height:48px;
+    }
+
+    .about-hero p{
+
+        text-align:center;
+    }
+
+    .hero-button{
+
+        justify-content:center;
+    }
+
+    .section-title h2{
+
+        font-size:32px;
+    }
+
+    .story-content h3{
+
+        font-size:28px;
+
+        line-height:40px;
+    }
+
+}
+
+/*==================================================
+        SECTION TITLE
+==================================================*/
+
+.section-title{
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    color:#5b4331;
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:#777;
+    font-size:16px;
+}
+
+/*==================================================
+        VISI MISI
+==================================================*/
+
+.vision-mission{
+
+    padding:100px 0;
+
+    background:#faf8f5;
+}
+
+.vision-box,
+.mission-box{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    height:100%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.vision-box:hover,
+.mission-box:hover{
+
+    transform:translateY(-8px);
+}
+
+.vm-icon{
+
+    width:70px;
+
+    height:70px;
+
+    background:#8b6b4a;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    text-align:center;
+
+    line-height:70px;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+}
+
+.vision-box h3,
+.mission-box h3{
+
+    color:#5b4331;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.vision-box p{
+
+    line-height:30px;
+
+    color:#666;
+}
+
+.mission-box ul{
+
+    padding-left:20px;
+}
+
+.mission-box li{
+
+    margin-bottom:18px;
+
+    line-height:28px;
+
+    color:#666;
+}
+
+/*==================================================
+        TEAM
+==================================================*/
+
+.our-team{
+
+    padding:100px 0;
+
+    background:#fff;
+}
+
+.team-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.team-card img{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #f1ebe4;
+
+    margin-bottom:20px;
+}
+
+.team-card h4{
+
+    color:#5b4331;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.team-card span{
+
+    display:block;
+
+    color:#a27b57;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+}
+
+.team-card p{
+
+    color:#666;
+
+    line-height:28px;
+}
+
+/*==================================================
+        CTA
+==================================================*/
+
+.about-cta{
+
+    padding:100px 0;
+
+    background:#f7f3ef;
+}
+
+.cta-box{
+
+    background:linear-gradient(135deg,#7c5a3d,#a17c56);
+
+    border-radius:25px;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    color:#fff;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.cta-box h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    line-height:58px;
+
+    margin-bottom:20px;
+}
+
+.cta-box span{
+
+    color:#ffe4ba;
+}
+
+.cta-box p{
+
+    width:70%;
+
+    margin:auto;
+
+    font-size:17px;
+
+    line-height:32px;
+
+    margin-bottom:40px;
+
+    color:rgba(255,255,255,.92);
+}
+
+.cta-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+}
+
+.btn-cta-primary{
+
+    background:#fff;
+
+    color:#7c5a3d;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-cta-primary:hover{
+
+    background:#f4ede7;
+
+    color:#7c5a3d;
+
+    text-decoration:none;
+
+    transform:translateY(-3px);
+}
+
+.btn-cta-secondary{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-cta-secondary:hover{
+
+    background:#fff;
+
+    color:#7c5a3d;
+
+    text-decoration:none;
+
+    transform:translateY(-3px);
+}
+
+/*==================================================
+        RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .vision-box,
+    .mission-box,
+    .team-card{
+
+        margin-bottom:30px;
+    }
+
+    .cta-box{
+
+        padding:40px 25px;
+    }
+
+    .cta-box h2{
+
+        font-size:28px;
+
+        line-height:42px;
+    }
+
+    .cta-box p{
+
+        width:100%;
+    }
+
+    .cta-button{
+
+        flex-direction:column;
+    }
+
+    .btn-cta-primary,
+    .btn-cta-secondary{
+
+        width:100%;
+    }
+}
+
+
+/*==================================================
+                CONTACT HERO
+==================================================*/
+
+.contact-hero{
+
+    padding:90px 0;
+
+    background:linear-gradient(135deg,#6D4C41,#8D6E63);
+
+    position:relative;
+    opacity:.95;
+
+    overflow:hidden;
+
+}
+
+.contact-hero::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    letter-spacing:.5px;
+
+}
+
+.hero-content p{
+
+    width:60%;
+
+    margin:auto;
+
+    line-height:30px;
+
+    font-size:17px;
+
+    color:#F5F5F5;
+
+}
+
+.hero-line{
+
+    width:90px;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    margin:28px auto 0;
+
+}
+
+
+/*==================================================
+                SECTION TITLE
+==================================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    color:#5D4037;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.section-title p{
+
+    width:60%;
+
+    margin:auto;
+
+    color:#777;
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+
+/*==================================================
+                CONTACT INFO
+==================================================*/
+
+.contact-info{
+
+    padding:90px 0;
+
+    background:#FAF8F6;
+
+}
+
+
+/*==================================================
+                CARD
+==================================================*/
+
+.contact-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    height:100%;
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.contact-card h3{
+
+    margin-top:0;
+
+    margin-bottom:25px;
+
+    color:#5D4037;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.contact-card h3 i{
+
+    margin-right:10px;
+
+    color:#8D6E63;
+
+}
+
+
+/*==================================================
+                MAPS
+==================================================*/
+
+.contact-card iframe{
+
+    border-radius:12px;
+
+    border:none;
+
+}
+
+
+/*==================================================
+            INFORMATION ITEM
+==================================================*/
+
+.info-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.info-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.info-item i{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:#EFE7E2;
+
+    color:#6D4C41;
+
+    text-align:center;
+
+    line-height:52px;
+
+    font-size:20px;
+
+    flex-shrink:0;
+
+}
+
+.info-item h4{
+
+    margin:0;
+
+    color:#5D4037;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.info-item p{
+
+    margin-top:6px;
+
+    margin-bottom:0;
+
+    color:#666;
+
+    line-height:28px;
+
+    font-size:15px;
+
+}
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:991px){
+
+.hero-content p{
+
+    width:90%;
+
+}
+
+.section-title p{
+
+    width:100%;
+
+}
+
+.contact-card{
+
+    margin-bottom:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-hero{
+
+    padding:70px 0;
+
+}
+
+.hero-content h1{
+
+    font-size:36px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+    line-height:28px;
+
+}
+
+.contact-info{
+
+    padding:60px 0;
+
+}
+
+.section-title{
+
+    margin-bottom:40px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+}
+/*==================================================
+                WHY US
+==================================================*/
+
+.why-us{
+
+    padding:90px 0;
+
+    background:#ffffff;
+
+}
+
+.why-card{
+
+    background:#fff;
+
+    border:1px solid #ece7e2;
+
+    border-radius:15px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    height:100%;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+    border-color:#B89B8A;
+
+}
+
+.why-card i{
+
+    width:80px;
+
+    height:80px;
+
+    line-height:80px;
+
+    border-radius:50%;
+
+    background:#F4EFEB;
+
+    color:#6D4C41;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.why-card h4{
+
+    color:#5D4037;
+
+    font-size:21px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    color:#666;
+
+    font-size:15px;
+
+    line-height:28px;
+
+    margin:0;
+
+}
+
+
+
+/*==================================================
+                CONTACT FORM
+==================================================*/
+
+.contact-form-section{
+
+    padding:90px 0;
+
+    background:#FAF8F6;
+
+}
+
+.contact-form-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.contact-form-card label{
+
+    color:#5D4037;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    display:block;
+
+    font-size:15px;
+
+}
+
+.contact-form-card .form-group{
+
+    margin-bottom:22px;
+
+}
+
+
+
+/*==================================================
+                INPUT
+==================================================*/
+
+.contact-form-card .form-control{
+
+    height:50px;
+
+    border-radius:10px;
+
+    border:1px solid #DDD;
+
+    box-shadow:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.contact-form-card textarea.form-control{
+
+    height:170px;
+
+    resize:none;
+
+    padding-top:12px;
+
+}
+
+.contact-form-card .form-control:focus{
+
+    border-color:#8D6E63;
+
+    box-shadow:0 0 0 3px rgba(141,110,99,.12);
+
+}
+
+
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.btn-send{
+
+    background:#6D4C41;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:13px 35px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-send:hover{
+
+    background:#5D4037;
+
+    color:#fff;
+
+}
+
+.btn-send i{
+
+    margin-right:8px;
+
+}
+
+
+
+/*==================================================
+                HELP CARD
+==================================================*/
+
+.help-card{
+
+    background:#6D4C41;
+
+    color:#fff;
+
+    border-radius:16px;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.help-card i{
+
+    width:90px;
+
+    height:90px;
+
+    line-height:90px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.help-card h3{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+    font-size:26px;
+
+    font-weight:700;
+
+}
+
+.help-card p{
+
+    color:#F5F5F5;
+
+    line-height:28px;
+
+    font-size:15px;
+
+}
+
+.help-card hr{
+
+    border-color:rgba(255,255,255,.2);
+
+    margin:25px 0;
+
+}
+
+.help-card strong{
+
+    color:#fff;
+
+    font-size:17px;
+
+}
+
+
+
+/*==================================================
+                WA BUTTON
+==================================================*/
+
+.btn-wa{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:12px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-wa:hover{
+
+    background:#1EBE5D;
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+.btn-wa i{
+
+    margin-right:8px;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:991px){
+
+.why-card{
+
+    margin-bottom:30px;
+
+}
+
+.help-card{
+
+    margin-top:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-us{
+
+    padding:60px 0;
+
+}
+
+.contact-form-section{
+
+    padding:60px 0;
+
+}
+
+.contact-form-card{
+
+    padding:25px;
+
+}
+
+.help-card{
+
+    padding:30px 25px;
+
+}
+
+.help-card h3{
+
+    font-size:22px;
+
+}
+
+}
+/*==================================================
+                    FAQ
+==================================================*/
+
+.faq-section{
+
+    padding:90px 0;
+
+    background:#fff;
+
+}
+
+.faq-card{
+
+    border:none;
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.faq-card .panel-heading{
+
+    background:#FAF8F6;
+
+    padding:0;
+
+    border:none;
+
+}
+
+.faq-card .panel-title{
+
+    margin:0;
+
+}
+
+.faq-card .panel-title a{
+
+    display:block;
+
+    padding:20px 25px;
+
+    color:#5D4037;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.faq-card .panel-title a:hover{
+
+    background:#F4EFEB;
+
+}
+
+.faq-card .panel-title a:after{
+
+    content:"+";
+
+    position:absolute;
+
+    right:25px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:22px;
+
+    color:#8D6E63;
+
+}
+
+.faq-card .panel-title a[aria-expanded="true"]:after{
+
+    content:"−";
+
+}
+
+.faq-card .panel-body{
+
+    padding:22px 25px;
+
+    color:#666;
+
+    line-height:30px;
+
+    font-size:15px;
+
+    background:#fff;
+
+}
+
+
+
+/*==================================================
+                    CTA
+==================================================*/
+
+.contact-cta{
+
+    padding:70px 0;
+
+    background:linear-gradient(135deg,#6D4C41,#8D6E63);
+
+}
+
+.contact-cta h2{
+
+    color:#fff;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.contact-cta p{
+
+    color:#F4F4F4;
+
+    line-height:30px;
+
+    margin-bottom:0;
+
+    font-size:16px;
+
+}
+
+
+
+/*==================================================
+                CTA BUTTON
+==================================================*/
+
+.btn-wa-cta{
+
+    display:inline-block;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    margin-right:10px;
+
+    transition:.3s;
+
+}
+
+.btn-wa-cta:hover{
+
+    background:#1EBE5D;
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+.btn-katalog{
+
+    display:inline-block;
+
+    background:#fff;
+
+    color:#6D4C41;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-katalog:hover{
+
+    background:#F4EFEB;
+
+    color:#6D4C41;
+
+    text-decoration:none;
+
+}
+
+
+
+/*==================================================
+            MINI FOOTER
+==================================================*/
+
+.contact-footer{
+
+    padding:40px 0;
+
+    background:#FAF8F6;
+
+    text-align:center;
+
+}
+
+.contact-footer h3{
+
+    color:#5D4037;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.contact-footer p{
+
+    width:60%;
+
+    margin:auto;
+
+    color:#777;
+
+    line-height:28px;
+
+}
+
+
+
+/*==================================================
+                ANIMATION
+==================================================*/
+
+.contact-card,
+.why-card,
+.help-card,
+.faq-card{
+
+    transition:all .35s ease;
+
+}
+
+.contact-card:hover,
+.why-card:hover,
+.help-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:991px){
+
+.contact-cta{
+
+    text-align:center;
+
+}
+
+.contact-cta .text-right{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.btn-wa-cta,
+.btn-katalog{
+
+    margin:8px;
+
+}
+
+.contact-footer p{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.faq-section{
+
+    padding:60px 0;
+
+}
+
+.contact-cta{
+
+    padding:55px 0;
+
+}
+
+.contact-cta h2{
+
+    font-size:28px;
+
+}
+
+.contact-cta p{
+
+    font-size:15px;
+
+}
+
+.btn-wa-cta,
+.btn-katalog{
+
+    display:block;
+
+    width:100%;
+
+    margin:10px 0;
+
+}
+
+.contact-footer{
+
+    padding:30px 0;
+
+}
+
+.contact-footer h3{
+
+    font-size:24px;
+
+}
+
+}   
 /*========================Thank you=================
