@@ -234,8 +234,8 @@
 							<ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
 								<li class=" scroll active"><a href="#home">Home</a></li>
 								<li class="scroll"><a href="#new-arrivals">Product</a></li>
-								<li class="scroll"><a href="<?= base_url('about') ?>">About</a></li>
-								<li class="scroll"><a href="<?= base_url('contact') ?>">Contact</a></li>
+								<li><a href="<?= base_url('about') ?>">About</a></li>
+								<li><a href="<?= base_url('contact') ?>">Contact</a></li>
 							</ul><!--/.nav -->
 						</div><!-- /.navbar-collapse -->
 					</div><!--/.container-->
@@ -328,31 +328,36 @@
 			</div>
 			<div class="new-arrivals-content">
 				<div class="row" id="produk-container">
+
 					<?php if (!empty($produk)) : ?>
 						<?php foreach ($produk as $row) : ?>
+
+							<?php
+							$hargaAsli = $row['harga'];
+							$diskon = (float) $row['diskon'];
+							$hargaDiskon = $hargaAsli;
+
+							if ($diskon > 0) {
+								$hargaDiskon = $hargaAsli - ($hargaAsli * $diskon / 100);
+							}
+							?>
 
 							<div class="col-md-3 col-sm-4">
 								<div class="single-new-arrival">
 
 									<div class="single-new-arrival-bg">
 
+										<?php if ($diskon > 0) : ?>
+											<div class="sale bg-1">
+												-<?= $diskon ?>%
+											</div>
+										<?php endif; ?>
+
 										<img
 											src="<?= base_url('storage/fotoproduk/' . $row['foto']) ?>"
 											alt="<?= esc($row['namaproduk']) ?>">
 
 										<div class="single-new-arrival-bg-overlay"></div>
-
-										<div class="new-arrival-cart">
-
-											<a href="#" class="action-icon">
-												<span class="lnr lnr-cart"></span>
-											</a>
-
-											<a href="#" class="action-icon">
-												<span class="lnr lnr-eye"></span>
-											</a>
-
-										</div>
 
 									</div>
 
@@ -362,9 +367,27 @@
 										</a>
 									</h4>
 
-									<p class="arrival-product-price">
-										Rp <?= number_format($row['harga'], 0, ',', '.') ?>
-									</p>
+									<?php if ($diskon > 0) : ?>
+
+										<p class="arrival-product-price" style="margin-bottom:4px;">
+											<span style="text-decoration:line-through;color:#999;font-size:14px;">
+												Rp <?= number_format($hargaAsli, 0, ',', '.') ?>
+											</span>
+										</p>
+
+										<p class="arrival-product-price">
+											<span style="color:#d9534f;font-weight:bold;font-size:18px;">
+												Rp <?= number_format($hargaDiskon, 0, ',', '.') ?>
+											</span>
+										</p>
+
+									<?php else : ?>
+
+										<p class="arrival-product-price">
+											Rp <?= number_format($hargaAsli, 0, ',', '.') ?>
+										</p>
+
+									<?php endif; ?>
 
 								</div>
 							</div>

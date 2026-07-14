@@ -57,13 +57,15 @@
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <?php if (session('success')) : ?>
+  <?php if (session()->getFlashdata('msg')) : ?>
     <script>
-      Swal.fire({
-        icon: 'success',
-        title: 'Registrasi Berhasil',
-        text: '<?= session('success') ?>',
-        confirmButtonText: 'OK'
+      document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+          icon: '<?= session()->getFlashdata('icon') ?>',
+          title: '<?= session()->getFlashdata('title') ?>',
+          text: '<?= session()->getFlashdata('msg') ?>',
+          confirmButtonText: 'OK'
+        });
       });
     </script>
   <?php endif; ?>

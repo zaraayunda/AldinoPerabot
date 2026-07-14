@@ -231,8 +231,7 @@
 
                                                     </label>
 
-                                                    <select name="jenispembayaran"
-                                                        class="form-select">
+                                                    <select name="jenispembayaran" id="jenispembayaran" class="form-select">
 
                                                         <option value="DP">DP</option>
 
@@ -410,17 +409,43 @@
         metode.addEventListener("change", cekMetode);
 
     });
-    
+
     const input = document.getElementById('jumlahbayar');
     const error = document.getElementById('errorDP');
     const minimalDP = <?= $minimalDP ?>;
+    const jenisPembayaran = document.getElementById('jenispembayaran');
+    const totalPesanan = <?= $pesanan['total'] ?>;
+
+    function cekJenisPembayaran() {
+
+        if (!jenisPembayaran) return;
+
+        if (jenisPembayaran.value === "Full Payment") {
+
+            input.value = totalPesanan;
+            input.readOnly = true;
+            input.classList.remove('is-invalid');
+            error.style.display = 'none';
+
+        } else {
+
+            input.readOnly = false;
+
+            // Kosongkan agar user mengisi sendiri nominal DP
+            input.value = "";
+        }
+
+    }
+
+    cekJenisPembayaran();
+    jenisPembayaran.addEventListener("change", cekJenisPembayaran);
 
     input.addEventListener('input', function() {
-        if (this.value === '') {
-            this.classList.remove('is-invalid');
-            error.style.display = 'none';
-            return;
-        }
+        if (jenisPembayaran && jenisPembayaran.value === "Full Payment") {
+        this.classList.remove('is-invalid');
+        error.style.display = 'none';
+        return;
+    }
 
         if (parseInt(this.value) < minimalDP) {
             this.classList.add('is-invalid');

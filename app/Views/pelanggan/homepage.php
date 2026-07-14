@@ -91,107 +91,107 @@
     <header id="home" class="welcome-hero">
 
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-			<!--/.carousel-indicator -->
-			<ol class="carousel-indicators">
-				<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
-				<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
-				<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
-			</ol><!-- /ol-->
-			<!--/.carousel-indicator -->
+            <!--/.carousel-indicator -->
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+                <li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+                <li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+            </ol><!-- /ol-->
+            <!--/.carousel-indicator -->
 
-			<!--/.carousel-inner -->
-			<div class="carousel-inner" role="listbox">
-				<!-- .item -->
-				<div class="item active">
-					<div class="single-slide-item slide1">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												<h4></h4>
-												<h2>Selamat Datang di <br>Aldino Perabot</h2>
-												<p>
-													Wujudkan hunian dan ruang kerja yang nyaman bersama Aldino Perabot. Kami menyediakan berbagai pilihan furnitur berkualitas dengan desain modern, material terbaik, serta pengerjaan yang rapi dan presisi. Kami menghadirkan solusi furnitur yang dapat disesuaikan dengan kebutuhan, ukuran ruangan, serta konsep desain yang Anda inginkan.
-												</p>
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									<div class="col-sm-5">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-img">
-												<img src="<?= base_url() ?>/assets/images/slider/slider1.png" alt="slider image">
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div><!-- /.single-slide-item-->
+            <!--/.carousel-inner -->
+            <div class="carousel-inner" role="listbox">
+                <!-- .item -->
+                <div class="item active">
+                    <div class="single-slide-item slide1">
+                        <div class="container">
+                            <div class="welcome-hero-content">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-txt">
+                                                <h4></h4>
+                                                <h2>Selamat Datang di <br>Aldino Perabot</h2>
+                                                <p>
+                                                    Wujudkan hunian dan ruang kerja yang nyaman bersama Aldino Perabot. Kami menyediakan berbagai pilihan furnitur berkualitas dengan desain modern, material terbaik, serta pengerjaan yang rapi dan presisi. Kami menghadirkan solusi furnitur yang dapat disesuaikan dengan kebutuhan, ukuran ruangan, serta konsep desain yang Anda inginkan.
+                                                </p>
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                    <div class="col-sm-5">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-img">
+                                                <img src="<?= base_url() ?>/assets/images/slider/slider1.png" alt="slider image">
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.welcome-hero-content-->
+                        </div><!-- /.container-->
+                    </div><!-- /.single-slide-item-->
 
-				</div><!-- /.item .active-->
+                </div><!-- /.item .active-->
 
-				<div class="item">
-					<div class="single-slide-item slide2">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												<h2>Mengapa Memilih Aldino Perabot?</h2>
-												<p>
-													Setiap produk dibuat dengan menggunakan material pilihan, proses pengerjaan yang teliti, serta memperhatikan detail agar menghasilkan furnitur yang kuat, fungsional, dan memiliki tampilan yang elegan. Aldino Perabot melayani berbagai jenis pesanan, mulai dari produk siap pakai hingga furnitur custom yang dapat disesuaikan dengan ukuran, desain, warna, dan fungsi sesuai keinginan pelanggan.
-												</p>
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									<div class="col-sm-5">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-img">
-												<img src="<?= base_url() ?>/assets/images/slider/slider2.png" alt="slider image">
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div><!-- /.single-slide-item-->
+                <div class="item">
+                    <div class="single-slide-item slide2">
+                        <div class="container">
+                            <div class="welcome-hero-content">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-txt">
+                                                <h2>Mengapa Memilih Aldino Perabot?</h2>
+                                                <p>
+                                                    Setiap produk dibuat dengan menggunakan material pilihan, proses pengerjaan yang teliti, serta memperhatikan detail agar menghasilkan furnitur yang kuat, fungsional, dan memiliki tampilan yang elegan. Aldino Perabot melayani berbagai jenis pesanan, mulai dari produk siap pakai hingga furnitur custom yang dapat disesuaikan dengan ukuran, desain, warna, dan fungsi sesuai keinginan pelanggan.
+                                                </p>
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                    <div class="col-sm-5">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-img">
+                                                <img src="<?= base_url() ?>/assets/images/slider/slider2.png" alt="slider image">
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.welcome-hero-content-->
+                        </div><!-- /.container-->
+                    </div><!-- /.single-slide-item-->
 
-				</div><!-- /.item .active-->
+                </div><!-- /.item .active-->
 
-				<div class="item">
-					<div class="single-slide-item slide3">
-						<div class="container">
-							<div class="welcome-hero-content">
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-txt">
-												<h2>Kami Mendengarkan Kebutuhan Anda</h2>
-												<p>
-													Tidak semua pelanggan memiliki kebutuhan yang sama. Ada yang membutuhkan furnitur minimalis, klasik, modern, hingga desain khusus sesuai ukuran ruangan. Aldino Perabot hadir untuk memberikan solusi melalui layanan custom produk sehingga setiap produk benar-benar sesuai dengan keinginan pelanggan..
-												</p>
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-									<div class="col-sm-5">
-										<div class="single-welcome-hero">
-											<div class="welcome-hero-img">
-												<img src="<?= base_url() ?>/assets/images/slider/slider3.png" alt="slider image">
-											</div><!--/.welcome-hero-txt-->
-										</div><!--/.single-welcome-hero-->
-									</div><!--/.col-->
-								</div><!--/.row-->
-							</div><!--/.welcome-hero-content-->
-						</div><!-- /.container-->
-					</div><!-- /.single-slide-item-->
+                <div class="item">
+                    <div class="single-slide-item slide3">
+                        <div class="container">
+                            <div class="welcome-hero-content">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-txt">
+                                                <h2>Kami Mendengarkan Kebutuhan Anda</h2>
+                                                <p>
+                                                    Tidak semua pelanggan memiliki kebutuhan yang sama. Ada yang membutuhkan furnitur minimalis, klasik, modern, hingga desain khusus sesuai ukuran ruangan. Aldino Perabot hadir untuk memberikan solusi melalui layanan custom produk sehingga setiap produk benar-benar sesuai dengan keinginan pelanggan..
+                                                </p>
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                    <div class="col-sm-5">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-img">
+                                                <img src="<?= base_url() ?>/assets/images/slider/slider3.png" alt="slider image">
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.welcome-hero-content-->
+                        </div><!-- /.container-->
+                    </div><!-- /.single-slide-item-->
 
-				</div><!-- /.item .active-->
-			</div><!-- /.carousel-inner-->
+                </div><!-- /.item .active-->
+            </div><!-- /.carousel-inner-->
 
-		</div><!--/#header-carousel-->
+        </div><!--/#header-carousel-->
 
         <!-- top-area Start -->
         <div class="top-area">
@@ -325,7 +325,7 @@
                         <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li><a href="<?= base_url('homepage') ?>">Home</a></li>
-                                <li><a href="<?= base_url('katalogproduk') ?>">Product</a></li>
+                                <li class="scroll"><a href="#new-arrivals">Product</a></li>
                                 <li><a href="<?= base_url('about') ?>">About</a></li>
                                 <li><a href="<?= base_url('contact') ?>">Contact</a></li>
                             </ul><!--/.nav -->
@@ -343,70 +343,70 @@
     <!--welcome-hero end -->
 
     <!--populer-products start -->
-	<section id="populer-products" class="populer-products">
-		<div class="container">
-			<div class="section-header">
-				<h2>Produk dan Layanan</h2>
-			</div><!--/.section-header-->
-			<br>
-			<div class="populer-products-content">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="single-populer-products">
-							<div class="single-inner-populer-products">
-								<div class="row">
-									<div class="col-md-4 col-sm-12">
-										<div class="single-inner-populer-product-img">
-											<img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
-										</div>
-									</div>
-									<div class="col-md-8 col-sm-12">
-										<div class="single-inner-populer-product-txt">
-											<h4> Custom Produk Sesuai Kebutuhan</h4>
-											<p>
-												Kami melayani pembuatan furnitur custom yang dapat disesuaikan dengan ukuran, desain, warna, hingga material pilihan agar sesuai dengan kebutuhan rumah, kantor, maupun tempat usaha Anda.
-											</p>
-											<button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='<?= base_url('customproduk') ?>'">
-												Pesan Custom
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="single-populer-products">
-							<div class="single-inner-populer-products">
-								<div class="row">
-									<div class="col-md-4 col-sm-12">
-										<div class="single-inner-populer-product-img">
-											<img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
-										</div>
-									</div>
-									<div class="col-md-8 col-sm-12">
-										<div class="single-inner-populer-product-txt">
-											<h4>
-												Jejalahi Katalog Produk
-											</h4>
-											<p>
-												Aldino Perabot menghadirkan berbagai pilihan furnitur yang mengutamakan kualitas, kenyamanan, dan desain modern untuk melengkapi kebutuhan rumah maupun tempat usaha Anda.
-											</p>
-											<button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='#new-arrivals'">
-												Lihat Produk
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.container-->
+    <section id="populer-products" class="populer-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Produk dan Layanan</h2>
+            </div><!--/.section-header-->
+            <br>
+            <div class="populer-products-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="single-populer-products">
+                            <div class="single-inner-populer-products">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="single-inner-populer-product-img">
+                                            <img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-12">
+                                        <div class="single-inner-populer-product-txt">
+                                            <h4> Custom Produk Sesuai Kebutuhan</h4>
+                                            <p>
+                                                Kami melayani pembuatan furnitur custom yang dapat disesuaikan dengan ukuran, desain, warna, hingga material pilihan agar sesuai dengan kebutuhan rumah, kantor, maupun tempat usaha Anda.
+                                            </p>
+                                            <button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='<?= base_url('customproduk') ?>'">
+                                                Pesan Custom
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-populer-products">
+                            <div class="single-inner-populer-products">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="single-inner-populer-product-img">
+                                            <img src="<?= base_url() ?>/assets/images/populer-products/p2.png" alt="populer-products images">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-12">
+                                        <div class="single-inner-populer-product-txt">
+                                            <h4>
+                                                Jejalahi Katalog Produk
+                                            </h4>
+                                            <p>
+                                                Aldino Perabot menghadirkan berbagai pilihan furnitur yang mengutamakan kualitas, kenyamanan, dan desain modern untuk melengkapi kebutuhan rumah maupun tempat usaha Anda.
+                                            </p>
+                                            <button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='#new-arrivals'">
+                                                Lihat Produk
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
 
-	</section><!--/.populer-products-->
-	<!--populer-products end-->
+    </section><!--/.populer-products-->
+    <!--populer-products end-->
 
     <!--new-arrivals start -->
     <section id="new-arrivals" class="new-arrivals">
@@ -416,31 +416,36 @@
             </div><!--/.section-header-->
             <div class="new-arrivals-content">
                 <div class="row" id="produk-container">
+
                     <?php if (!empty($produk)) : ?>
                         <?php foreach ($produk as $row) : ?>
+
+                            <?php
+                            $hargaAsli = $row['harga'];
+                            $diskon = (float) $row['diskon'];
+                            $hargaDiskon = $hargaAsli;
+
+                            if ($diskon > 0) {
+                                $hargaDiskon = $hargaAsli - ($hargaAsli * $diskon / 100);
+                            }
+                            ?>
 
                             <div class="col-md-3 col-sm-4">
                                 <div class="single-new-arrival">
 
                                     <div class="single-new-arrival-bg">
 
+                                        <?php if ($diskon > 0) : ?>
+                                            <div class="sale bg-1">
+                                                -<?= $diskon ?>%
+                                            </div>
+                                        <?php endif; ?>
+
                                         <img
                                             src="<?= base_url('storage/fotoproduk/' . $row['foto']) ?>"
                                             alt="<?= esc($row['namaproduk']) ?>">
 
                                         <div class="single-new-arrival-bg-overlay"></div>
-
-                                        <div class="new-arrival-cart">
-
-                                            <a href="#" class="action-icon">
-                                                <span class="lnr lnr-cart"></span>
-                                            </a>
-
-                                            <a href="#" class="action-icon">
-                                                <span class="lnr lnr-eye"></span>
-                                            </a>
-
-                                        </div>
 
                                     </div>
 
@@ -450,9 +455,27 @@
                                         </a>
                                     </h4>
 
-                                    <p class="arrival-product-price">
-                                        Rp <?= number_format($row['harga'], 0, ',', '.') ?>
-                                    </p>
+                                    <?php if ($diskon > 0) : ?>
+
+                                        <p class="arrival-product-price" style="margin-bottom:4px;">
+                                            <span style="text-decoration:line-through;color:#999;font-size:14px;">
+                                                Rp <?= number_format($hargaAsli, 0, ',', '.') ?>
+                                            </span>
+                                        </p>
+
+                                        <p class="arrival-product-price">
+                                            <span style="color:#d9534f;font-weight:bold;font-size:18px;">
+                                                Rp <?= number_format($hargaDiskon, 0, ',', '.') ?>
+                                            </span>
+                                        </p>
+
+                                    <?php else : ?>
+
+                                        <p class="arrival-product-price">
+                                            Rp <?= number_format($hargaAsli, 0, ',', '.') ?>
+                                        </p>
+
+                                    <?php endif; ?>
 
                                 </div>
                             </div>
@@ -519,122 +542,122 @@
     <!--sofa-collection end -->
 
     <!-- Company Information Start -->
-	<section id="newsletter" class="newsletter">
-		<div class="container">
+    <section id="newsletter" class="newsletter">
+        <div class="container">
 
-			<div class="section-header">
-				<h2>Hubungi & Kunjungi Kami</h2>
-				<p>
-					Kami selalu siap melayani kebutuhan furnitur Anda.
-					Kunjungi workshop kami atau hubungi tim Aldino Perabot
-					untuk konsultasi maupun pemesanan.
-				</p>
-			</div>
+            <div class="section-header">
+                <h2>Hubungi & Kunjungi Kami</h2>
+                <p>
+                    Kami selalu siap melayani kebutuhan furnitur Anda.
+                    Kunjungi workshop kami atau hubungi tim Aldino Perabot
+                    untuk konsultasi maupun pemesanan.
+                </p>
+            </div>
 
-			<div class="row">
+            <div class="row">
 
-				<!-- Informasi -->
-				<div class="col-md-5">
+                <!-- Informasi -->
+                <div class="col-md-5">
 
-					<div class="company-info">
+                    <div class="company-info">
 
-						<h3>Aldino Perabot</h3>
+                        <h3>Aldino Perabot</h3>
 
-						<p>
-							Aldino Perabot merupakan usaha yang bergerak di bidang
-							pembuatan dan penjualan berbagai produk furnitur berkualitas.
-							Kami melayani pembuatan furnitur rumah, kantor, hingga
-							kebutuhan usaha dengan mengutamakan kualitas, ketelitian,
-							dan kepuasan pelanggan.
-						</p>
+                        <p>
+                            Aldino Perabot merupakan usaha yang bergerak di bidang
+                            pembuatan dan penjualan berbagai produk furnitur berkualitas.
+                            Kami melayani pembuatan furnitur rumah, kantor, hingga
+                            kebutuhan usaha dengan mengutamakan kualitas, ketelitian,
+                            dan kepuasan pelanggan.
+                        </p>
 
-						<ul>
+                        <ul>
 
-							<li>
-								<i class="fa fa-map-marker"></i>
-								Jl. Lintas Sumatera Kilometer 17, Koto Gadang Guguak, Kecamatan Gunung Talang, Kabupaten Solok.
-							</li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                Jl. Lintas Sumatera Kilometer 17, Koto Gadang Guguak, Kecamatan Gunung Talang, Kabupaten Solok.
+                            </li>
 
-							<li>
-								<i class="fa fa-phone"></i>
-								+62 852 7477 6577
-							</li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                +62 852 7477 6577
+                            </li>
 
-							<li>
-								<i class="fa fa-envelope"></i>
-								aldinoperabot@gmail.com
-							</li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                aldinoperabot@gmail.com
+                            </li>
 
-							<li>
-								<i class="fa fa-clock-o"></i>
-								Setiap Hari :
-								08.00 - 17.00 WIB
-							</li>
+                            <li>
+                                <i class="fa fa-clock-o"></i>
+                                Setiap Hari :
+                                08.00 - 17.00 WIB
+                            </li>
 
-						</ul>
+                        </ul>
 
-					</div>
+                    </div>
 
-				</div>
+                </div>
 
-				<!-- Maps -->
-				<div class="col-lg-7 col-md-7">
+                <!-- Maps -->
+                <div class="col-lg-7 col-md-7">
 
-					<div class="maps-card">
+                    <div class="maps-card">
 
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510629.1322606219!2d100.05446267343753!3d-0.9323417999999959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b4b25fe0d94e9%3A0x144bda80efa73177!2sAldino%20Perabot!5e0!3m2!1sen!2sid!4v1782894635520!5m2!1sen!2sid"
-							width="100%"
-							height="420"
-							style="border:0;"
-							allowfullscreen=""
-							loading="lazy"
-							referrerpolicy="strict-origin-when-cross-origin">
-						</iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510629.1322606219!2d100.05446267343753!3d-0.9323417999999959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b4b25fe0d94e9%3A0x144bda80efa73177!2sAldino%20Perabot!5e0!3m2!1sen!2sid!4v1782894635520!5m2!1sen!2sid"
+                            width="100%"
+                            height="420"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
 
-					</div>
+                    </div>
 
-				</div>
+                </div>
 
-			</div>
+            </div>
 
-		</div>
-	</section>
+        </div>
+    </section>
 
     <!--footer start-->
-	<footer id="footer" class="footer">
-		<div class="container">
-			<div class="hm-footer-copyright text-center">
-				<div class="footer-social">
-					<div class="social-media">
-						<a href="https://www.facebook.com/USERNAME" target="_blank">
-							<i class="fab fa-facebook-f"></i>
-						</a>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <div class="footer-social">
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/USERNAME" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
 
-						<a href="https://www.instagram.com/dino_ok86?igsh=MWs3MTgya2dzOGxkYw==" target="_blank">
-							<i class="fab fa-instagram"></i>
-						</a>
+                        <a href="https://www.instagram.com/dino_ok86?igsh=MWs3MTgya2dzOGxkYw==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
 
-						<a href="https://www.tiktok.com/@dinook5?_r=1&_t=ZS-97fKVSNCGdF" target="_blank">
-							<i class="fab fa-tiktok"></i>
-						</a>
-					</div>
-				</div>
-				<p>
-					&copy;2026. Aldino Perabot. All Rights Reserved.
-				</p><!--/p-->
-			</div><!--/.text-center-->
-		</div><!--/.container-->
+                        <a href="https://www.tiktok.com/@dinook5?_r=1&_t=ZS-97fKVSNCGdF" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <p>
+                    &copy;2026. Aldino Perabot. All Rights Reserved.
+                </p><!--/p-->
+            </div><!--/.text-center-->
+        </div><!--/.container-->
 
-		<div id="scroll-Top">
-			<div class="return-to-top">
-				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-			</div>
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+            </div>
 
-		</div><!--/.scroll-Top-->
+        </div><!--/.scroll-Top-->
 
-	</footer><!--/.footer-->
-	<!--footer end-->
+    </footer><!--/.footer-->
+    <!--footer end-->
 
     <!-- Include all js compiled plugins (below), or include individual files as needed -->
 
@@ -697,33 +720,31 @@
     </style>
 
 
-    <?php if (session()->getFlashdata('success')) : ?>
+    <?php
+    $success = session()->getFlashdata('success');
+    $error   = session()->getFlashdata('error');
+    ?>
+
+    <?php if ($success): ?>
 
         <script>
             Swal.fire({
-
                 icon: 'success',
-
                 title: 'Berhasil',
-
-                text: "<?= session()->getFlashdata('success'); ?>",
-
+                text: <?= json_encode($success) ?>,
                 confirmButtonText: 'OK'
-
             });
         </script>
 
-
     <?php endif; ?>
 
-
-    <?php if (session()->getFlashdata('error')) : ?>
+    <?php if ($error): ?>
 
         <script>
             Swal.fire({
                 icon: 'error',
                 title: 'Gagal',
-                text: "<?= session()->getFlashdata('error') ?>",
+                text: <?= json_encode($error) ?>
             });
         </script>
 

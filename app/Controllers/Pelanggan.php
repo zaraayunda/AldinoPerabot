@@ -39,17 +39,20 @@ class Pelanggan extends BaseController
 
         $rules = [
             'email' => [
-                'rules' => 'required|valid_email',
+                'rules' => 'required|valid_email|is_unique[user.email]',
+                'label' => 'Email',
                 'errors' => [
-                    'required' => 'Email wajib diisi',
-                    'valid_email' => 'Format email tidak valid'
+                    'required' => 'Email wajib diisi.',
+                    'valid_email' => 'Format email tidak valid.',
+                    'is_unique' => 'Email sudah digunakan.'
                 ]
             ],
             'username' => [
                 'rules' => 'required|is_unique[user.username]',
+                'label' => 'Username',
                 'errors' => [
-                    'required' => 'Username wajib diisi',
-                    'is_unique' => 'Username sudah digunakan'
+                    'required' => 'Username wajib diisi.',
+                    'is_unique' => 'Username sudah digunakan.'
                 ]
             ],
             'password' => [
@@ -78,6 +81,7 @@ class Pelanggan extends BaseController
         ];
 
         if (!$this->validate($rules)) {
+            dd($this->validator->getErrors());
 
             return redirect()->back()
                 ->withInput()
@@ -108,14 +112,13 @@ class Pelanggan extends BaseController
             'alamat' => $this->request->getPost('alamat'),
             'nohp' => $this->request->getPost('nohp')
         ];
-
         $modelPelanggan->insert($dataPelanggan);
-        return redirect()
-            ->to('/datapelanggan')
-            ->with(
-                'success',
-                'Data pelanggan berhasil ditambahkan.'
+        session()->setFlashdata(
+            'success',
+            'Data pelanggan berhasil ditambahkan'
         );
+
+        return redirect()->to('/datapelanggan');
     }
 
     public function edit($idpelanggan, $iduser)

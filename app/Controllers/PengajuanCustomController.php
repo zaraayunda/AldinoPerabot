@@ -167,7 +167,7 @@ class PengajuanCustomController extends BaseController
             $db->transCommit();
 
             return redirect()
-                ->to('/homepage')
+                ->to('/pengajuan-custom')
                 ->with(
                     'success',
                     'Data produk berhasil diajukan, silahkan tunggu konfirmasi admin. Anda dapat memantau proses pengajuan melalui menu "Pengajuan Custom".'
@@ -539,7 +539,7 @@ class PengajuanCustomController extends BaseController
                     'detailproduk' =>
                     $detail['detailcustom'],
 
-                    'foto' =>'',
+                    'foto' => '',
 
                     'statusproduk' => 'nonaktif'
 

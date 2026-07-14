@@ -400,6 +400,7 @@
             });
 
         });
+        document.getElementById('biayaantar').addEventListener('input', hitungTotal);
 
     });
 
@@ -419,10 +420,7 @@
         }
         let subtotal = (harga * qty) - ((harga * qty) * (diskon / 100));
         totalProduk += subtotal;
-        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
-        let totalHarga = totalProduk + biayaantar;
-
-        document.getElementById('total').value = totalHarga;
+        hitungTotal();
 
         let row = `
         <tr>
@@ -447,11 +445,13 @@
     function hapusBaris(button, subtotal) {
         totalProduk -= subtotal;
 
-        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
-        let totalHarga = totalProduk + biayaantar;
-
-        document.getElementById('total').value = totalHarga;
+        hitungTotal();
         button.closest('tr').remove();
+    }
+
+    function hitungTotal() {
+        let biayaantar = parseInt(document.getElementById('biayaantar').value) || 0;
+        document.getElementById('total').value = totalProduk + biayaantar;
     }
 </script>
 

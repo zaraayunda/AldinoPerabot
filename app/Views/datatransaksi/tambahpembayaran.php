@@ -26,7 +26,7 @@
 
             <?= csrf_field() ?>
             <input
-                type="text"
+                type="hidden"
                 name="idpembayaran"
                 class="form-control"
                 value="<?= $idpembayaran ?>"
@@ -108,7 +108,7 @@
                         </label>
                         <input
                             type="number"
-                            id="totalharga"
+                            id="total"
                             class="form-control"
                             readonly>
 
@@ -327,7 +327,7 @@
                                 </td>
 
                                 <td>
-                                    Rp <?= number_format($p['totalharga'], 0, ',', '.') ?>
+                                    Rp <?= number_format($p['total'], 0, ',', '.') ?>
                                 </td>
 
                                 <td>
@@ -343,7 +343,7 @@
                                         data-tanggal="<?= $p['tanggalpesanan'] ?>"
                                         data-nama="<?= $namaPelanggan ?>"
                                         data-idpelanggan="<?= $p['idpelanggan'] ?>"
-                                        data-total="<?= $p['totalharga'] ?>"
+                                        data-total="<?= $p['total'] ?>"
                                         data-jumlahproduk="<?= $jumlahProduk ?>"
                                         data-statuspesanan="<?= $p['statuspesanan'] ?>">
 
@@ -378,7 +378,7 @@
             document.getElementById('namapelanggan').value = this.dataset.nama;
             document.getElementById('idpelanggan').value = this.dataset.idpelanggan;
             document.getElementById('jumlahproduk').value = this.dataset.jumlahproduk;
-            document.getElementById('totalharga').value = this.dataset.total;
+            document.getElementById('total').value = this.dataset.total;
             document.getElementById('statuspesanan').value = this.dataset.statuspesanan;
 
             // OPTIONAL kalau kamu punya field jumlah produk di form

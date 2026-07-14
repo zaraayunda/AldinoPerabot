@@ -18,6 +18,7 @@ class KeranjangController extends BaseController
     {
         $modelKeranjang = new ModelKeranjang();
         $modelPelanggan = new ModelPelanggan();
+        $session = session();
         $iduser = session()->get('iduser');
 
         $pelanggan = $modelPelanggan
@@ -53,9 +54,12 @@ class KeranjangController extends BaseController
                 'statuskeranjang' => 'aktif'
             ]);
         }
-
-        return redirect()->back()
-            ->with('success', 'Produk berhasil ditambahkan ke keranjang.');
+        $session->setFlashdata([
+            'icon'  => 'success',
+            'title' => 'Produk Ditambahkan',
+            'msg'   => 'Produk berhasil ditambahkan ke keranjang.'
+        ]);
+        return redirect()->to('/keranjang');
     }
 
     public function tampilankeranjang()
@@ -356,4 +360,5 @@ class KeranjangController extends BaseController
 
         return redirect()->back();
     }
+
 }

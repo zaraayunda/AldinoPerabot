@@ -1,6 +1,7 @@
 <?= $this->extend('dashboard/dashboard') ?>
 <?= $this->section('content') ?>
 
+
 <!-- Statistik -->
 <div class="row mb-4">
     <div class="col-md-3 mb-3">
@@ -183,37 +184,37 @@
 <script>
     const searchInput = document.getElementById('search-input');
 
-searchInput.addEventListener('keyup', function () {
+    searchInput.addEventListener('keyup', function() {
 
-    let keyword = this.value.toLowerCase();
-    let rows = document.querySelectorAll('#datapengguna tbody tr');
-    let found = false;
+        let keyword = this.value.toLowerCase();
+        let rows = document.querySelectorAll('#datapengguna tbody tr');
+        let found = false;
 
-    rows.forEach(row => {
+        rows.forEach(row => {
 
-        // skip row "no result"
-        if (row.id === 'no-result') return;
+            // skip row "no result"
+            if (row.id === 'no-result') return;
 
-        let nama = row.cells[2]?.innerText.toLowerCase() || '';
-        let email = row.cells[3]?.innerText.toLowerCase() || '';
+            let nama = row.cells[2]?.innerText.toLowerCase() || '';
+            let email = row.cells[3]?.innerText.toLowerCase() || '';
 
-        if (
-            nama.includes(keyword) ||
-            email.includes(keyword)
-        ) {
-            row.style.display = '';
-            found = true;
-        } else {
-            row.style.display = 'none';
-        }
+            if (
+                nama.includes(keyword) ||
+                email.includes(keyword)
+            ) {
+                row.style.display = '';
+                found = true;
+            } else {
+                row.style.display = 'none';
+            }
+
+        });
+
+        // tampilkan / sembunyikan pesan kosong
+        document.getElementById('no-result').style.display =
+            found ? 'none' : '';
 
     });
-
-    // tampilkan / sembunyikan pesan kosong
-    document.getElementById('no-result').style.display =
-        found ? 'none' : '';
-
-});
 
 
     document.querySelectorAll('.btn-hapus').forEach(button => {

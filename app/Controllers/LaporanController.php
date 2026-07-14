@@ -276,9 +276,37 @@ class LaporanController extends BaseController
         return view('laporan/laporanpesanan', $data);
     }
 
-    public function lapstatuspesanan()
+    public function laporanstatuspesanan()
     {
-        //
+        $modelPesanan = new ModelPesanan();
+        $data = [
+            'pesanan' => $modelPesanan->findAll()
+        ];
+        return view('laporan/v_lapstatuspesanan', $data);
+    }
+
+    public function cetaklapstatuspesanan()
+    {
+        $idpesanan = $this->request->getPost('idpesanan');
+
+        $modelPesanan = new ModelPesanan();
+        $modelKategori = new ModelKategori();
+        $modelProduk = new ModelProduk();
+        $modelDetailPesanan = new ModelDetailPesanan();
+        $modelPelanggan = new ModelPelanggan();
+        $modelPembayaran = new ModelPembayaran();
+
+        $data = [
+            'idpesanan'      => $idpesanan,
+            'pesanan'        => $modelPesanan->findAll(),
+            'detailpesanan'  => $modelDetailPesanan->findAll(),
+            'produk'         => $modelProduk->findAll(),
+            'kategori'       => $modelKategori->findAll(),
+            'pelanggan'      => $modelPelanggan->findAll(),
+            'pembayaran'     => $modelPembayaran->findAll()
+        ];
+
+        return view('laporan/laporanstatuspesanan', $data);
     }
     public function laporanpenjualan()
     {

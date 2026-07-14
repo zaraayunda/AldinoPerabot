@@ -11,8 +11,9 @@ $routes->post('/login/ceklogin', 'Login::ceklogin');
 $routes->get('/logout', 'Login::logout');
 $routes->post('/registrasi/simpan', 'Login::simpanregistrasi');
 $routes->get('/homepage/loadmore', 'Layout::loadMore');
-$routes->get('/about', 'Layout::about');
+$routes->get('about', 'Layout::about');
 $routes->get('/contact', 'Layout::contact');
+$routes->get('/dashboard/tampil', 'Layout::dashboard_admin');
 
 /** PENGGUNA */
 $routes->get('/datapengguna', 'Pengguna::index');
@@ -90,11 +91,13 @@ $routes->get('batalkanpengajuan/(:segment)', 'PengajuanCustomController::batalka
 
 /** KERANJANG**/
 $routes->get('/keranjang', 'KeranjangController::tampilankeranjang');
+$routes->get('/simpankeranjang/(:segment)', 'KeranjangController::simpan/$1');
 $routes->post('checkout', 'KeranjangController::checkout');
 $routes->post('checkout/simpan', 'KeranjangController::simpanCheckout');
 $routes->get('/hapuskeranjang/(:segment)', 'KeranjangController::hapusKeranjang/$1');
 $routes->get('/tambahqty/(:segment)', 'KeranjangController::tambahqty/$1');
 $routes->get('/kurangqty/(:segment)', 'KeranjangController::kurangqty/$1');
+$routes->get('/lihatproduk/(:segment)', 'KeranjangController::lihatProduk/$1');
 
 /** LAPORAN **/
 $routes->get('/laporanuser', 'LaporanController::laporanuser');
@@ -111,5 +114,6 @@ $routes->get('/laporanpesanan', 'LaporanController::laporanpesanan');
 $routes->get('/cetaklaporan/pesanan', 'LaporanController::cetaklappesanan');
 $routes->get('/laporanpenjualan', 'LaporanController::laporanpenjualan');
 $routes->get('/cetaklaporan/penjualan', 'LaporanController::cetaklappenjualan');
-
 $routes->get('faktur/(:segment)', 'LaporanController::faktur/$1');
+$routes->get('/lapstatuspesanan', 'LaporanController::laporanstatuspesanan');
+$routes->post('/cetaklaporan/statuspesanan', 'LaporanController::cetaklapstatuspesanan');
