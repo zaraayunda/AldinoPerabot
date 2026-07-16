@@ -293,7 +293,7 @@
 
                 $totalBayar = $pembayaranMap[$row['idpesanan']] ?? 0;
 
-                $sisa = $row['totalharga'] - $totalBayar;
+                $sisa = $row['total'] - $totalBayar;
 
                 if ($totalBayar == 0) {
 

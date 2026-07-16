@@ -518,17 +518,17 @@
     </style>
 
 
-<?php if (session()->getFlashdata('msg')) : ?>
-<script>
-Swal.fire({
-    icon: '<?= session()->getFlashdata('icon') ?>',
-    title: '<?= session()->getFlashdata('title') ?>',
-    html: '<?= esc(session()->getFlashdata('msg')) ?>',
-    confirmButtonColor: '#8B5E3C',
-    confirmButtonText: 'OK'
-});
-</script>
-<?php endif; ?>
+    <?php if (session()->getFlashdata('msg')) : ?>
+        <script>
+            Swal.fire({
+                icon: '<?= session()->getFlashdata('icon') ?>',
+                title: '<?= session()->getFlashdata('title') ?>',
+                html: '<?= esc(session()->getFlashdata('msg')) ?>',
+                confirmButtonColor: '#8B5E3C',
+                confirmButtonText: 'OK'
+            });
+        </script>
+    <?php endif; ?>
     <script>
         document.addEventListener(
             'DOMContentLoaded',
