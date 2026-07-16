@@ -293,4 +293,115 @@ class Layout extends BaseController
 
         return view('dashboard/v_dashboard', $data);
     }
+
+    public function profile()
+    {
+        $modelPelanggan = new ModelPelanggan();
+        $modelPesanan   = new ModelPesanan();
+        $modelPembayaran = new ModelPembayaran();
+
+        $iduser = session()->get('iduser');
+
+        $pelanggan = $modelPelanggan
+            ->select('pelanggan.*, user.namauser,user.username,user.email,user.status')
+            ->join('user', 'user.iduser=pelanggan.iduser')
+            ->where('pelanggan.iduser', $iduser)
+            ->first();
+
+        $idpelanggan = $pelanggan['idpelanggan'];
+
+        $data = [
+            'pelanggan' => $pelanggan,
+
+            'totalPesanan' => $modelPesanan
+                ->where('idpelanggan', $idpelanggan)
+                ->countAllResults(),
+
+            'pesananSelesai' => $modelPesanan
+                ->where('idpelanggan', $idpelanggan)
+                ->where('statuspesanan', 'selesai')
+                ->countAllResults(),
+
+            'menungguKonfirmasi' => $modelPesanan
+                ->where('idpelanggan', $idpelanggan)
+                ->where('statuspesanan', 'menunggu_konfirmasi')
+                ->countAllResults(),
+
+            'pembayaranMenunggu' => $modelPembayaran
+                ->join('pesanan', 'pesanan.idpesanan=pembayaran.idpesanan')
+                ->where('pesanan.idpelanggan', $idpelanggan)
+                ->where('statuspembayaran', 'menunggu')
+                ->countAllResults(),
+            'prosesProduksi' => $modelPesanan
+                ->where('idpelanggan', $idpelanggan)
+                ->where('statuspesanan', 'proses_produksi')
+                ->countAllResults(),
+
+            'prosesPengantaran' => $modelPesanan
+                ->where('idpelanggan', $idpelanggan)
+                ->where('statuspesanan', 'proses_pengantaran')
+                ->countAllResults(),
+        ];
+
+        return view('pelanggan/v_profile', $data);
+    }
+
+    public function edit_pelanggan()
+    {
+        $modelPelanggan = new ModelPelanggan();
+        $modelPengguna = new ModelPengguna();
+
+        $iduser = session()->get('iduser');
+
+        $pelanggan = $modelPelanggan
+            ->where('iduser', $iduser)
+            ->first();
+
+        $data = [
+            'pelanggan' => $pelanggan,
+            'user' => $modelPengguna->find($iduser)
+        ];
+
+        return view('pelanggan/editprofile', $data);
+    }
+
+    public function simpan_edit_pelanggan()
+    {
+        $modelPelanggan = new ModelPelanggan();
+        $modelPengguna = new ModelPengguna();
+
+        $iduser = session()->get('iduser');
+
+        $pelanggan = $modelPelanggan
+            ->where('iduser', $iduser)
+            ->first();
+
+        $dataPelanggan = [
+            'namapelanggan' => $this->request->getPost('namapelanggan'),
+            'nohp' => $this->request->getPost('nohp'),
+            'alamat' => $this->request->getPost('alamat')
+        ];
+
+        $dataUser = [
+            'username' => $this->request->getPost('username'),
+            'email' => $this->request->getPost('email')
+        ];
+
+        // Update data pelanggan
+        $modelPelanggan
+            ->where('idpelanggan', $pelanggan['idpelanggan'])
+            ->set($dataPelanggan)
+            ->update();
+
+        // Update data user
+        $modelPengguna
+            ->where('iduser', $iduser)
+            ->set($dataUser)
+            ->update();
+
+        return redirect()->to('/profil')
+            ->with('msg', 'Data telah berhasil diperbaruhi.')
+            ->with('title', 'Berhasil')
+            ->with('icon', 'success');
+    }
 }

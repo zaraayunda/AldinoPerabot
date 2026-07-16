@@ -22,7 +22,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="<?= base_url() ?>/assets/dashboard/images/logos/logo.svg" alt="">
+                  <img src="<?= base_url() ?>/assets/dashboard/images/logos/logo.png" alt="" width="330">
                 </a>
                 <p class="text-center">Jalan Lintas Solok – Padang KM 17, Ps. Usang Guguk, Sumatera Barat</p>
                 <form action="<?= base_url('registrasi/simpan') ?>" method="post">

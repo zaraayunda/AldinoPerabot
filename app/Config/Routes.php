@@ -13,7 +13,11 @@ $routes->post('/registrasi/simpan', 'Login::simpanregistrasi');
 $routes->get('/homepage/loadmore', 'Layout::loadMore');
 $routes->get('about', 'Layout::about');
 $routes->get('/contact', 'Layout::contact');
+$routes->get('/profil', 'Layout::profile');
+$routes->get('/edit_pelanggan', 'Layout::edit_pelanggan');
+$routes->post('/edit_pelanggan/simpan', 'Layout::simpan_edit_pelanggan');
 $routes->get('/dashboard/tampil', 'Layout::dashboard_admin');
+$routes->get('/lupasandi', 'Layout::lupasandi');
 
 /** PENGGUNA */
 $routes->get('/datapengguna', 'Pengguna::index');

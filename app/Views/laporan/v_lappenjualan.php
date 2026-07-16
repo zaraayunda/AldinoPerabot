@@ -100,7 +100,7 @@
                                 <?php
                                 $tahunSekarang = date('Y');
 
-                                for ($i = $tahunSekarang; $i >= 2010; $i--) :
+                                for ($i = $tahunSekarang; $i >= 2002; $i--) :
                                 ?>
 
                                     <option value="<?= $i ?>">

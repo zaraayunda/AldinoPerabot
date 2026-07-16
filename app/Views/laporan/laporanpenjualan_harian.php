@@ -371,7 +371,7 @@
                                 Rp <?= number_format($d['harga'], 0, ',', '.') ?>
                             </td>
                             <td>
-                                Rp <?= number_format($d['diskon'], 0, ',', '.') ?>
+                                <?= number_format($d['diskon'], 0, ',', '.') ?> %
                             </td>
 
                             <td>
