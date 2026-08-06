@@ -228,13 +228,12 @@
     <!--welcome-hero end -->
 
     <br>
-    <br>
-    <br>
 
     <div class="custom-page">
 
         <div class="page-header">
             <h2>Pesanan Saya</h2>
+            <div class="page-divider"></div>
             <p>
                 Pantau status dan perkembangan seluruh pesanan Anda.
             </p>
@@ -615,23 +614,31 @@
                                 <!-- Belum pernah melakukan pembayaran -->
                                 <?php if (empty($jenis)) : ?>
 
-                                    <button
-                                        type="button"
-                                        class="btn-payment"
-                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+                                    <?php if (empty($row['biayaantar'])) : ?>
 
-                                        Bayar Sekarang
+                                        <button
+                                            type="button"
+                                            class="btn-payment btn-disabled"
+                                            disabled
+                                            title="Biaya pengiriman belum ditetapkan oleh admin">
+                                            Bayar Sekarang
+                                        </button>
 
-                                    </button>
-                                    <!-- <button
-                                        data-url="<?= base_url('pesananpelanggan/batal/' . $row['idpesanan']) ?>"
-                                        class="btn-cancel btn-batal-pesanan">
+                                        <p style="margin-top:10px;color:#d35400;font-size:13px;">
+                                            Menunggu admin menetapkan biaya pengiriman sebelum pembayaran dapat dilakukan.
+                                        </p>
 
-                                        Batalkan
+                                    <?php else : ?>
 
-                                    </button> -->
+                                        <button
+                                            type="button"
+                                            class="btn-payment"
+                                            onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+                                            Bayar Sekarang
+                                        </button>
 
-                                    <!-- Ada pembayaran yang sedang diperiksa admin -->
+                                    <?php endif; ?>
+
                                 <?php elseif ($status == 'menunggu_pembayaran') : ?>
 
                                     <p style="margin-top:12px;color:#e67e22;font-weight:600;">
@@ -741,16 +748,32 @@
 
                                 <!-- Belum pernah melakukan pembayaran -->
                                 <?php if (empty($jenis)) : ?>
-                                    <button
-                                        type="button"
-                                        class="btn-payment"
-                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
 
-                                        Bayar Sekarang
+                                    <?php if (empty($row['biayaantar'])) : ?>
 
-                                    </button>
+                                        <button
+                                            type="button"
+                                            class="btn-payment btn-disabled"
+                                            disabled
+                                            title="Biaya pengiriman belum ditetapkan oleh admin">
+                                            Bayar Sekarang
+                                        </button>
 
-                                    <!-- Ada pembayaran yang sedang diperiksa admin -->
+                                        <p style="margin-top:10px;color:#d35400;font-size:13px;">
+                                            Menunggu admin menetapkan biaya pengiriman sebelum pembayaran dapat dilakukan.
+                                        </p>
+
+                                    <?php else : ?>
+
+                                        <button
+                                            type="button"
+                                            class="btn-payment"
+                                            onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+                                            Bayar Sekarang
+                                        </button>
+
+                                    <?php endif; ?>
+
                                 <?php elseif ($status == 'menunggu_pembayaran') : ?>
 
                                     <p style="margin-top:12px;color:#e67e22;font-weight:600;">
@@ -862,16 +885,31 @@
                                 <!-- Belum pernah melakukan pembayaran -->
                                 <?php if (empty($jenis)) : ?>
 
-                                    <button
-                                        type="button"
-                                        class="btn-payment"
-                                        onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+                                    <?php if (empty($row['biayaantar'])) : ?>
 
-                                        Bayar Sekarang
+                                        <button
+                                            type="button"
+                                            class="btn-payment btn-disabled"
+                                            disabled
+                                            title="Biaya pengiriman belum ditetapkan oleh admin">
+                                            Bayar Sekarang
+                                        </button>
 
-                                    </button>
+                                        <p style="margin-top:10px;color:#d35400;font-size:13px;">
+                                            Menunggu admin menetapkan biaya pengiriman sebelum pembayaran dapat dilakukan.
+                                        </p>
 
-                                    <!-- Ada pembayaran yang sedang diperiksa admin -->
+                                    <?php else : ?>
+
+                                        <button
+                                            type="button"
+                                            class="btn-payment"
+                                            onclick="window.location.href='<?= base_url('pembayaran_pelanggan/' . $row['idpesanan']) ?>'">
+                                            Bayar Sekarang
+                                        </button>
+
+                                    <?php endif; ?>
+
                                 <?php elseif ($status == 'menunggu_pembayaran') : ?>
 
                                     <p style="margin-top:12px;color:#e67e22;font-weight:600;">
@@ -1012,25 +1050,63 @@
 
                         <i class="lnr lnr-clock"></i>
 
-                        <div>
+                        <div class="estimasi-wrapper">
 
-                            <strong>
-                                Estimasi Pengerjaan
-                            </strong>
+                            <?php if (!empty($row['estimasiwaktu'])) : ?>
 
-                            <p>
+                                <?php
+                                $bulan = [
+                                    'January' => 'Januari',
+                                    'February' => 'Februari',
+                                    'March' => 'Maret',
+                                    'April' => 'April',
+                                    'May' => 'Mei',
+                                    'June' => 'Juni',
+                                    'July' => 'Juli',
+                                    'August' => 'Agustus',
+                                    'September' => 'September',
+                                    'October' => 'Oktober',
+                                    'November' => 'November',
+                                    'December' => 'Desember'
+                                ];
 
-                                <?php if (!empty($row['estimasiwaktu'])) : ?>
+                                $tanggalPesan = new DateTime($row['tanggalpesanan']);
+                                $tanggalSelesai = clone $tanggalPesan;
+                                $tanggalSelesai->modify('+' . $row['estimasiwaktu'] . ' days');
 
-                                    <?= $row['estimasiwaktu'] ?> Hari
+                                $tglSelesai = strtr($tanggalSelesai->format('d F Y'), $bulan);
+                                ?>
 
-                                <?php else : ?>
+                                <div class="estimasi-item">
+                                    <i class="fa fa-hourglass-half"></i>
 
-                                    Belum ada perkiraan waktu penyelesaian.
+                                    <div>
+                                        <small>Estimasi Pengerjaan</small>
+                                        <strong><?= $row['estimasiwaktu'] ?> Hari</strong>
+                                    </div>
+                                </div>
 
-                                <?php endif; ?>
+                                <div class="estimasi-item">
+                                    <i class="fa fa-calendar"></i>
 
-                            </p>
+                                    <div>
+                                        <small>Perkiraan Selesai</small>
+                                        <strong><?= $tglSelesai ?></strong>
+                                    </div>
+                                </div>
+
+                            <?php else : ?>
+
+                                <div class="estimasi-item">
+                                    <i class="fa fa-info-circle"></i>
+
+                                    <div>
+                                        <small>Estimasi Pengerjaan</small>
+                                        <strong>Belum ada perkiraan waktu penyelesaian.</strong>
+                                    </div>
+                                </div>
+
+                            <?php endif; ?>
 
                         </div>
 

@@ -144,7 +144,7 @@
 
                 <hr>
 
-                <h4 class="section-title">Detail Produk</h4>
+                <h4 class="section-title">Detail Pesanan</h4>
 
                 <div class="row align-items-end">
 

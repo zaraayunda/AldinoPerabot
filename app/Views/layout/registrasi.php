@@ -95,9 +95,12 @@
                         <input
                           type="password"
                           name="password"
+                          id="password"
                           class="form-control"
-                          placeholder="Masukkan password"
+                          placeholder="Masukkan password (minimal 8 karakter)"
+                          minlength="8"
                           required>
+                        <small id="password-error" class="text-danger"></small>
                       </div>
                       <div class="col-md-6 mb-3">
                         <label class="form-label">
@@ -108,9 +111,11 @@
                         <input
                           type="password"
                           name="konfirmasi_password"
+                          id="konfirmasi_password"
                           class="form-control"
                           placeholder="Ulangi password"
                           required>
+                        <small id="konfirmasi-error" class="text-danger"></small>
                       </div>
                     </div>
                     <div class="row">
@@ -201,6 +206,38 @@
       });
     </script>
   <?php endif; ?>
+
+  <script>
+    const password = document.getElementById('password');
+    const konfirmasi = document.getElementById('konfirmasi_password');
+
+    const passwordError = document.getElementById('password-error');
+    const konfirmasiError = document.getElementById('konfirmasi-error');
+
+    function cekPassword() {
+
+      // Validasi minimal 8 karakter
+      if (password.value.length > 0 && password.value.length < 8) {
+        passwordError.innerHTML = "Password minimal 8 karakter.";
+        password.setCustomValidity("Password minimal 8 karakter.");
+      } else {
+        passwordError.innerHTML = "";
+        password.setCustomValidity("");
+      }
+
+      // Validasi konfirmasi password
+      if (konfirmasi.value.length > 0 && password.value !== konfirmasi.value) {
+        konfirmasiError.innerHTML = "Konfirmasi password tidak sesuai.";
+        konfirmasi.setCustomValidity("Konfirmasi password tidak sesuai.");
+      } else {
+        konfirmasiError.innerHTML = "";
+        konfirmasi.setCustomValidity("");
+      }
+    }
+
+    password.addEventListener('input', cekPassword);
+    konfirmasi.addEventListener('input', cekPassword);
+  </script>
 </body>
 
 </html>

@@ -79,7 +79,7 @@
                         Update Data
                     </button>
                     <a
-                        href="<?= base_url('datapengguna') ?>"
+                        href="<?= base_url('datakategori') ?>"
                         class="btn btn-kembali ms-2">
                         <i class="ti ti-arrow-left me-1"></i>
                         Kembali

@@ -228,12 +228,11 @@
     <!--welcome-hero end -->
 
     <br>
-    <br>
-    <br>
 
     <div class="custom-page">
         <div class="page-header">
             <h2>Pengajuan Custom Saya</h2>
+            <div class="page-divider"></div>
             <p>
                 Kelola dan pantau seluruh pengajuan produk custom Anda.
             </p>

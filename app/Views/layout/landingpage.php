@@ -173,7 +173,7 @@
 									<div class="col-sm-5">
 										<div class="single-welcome-hero">
 											<div class="welcome-hero-img">
-												<img src="<?= base_url() ?>/assets/images/slider/slider3.png" alt="slider image">
+												<img src="<?= base_url() ?>/assets/images/slider/slider4.png" alt="slider image">
 											</div><!--/.welcome-hero-txt-->
 										</div><!--/.single-welcome-hero-->
 									</div><!--/.col-->
@@ -420,32 +420,26 @@
 			<div class="sofa-collection collectionbg1">
 				<div class="container">
 					<div class="sofa-collection-txt">
-						<h2>unlimited sofa collection</h2>
+						<h2>
+							<strong>Wujudkan Furniture Impian Bersama Aldino Perabot</strong>
+						</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Temukan berbagai pilihan furniture berkualitas untuk rumah, kantor, sekolah, hingga kebutuhan usaha Anda. Dengan material terbaik dan pengerjaan yang rapi, kami siap menghadirkan produk yang nyaman, kuat, dan sesuai dengan kebutuhan Anda.
 						</p>
 						<div class="sofa-collection-price">
-							<h4>strting from <span>$ 199</span></h4>
+							<h4>Mulai dari <span>Rp 250.000</span></h4>
 						</div>
-						<button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='#'">
-							view more
-						</button>
+
 					</div>
 				</div>
 			</div><!--/.sofa-collection-->
 			<div class="sofa-collection collectionbg2">
 				<div class="container">
 					<div class="sofa-collection-txt">
-						<h2>unlimited dainning table collection</h2>
+						<h2>Furniture Custom Sesuai Keinginan Anda</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Punya desain furniture impian? Kami siap membantu mewujudkannya. Kirimkan desain atau referensi Anda, lalu biarkan tim Aldino Perabot membuat furniture yang sesuai dengan ukuran, model, dan kebutuhan ruangan Anda.
 						</p>
-						<div class="sofa-collection-price">
-							<h4>strting from <span>$ 299</span></h4>
-						</div>
-						<button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='#'">
-							view more
-						</button>
 					</div>
 				</div>
 			</div><!--/.sofa-collection-->

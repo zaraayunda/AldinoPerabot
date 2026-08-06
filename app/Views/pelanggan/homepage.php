@@ -179,7 +179,7 @@
                                     <div class="col-sm-5">
                                         <div class="single-welcome-hero">
                                             <div class="welcome-hero-img">
-                                                <img src="<?= base_url() ?>/assets/images/slider/slider3.png" alt="slider image">
+                                                <img src="<?= base_url() ?>/assets/images/slider/slider4.png" alt="slider image">
                                             </div><!--/.welcome-hero-txt-->
                                         </div><!--/.single-welcome-hero-->
                                     </div><!--/.col-->

@@ -50,6 +50,7 @@
 
     <div class="page-header">
         <h2>Checkout Pesanan</h2>
+        <div class="page-divider"></div>
         <p>
             Periksa kembali produk yang akan Anda pesan.
         </p>

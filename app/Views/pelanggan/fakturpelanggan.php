@@ -30,6 +30,20 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, .12);
         }
 
+        .invoice-table tfoot td {
+            padding: 10px 12px;
+            border-top: 1px solid #ddd;
+            font-weight: 600;
+        }
+
+        .invoice-table tfoot td:last-child {
+            text-align: right;
+        }
+
+        .invoice-table tfoot .label-total {
+            text-align: right;
+        }
+
         /* ================= HEADER ================= */
 
         .header {
@@ -498,30 +512,26 @@
             <table class="invoice-table">
 
                 <thead>
-
                     <tr>
-
                         <th width="6%">No</th>
-
                         <th>Nama Produk</th>
-
                         <th width="10%">Qty</th>
-
                         <th width="18%">Harga</th>
-
                         <th width="10%">Diskon</th>
-
                         <th width="20%">Subtotal</th>
-
                     </tr>
-
                 </thead>
 
                 <tbody>
 
-                    <?php $no = 1; ?>
+                    <?php
+                    $no = 1;
+                    $totalSubtotal = 0;
+                    ?>
 
                     <?php foreach ($detail as $d) : ?>
+
+                        <?php $totalSubtotal += $d['subtotal']; ?>
 
                         <tr>
 
@@ -530,33 +540,23 @@
                             </td>
 
                             <td>
-
-                                <strong><?= $d['namaproduk']; ?></strong>
-
+                                <strong><?= esc($d['namaproduk']); ?></strong>
                             </td>
 
                             <td class="center">
-
                                 <?= $d['qty']; ?>
-
                             </td>
 
                             <td class="right">
-
                                 Rp <?= number_format($d['harga'], 0, ',', '.'); ?>
-
                             </td>
 
                             <td class="center">
-
                                 <?= $d['diskon']; ?>%
-
                             </td>
 
                             <td class="right">
-
                                 Rp <?= number_format($d['subtotal'], 0, ',', '.'); ?>
-
                             </td>
 
                         </tr>
@@ -564,6 +564,24 @@
                     <?php endforeach; ?>
 
                 </tbody>
+
+                <tfoot>
+
+                    <tr class="total-row">
+
+                        <td colspan="5" class="right">
+                            <h5>Total Subtotal Produk</h5>
+                        </td>
+
+                        <td class="right">
+                            <h5>
+                                Rp <?= number_format($totalSubtotal, 0, ',', '.'); ?>
+                            </h5>
+                        </td>
+
+                    </tr>
+
+                </tfoot>
 
             </table>
 

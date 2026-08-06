@@ -177,22 +177,52 @@
                                             </td>
 
                                             <td rowspan="<?= $jumlahDetail ?>" class="text-center align-middle" style="min-width:150px;">
-                                                <div class="d-flex justify-content-center gap-2">                                                
+                                                <div class="d-flex justify-content-center gap-2">
 
-                                                    <?php if ($row['statuscustom'] != 'batal') : ?>
+                                                    <?php if ($row['statuscustom'] == 'batal') : ?>
+
+                                                        <!-- Hanya tombol Hapus -->
+                                                        <a href="<?= base_url('hapuspengajuan/' . $row['idpengajuan']) ?>"
+                                                            class="btn btn-danger btn-sm btn-hapus">
+                                                            <i class="ti ti-trash"></i>
+                                                        </a>
+
+                                                    <?php elseif ($row['statuscustom'] == 'disetujui') : ?>
+
+                                                        <!-- Tombol Edit -->
+                                                        <a href="<?= base_url('editpengajuan/' . $row['idpengajuan']) ?>"
+                                                            class="btn btn-warning btn-sm">
+                                                            <i class="ti ti-edit"></i>
+                                                        </a>
+
+                                                        <!-- Tombol Hapus -->
+                                                        <a href="<?= base_url('hapuspengajuan/' . $row['idpengajuan']) ?>"
+                                                            class="btn btn-danger btn-sm btn-hapus">
+                                                            <i class="ti ti-trash"></i>
+                                                        </a>
+
+                                                    <?php elseif (in_array($row['statuscustom'], ['menunggu', 'penawaran_harga'])) : ?>
+
+                                                        <!-- Tombol Batal -->
                                                         <a href="<?= base_url('batalkanpengajuan/' . $row['idpengajuan']) ?>"
                                                             class="btn btn-secondary btn-sm btn-batal">
                                                             <i class="ti ti-x"></i>
                                                         </a>
+
+                                                        <!-- Tombol Edit -->
                                                         <a href="<?= base_url('editpengajuan/' . $row['idpengajuan']) ?>"
-                                                        class="btn btn-warning btn-sm">
-                                                        <i class="ti ti-edit"></i>
-                                                    </a>
+                                                            class="btn btn-warning btn-sm">
+                                                            <i class="ti ti-edit"></i>
+                                                        </a>
+
+                                                        <!-- Tombol Hapus -->
+                                                        <a href="<?= base_url('hapuspengajuan/' . $row['idpengajuan']) ?>"
+                                                            class="btn btn-danger btn-sm btn-hapus">
+                                                            <i class="ti ti-trash"></i>
+                                                        </a>
+
                                                     <?php endif; ?>
-                                                     <a href="<?= base_url('hapuspengajuan/' . $row['idpengajuan']) ?>"
-                                                        class="btn btn-danger btn-sm btn-hapus">
-                                                        <i class="ti ti-trash"></i>
-                                                    </a>
+
                                                 </div>
                                             </td>
 
@@ -210,7 +240,7 @@
 
                         <tr>
                             <td colspan="11" class="text-center text-muted py-4">
-                                Data pesanan belum tersedia
+                                Data pengajuan belum tersedia
                             </td>
                         </tr>
 

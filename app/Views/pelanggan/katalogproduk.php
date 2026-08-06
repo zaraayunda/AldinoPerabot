@@ -233,30 +233,73 @@
 
         <div class="container">
 
-            <!-- Judul -->
-            <div class="text-center mb-3">
-                <h2 class="kategori-title">Kategori Produk</h2>
+            <!-- Heading -->
+            <div class="page-header">
 
-                <p class="kategori-subtitle">
-                    Temukan furnitur sesuai kebutuhan ruangan Anda
+                <h2>
+                    Kategori Produk
+                </h2>
+
+                <div class="page-divider"></div>
+
+                <p>
+                    Temukan berbagai pilihan furniture berkualitas untuk melengkapi
+                    ruang tamu, kamar tidur, ruang makan, hingga kebutuhan interior
+                    rumah Anda.
                 </p>
+
             </div>
 
-            <!-- Button Kategori -->
+            <!-- Kategori -->
             <div class="kategori-wrapper">
 
-                <button
-                    class="kategori-btn active"
-                    data-kategori="all">
-
+                <button class="kategori-btn active" data-kategori="all">
+                    <i class="fa-solid fa-border-all"></i>
                     Semua
                 </button>
 
-                <?php foreach ($kategori as $k) : ?>
+                <?php foreach ($kategori as $k) :
+
+                    $icon = "fa-box";
+
+                    switch (strtolower($k['namakategori'])) {
+
+                        case "kursi":
+                            $icon = "fa-chair";
+                            break;
+
+                        case "meja":
+                            $icon = "fa-table";
+                            break;
+
+                        case "lemari":
+                            $icon = "fa-door-open";
+                            break;
+
+                        case "sofa":
+                            $icon = "fa-couch";
+                            break;
+
+                        case "tempat tidur":
+                            $icon = "fa-bed";
+                            break;
+
+                        case "rak":
+                            $icon = "fa-book";
+                            break;
+
+                        case "bufet":
+                            $icon = "fa-cabinet-filing";
+                            break;
+                    }
+
+                ?>
 
                     <button
                         class="kategori-btn"
                         data-kategori="<?= $k['idkategori'] ?>">
+
+                        <i class="fa-solid <?= $icon ?>"></i>
 
                         <?= esc($k['namakategori']) ?>
 
@@ -265,7 +308,9 @@
                 <?php endforeach; ?>
 
             </div>
+
         </div>
+
     </section>
 
     <section id="new-arrivals" class="new-arrivals">
@@ -286,7 +331,7 @@
                             }
                             ?>
 
-                            <div class="col-md-3 col-sm-4">
+                            <div class="col-md-3 col-sm-4 produk-item" data-kategori="<?= $row['idkategori'] ?>">
                                 <div class="single-new-arrival">
 
                                     <div class="single-new-arrival-bg">
@@ -311,7 +356,6 @@
 
                                             <a href="#"
                                                 class="action-icon btn-detail-produk"
-
                                                 data-id="<?= $row['idproduk'] ?>"
                                                 data-nama="<?= esc($row['namaproduk']) ?>"
                                                 data-jenis="<?= esc($row['jenisproduk']) ?>"
@@ -360,19 +404,27 @@
                             </div>
 
                         <?php endforeach; ?>
+                    <?php endif; ?>
 
-                    <?php else : ?>
+                    <!-- Empty State -->
+                    <div id="empty-kategori" class="empty-product"
+                        style="<?= empty($produk) ? '' : 'display:none;' ?>">
 
-                        <div class="col-md-12 text-center">
-                            <h4>Produk belum tersedia</h4>
+                        <div class="empty-icon">
+                            <i class="fa-solid fa-box-open"></i>
                         </div>
 
-                    <?php endif; ?>
+                        <h3>Produk Belum Tersedia</h3>
+
+                        <p>
+                            Maaf, belum ada produk pada kategori yang dipilih.
+                        </p>
+
+                    </div>
 
                 </div>
             </div>
-        </div><!--/.container-->
-
+        </div>
     </section>
 
     <div class="modal fade" id="modalDetailProduk" tabindex="-1" role="dialog">
@@ -613,6 +665,40 @@
                 $('#modalDetailProduk').modal('show');
 
             });
+
+        });
+
+        // Filter Kategori
+        $('.kategori-btn').click(function() {
+
+            $('.kategori-btn').removeClass('active');
+            $(this).addClass('active');
+
+            let kategori = $(this).data('kategori');
+
+            if (kategori == 'all') {
+
+                $('.produk-item').fadeIn(200);
+                $('#empty-kategori').hide();
+
+            } else {
+
+                $('.produk-item').hide();
+
+                let produk = $('.produk-item[data-kategori="' + kategori + '"]');
+
+                if (produk.length > 0) {
+
+                    produk.fadeIn(200);
+                    $('#empty-kategori').hide();
+
+                } else {
+
+                    $('#empty-kategori').fadeIn(200);
+
+                }
+
+            }
 
         });
     </script>

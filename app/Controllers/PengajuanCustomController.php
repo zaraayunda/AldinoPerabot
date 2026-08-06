@@ -522,28 +522,30 @@ class PengajuanCustomController extends BaseController
             | Simpan Produk Custom
             |----------------------------------------------
             */
-                $modelProduk->insert([
+                $dataProduk = [
 
-                    'idproduk' => $idproduk,
+                    'idproduk'      => $idproduk,
+                    'idkategori'    => null,
+                    'namaproduk'    => $detail['namaprodukcustom'],
+                    'jenisproduk'   => 'custom',
+                    'harga'         => $detail['hargacustom'],
+                    'detailproduk'  => $detail['detailcustom'],
+                    'foto'          => $detail['fotoreferensi'],
+                    'statusproduk'  => 'nonaktif'
 
-                    'idkategori' => null,
+                ];
+                $asal = FCPATH . 'storage/fotocustom/' . $detail['fotoreferensi'];
+                $tujuan = FCPATH . 'storage/fotoproduk/' . $detail['fotoreferensi'];
 
-                    'namaproduk' =>
-                    $detail['namaprodukcustom'],
+                if (!empty($detail['fotoreferensi']) && file_exists($asal)) {
 
-                    'jenisproduk' => 'custom',
+                    if (!is_dir(FCPATH . 'storage/fotoproduk')) {
+                        mkdir(FCPATH . 'storage/fotoproduk', 0777, true);
+                    }
 
-                    'harga' =>
-                    $detail['hargacustom'],
-
-                    'detailproduk' =>
-                    $detail['detailcustom'],
-
-                    'foto' => '',
-
-                    'statusproduk' => 'nonaktif'
-
-                ]);
+                    copy($asal, $tujuan);
+                }
+                $modelProduk->insert($dataProduk);
 
                 /*
             |----------------------------------------------
