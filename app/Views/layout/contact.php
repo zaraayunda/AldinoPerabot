@@ -177,7 +177,7 @@
                 <div class="contact-card">
 
                     <h3>
-                        <i class="fa fa-map-marker"></i>
+                        <i class="fa fa-map"></i>
                         Lokasi Kami
                     </h3>
 
@@ -211,7 +211,7 @@
 
                     <div class="info-item">
 
-                        <i class="fa fa-map-marker"></i>
+                        <i class="fa fa-map"></i>
 
                         <div>
 
@@ -241,7 +241,7 @@
 
                     <div class="info-item">
 
-                        <i class="fa fa-whatsapp"></i>
+                       <i class="fa-brands fa-whatsapp"></i>
 
                         <div>
 
@@ -269,7 +269,7 @@
 
                     <div class="info-item">
 
-                        <i class="fa fa-clock-o"></i>
+                        <i class="fa fa-clock"></i>
 
                         <div>
 
@@ -436,7 +436,7 @@
 
                 </div>
 
-                <div id="faq1" class="panel-collapse collapse in">
+                <div id="faq1" class="panel-collapse collapse">
 
                     <div class="panel-body">
 

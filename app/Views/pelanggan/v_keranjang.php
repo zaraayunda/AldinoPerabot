@@ -235,10 +235,17 @@
     <div class="cart-container">
 
         <div class="page-header">
-            <h2>Keranjang Saya</h2>
+
+            <h2>
+                Keranjang Saya
+            </h2>
+
+            <div class="page-divider"></div>
+
             <p>
-                Pilih produk yang ingin Anda checkout.
+                Kelola produk pilihan Anda sebelum melanjutkan ke proses checkout.
             </p>
+
         </div>
 
         <form action="<?= base_url('checkout') ?>" method="post">

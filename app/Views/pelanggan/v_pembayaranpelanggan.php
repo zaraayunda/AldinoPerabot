@@ -264,9 +264,9 @@
                                                 <select
                                                     name="metode_pembayaran"
                                                     id="metode_pembayaran"
-                                                    class="form-select">
-                                                    <option value="cash">Cash</option>
+                                                    class="form-select">                                                    
                                                     <option value="transfer">Transfer</option>
+                                                    <option value="cash">Cash</option>
                                                 </select>
 
                                             </div>

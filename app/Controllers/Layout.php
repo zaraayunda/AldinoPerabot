@@ -326,11 +326,10 @@ class Layout extends BaseController
                 ->where('idpelanggan', $idpelanggan)
                 ->where('statuspesanan', 'menunggu_konfirmasi')
                 ->countAllResults(),
-
-            'pembayaranMenunggu' => $modelPembayaran
-                ->join('pesanan', 'pesanan.idpesanan=pembayaran.idpesanan')
+            'pembayaranMenunggu' => $modelPesanan
+                ->join('pembayaran', 'pembayaran.idpesanan = pesanan.idpesanan', 'left')
                 ->where('pesanan.idpelanggan', $idpelanggan)
-                ->where('statuspembayaran', 'menunggu')
+                ->where('pembayaran.idpesanan', null)
                 ->countAllResults(),
             'prosesProduksi' => $modelPesanan
                 ->where('idpelanggan', $idpelanggan)

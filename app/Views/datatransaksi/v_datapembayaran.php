@@ -197,13 +197,13 @@
 
                     <?php else : ?>
                         <tr>
-                            <td colspan="12" class="text-center text-muted">
+                            <td colspan="13" class="text-center text-muted">
                                 Data tidak tersedia
                             </td>
                         </tr>
                     <?php endif; ?>
                     <tr id="no-result" style="display:none;">
-                        <td colspan="12" class="text-center text-danger">
+                        <td colspan="13" class="text-center text-danger">
                             Data tidak ditemukan
                         </td>
                     </tr>

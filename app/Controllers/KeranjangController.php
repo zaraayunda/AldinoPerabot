@@ -293,7 +293,7 @@ class KeranjangController extends BaseController
             $db->transCommit();
 
             return redirect()
-                ->to('/homepage')
+                ->to('/pesananpelanggan')
                 ->with(
                     'success',
                     'Pesanan berhasil dibuat.'
